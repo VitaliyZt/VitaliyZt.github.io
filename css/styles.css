@@ -1,0 +1,15 @@
+body {
+	min-width: 320px;
+	height: 3587px;
+	background:
+		url("../img/page-bg-2.png") no-repeat center 495px,
+		url("../img/page-bg-2.png") no-repeat center 2140px,
+		#3f2b30 url("../img/page-bg.jpg") no-repeat center top;
+}
+.container {
+	padding: 0;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+}
+header {}
+.header-menu {}
