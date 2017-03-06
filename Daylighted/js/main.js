@@ -3,6 +3,7 @@ $(function(){
 // слайдер
 	if($("#s9-slider").length) {
 		$("#s9-slider").slick({
+			arrows: true,
 			autoplay: true,
 			autoplaySpeed: 7000,
 			speed: 500,
@@ -13,9 +14,23 @@ $(function(){
 		});	
 	}
 
+	var slidervert = $(".s5-vert-slider");
+	if(slidervert.length) {
+		slidervert.slick({
+			autoplay: true,
+			autoplaySpeed: 5000,
+			fade: true,
+			arrows: false
+//			,
+//			prevArrow: "<a href='#' class='slick-prev'><i class='fa fa-caret-left'></i></a>",
+//			nextArrow: "<a href='#' class='slick-next'><i class='fa fa-caret-right'></i></a>"
+		});	
+	}
+
 	var slider = $(".s5-slider");
 	if(slider.length) {
 		slider.slick({
+			arrows: false,
 			autoplaySpeed: 5000,
 			fade: true,
 			prevArrow: "<a href='#' class='slick-prev'><i class='fa fa-caret-left'></i></a>",
@@ -49,12 +64,6 @@ $(function(){
 			slider.slick("slickPause");
 		}		
 	});	
-
-
-	
-	
-	
-	
 
 	// стрелки влево-вправо в слайдере ставим ровно
 	function s5sliderRows(){

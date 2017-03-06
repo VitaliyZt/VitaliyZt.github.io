@@ -212,17 +212,19 @@ header .menu-btn > span {
 	font: 36px "lato-sb";
 }
 .s5-text {
-	max-width: 435px;
+	max-width: 615px;
 	font: 18px "lato-sb";
 }
 .s5-slider {
 	margin: 10px auto 30px;
 	padding: 0;
-	max-width: 480px;
+	width: 452px;
 	height: auto;
+/*
 	border: 20px solid #000;
 	border-radius: 25px;
 	background: #000;
+*/
 }
 .s5-slider .slick-list, .s5-slider .slick-track, .s5-slide {
 	height: 100%;
@@ -612,6 +614,58 @@ footer {
 .footer-right-item-title {
 	margin: 0 0 1px;
 }
+.s5-vert-slider {
+	margin: 12px 0 0 0;
+	padding: 0;
+	width: 210px;
+/*
+	border: 20px solid #000;
+	border-radius: 25px;
+	background: #000;
+*/
+}
+.s5-vert-slider > img {
+	width: 100%;
+	height: 100%;
+}
+
+.s5 {
+	position: relative;
+}
+.s5 > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.s5-slider {
+	margin: 40px auto 60px;
+}
+.s5-vert-slider {
+	margin: 12px auto 30px;
+}
+.s5-slider, .s5-vert-slider {
+	position: relative;
+}
+.s5-slider:before, .s5-vert-slider:before {
+	position: absolute;
+	content: "";
+}
+.s5-slider:before {
+	top: -38px;
+	left: -56px;
+	width: 541px;
+	height: 355px;
+	background: url("../img/s5-slider-bg.png") top center;
+}
+.s5-vert-slider:before {
+	top: -19px;
+	left: -45px;
+	width: 277px;
+	height: 432px;
+	background: url("../img/s5-vert-slider-bg.png") top center;
+}
 
 
 .s4-img {
@@ -625,7 +679,7 @@ footer {
 	}
 	100% {
 		top: 560px;
-		left: -380px;
+		left: 0;
 		opacity: 0.2;
 		transform: scale(0.4);
 	}
