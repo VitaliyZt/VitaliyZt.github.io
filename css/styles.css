@@ -9,7 +9,7 @@ body {
 		#3f2b30 url("../img/page-bg.jpg") no-repeat center top;
 }
 .container {
-	width: 920px !important;
+/*	width: 920px !important;*/
 	padding: 0;
 	height: 100%;
 /*	background: rgba(255,255,255,0.3);*/
