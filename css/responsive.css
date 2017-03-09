@@ -1,0 +1,161 @@
+@media (min-width: 800px){
+	body {
+		min-width: 1381px;
+		height: 2676px;
+		background:
+			url("../img/page-bg-flowers-1.png") no-repeat center 494px,
+			url("../img/page-bg-flowers-1.png") no-repeat center 2138px,
+			#3f2b30 url("../img/page-bg.jpg") no-repeat center top;
+	}
+	.container {
+		width: 1138px !important;
+	}
+
+/*	boys 	*/
+/*
+	.container {
+		width: 800px !important;
+	}
+	body {
+		background: #3f2b30;
+	}
+*/
+/*	boys 	*/	
+	
+	
+	.top {
+		padding-top: 17px;
+	}
+	.top-logo > img {
+		margin-left: -31px;
+		transform: none;
+	}
+	.top-text {
+		padding-left: 18px;
+		margin-top: 8px;
+		font: 15px/25px "bantiqa-i";
+		letter-spacing: 2.05px;
+	}
+	.books-heading {
+		margin-top: 20px;
+		padding: 0 0 16px 0;
+		font: 30px "times-i"; 
+		letter-spacing: 1.5px;
+	}
+	.books-list {
+		padding: 0 0 0 134px;
+	}
+	.book {
+		float: left;
+		width: 399px;
+	}
+	.book2 {
+		margin-top: 0;
+	}
+	.book-top {
+		margin: 4px 0 12px;
+		padding-left: 14px;
+	}
+	.book-number {
+		font: 18px "times-i";
+		letter-spacing: 1px;
+	}
+	.book-title {
+		margin: 1px 0 0 0;
+		font: 20px "times-i";
+		letter-spacing: 0.7px;
+	}
+	.book-img {
+		float: left;
+		width: 238px;
+		height: 343px;
+	}
+	.book-info {
+		margin-left: -3px;
+		margin-top: 0;
+		padding-top: 66px;
+		width: 150px;
+	}
+	.book-price {
+		float: none;
+		padding-left: 31px;
+		width: 150px;
+		height: 65px;
+		letter-spacing: 2px;
+		font: 31.62px "sladkoeshka";
+		background: url("../img/price-bg-red.png") no-repeat 0 0;
+	}
+	.book-price > span {
+		margin-left: -7px;
+		font: 21.08px "sladkoeshka";
+	}
+	.book-info > a {
+		float: none;
+		margin: 0 0 0 15px;
+		width: 114px;
+		height: 39px;
+		font: 18.45px "sladkoeshka";
+		letter-spacing: 1px;
+		word-spacing: -2px;
+	}
+	.book-info > .addtocart-btn {
+		margin-top: 3px;
+		padding: 1px 0 0 17px;
+		background: url("../img/addtocart-btn-bg.png") no-repeat 0 0;
+	}
+	.book-info > .buyebook-btn {
+		margin: 5px 0 0 15px;
+		padding: 1px 0 0 5px;
+		background: url("../img/buyebook1-btn-bg.png") no-repeat 0 0;
+	}
+	.book-info > .showmore-btn {
+		margin: 8px 0 0 2px;
+		padding: 11px 0 0 12px;
+		width: 131px;
+		height: 46px;
+		font: 15.81px "sladkoeshka";
+		letter-spacing: 0.7px;
+		background: url("../img/showmore-btn-bg.png") no-repeat 0 0;
+	}
+	.book2 .book-top {
+		margin-bottom: 13px;
+		padding-left: 37px;
+	}
+	.book2 .book-title {
+		letter-spacing: 1px;
+	}
+	.book2 .book-price {
+		padding-left: 27px;
+		letter-spacing: 2px;
+		background: url("../img/price-bg-blue.png") no-repeat 0 0;
+	}
+	.book2 .book-info {
+		margin: 0 0 0 11px;
+		padding-top: 62px;
+	}
+	.bottom-line {
+		margin-top: -12px;
+	}
+	.center {
+		width: 735px;
+	}
+	.info {
+		padding-top: 8px;
+	}
+	.info .bottom-line {
+		margin-top: 133px;
+	}
+	.info .center > * {
+		margin-bottom: 36px;
+	}
+	.payment ul {
+		margin: -5px 0 0 0;
+	}
+	.info-title {
+		padding-left: 0;
+		letter-spacing: 1.5px;
+	}
+	.info .center > * *:not(.info-title) {
+		letter-spacing: 1.55px;
+	}
+}

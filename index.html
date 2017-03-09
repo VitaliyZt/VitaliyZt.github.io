@@ -11,6 +11,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,57 +22,104 @@
 	</head>
 	<body>
 			<div class="container">
-				<img src="img/bg1138.jpg" alt="">
-<!--
-				<header>
-					<div class="container">
-						<ul class="header-menu nav nav-pills">
-							<li><a href="#">БЛОГ</a></li>
-							<li class="active"><a href="#">КНИГИ</a></li>
-							<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
-							<li><a href="#">ГАДАНИЕ</a></li>
-							<li><a href="#">ОБ АВТОРЕ</a></li>
-							<li><a href="#">ОТЗЫВЫ</a></li>
-						</ul>
-					</div>					
-				</header>
-				
-				<section class="top">
-					<div class="container">
-						<div class="top-logo">
-							<img src="img/s1-logo.png" alt="">
+					<header class="visible-lg">
+						<div class="container">
+							<ul class="header-menu nav nav-pills">
+								<li><a href="#">БЛОГ</a></li>
+								<li class="active"><a href="#">КНИГИ</a></li>
+								<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
+								<li><a href="#">ГАДАНИЕ</a></li>
+								<li><a href="#">ОБ АВТОРЕ</a></li>
+								<li><a href="#">ОТЗЫВЫ</a></li>
+							</ul>
+						</div>					
+					</header>
+
+
+					<section class="top">
+						<div class="container">
+							<div class="top-logo">
+								<img src="img/s1-logo.png" alt="">
+							</div>
+							<p class="top-text">У настоящей женщины три возраста:<br> молодость,вторая молодость и вечная молодость. (с) Яна Джангирова</p>
 						</div>
-						<p class="top-text">У настоящей женщины три возраста:<br> молодость,вторая молодость и вечная молодость. (с) Яна Джангирова</p>
-					</div>
-				</section>
-				
-				<section class="books">
-					<div class="container">
-						<h2 class="books-title"></h2>
-						<ul class="books-list">
-							<li class="book clearfix">
-								<div class="col-xs-6">
+					</section>
+
+					<section class="books">
+						<div class="container">
+							<h2 class="books-heading">Все книги</h2>
+							<div class="books-list clearfix">
+
+								<div class="book book1 clearfix">
+									<div class="book-top">
+										<span class="book-number">Книга 1</span>
+										<h3 class="book-title">«Секс. Друзья.Подружки».</h3>
+									</div>
 									<div class="book-img">
-										<img src="" alt="">
+										<img src="img/book-1.png" class="visible-md visible-lg" alt="">
+										<img src="img/book-1-big.png" class="hidden-md hidden-lg" alt="">
+									</div>
+									<div class="book-info clearfix">
+										<div class="book-price">120 <span>грн.</span></div>
+										<a href="#" class="addtocart-btn">В корзину!</a>
+										<a href="#" class="buyebook-btn"></a>
+										<a href="#" class="showmore-btn">Подробнее о книге...</a>
 									</div>
 								</div>
-								<div class="col-xs-6">
-									<div class="book-info">
-										<p class="book-number"></p>
-										<h3 class="book-title"></h3>
-										<div class="book-btns">
-											<a href="#" class="book-btn cart-btn"></a>
-											<a href="#" class="book-btn ebook-btn"></a>
-											<a href="#" class="book-btn info-btn"></a>
-										</div>
+
+								<div class="book book2 clearfix">
+									<div class="book-top">
+										<span class="book-number">Книга 2</span>
+										<h3 class="book-title">«Замуж? Да.Нет.Не знаю».</h3>
+									</div>
+									<div class="book-img">
+										<img src="img/book-2.png" class="visible-md visible-lg" alt="">
+										<img src="img/book-2-big.png" class="hidden-md hidden-lg" alt="">
+									</div>
+									<div class="book-info clearfix">
+										<div class="book-price">200 <span>грн.</span></div>
+										<a href="#" class="addtocart-btn">В корзину!</a>
+										<a href="#" class="buyebook-btn"></a>
+										<a href="#" class="showmore-btn">Подробнее о книге...</a>
 									</div>
 								</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</div>
--->
+							</div>
+							<img src="img/line-1.png" alt="" class="bottom-line visible-lg visible-md">
+							<img src="img/line-1-small.png" alt="" class="bottom-line hidden-lg hidden-md">
+						</div>
+					</section>
+
+					<section class="info">
+						<div class="container">
+							<div class="center">
+								<div class="payment">
+									<h3 class="info-title">Оплата</h3>
+									<p>Оплата заказа производится платежной картой Visa/Mastercard в режиме онлайн:</p>
+									<ul>
+										<li>через систему электронных платежей Liqpay или Приват24;</li>
+										<li>через систему электронных платежей Platon.</li>
+									</ul>
+									<p>При этом списание с вашей карты будет произведено в гривне по курсу платежной системы на дату проведения платежа.</p>
+								</div>
+								<div class="delivery-ua">
+									<h3 class="info-title">Доставка по Украине</h3>
+									<p>Курьерской службой «Нова Пошта».</p>
+								</div>
+								<div class="delivery-another">
+									<h3 class="info-title">Доставка в другие страны</h3>
+									<p>Доставка по миру осуществляется Укрпочтой, стоимость доставки включена в стоимость товара. В среднем доставка занимает 10-27 рабочих дней, но окончательные сроки зависят от курьерской службы.</p>
+									<p>Покупатель несет ответственность за достоверность персональных данных, внесенных при оформлении заказа.</p>
+								</div>
+							</div>
+							<img src="img/line-1.png" alt="" class="bottom-line visible-md visible-lg">
+						</div>
+					</section>
+					<footer class="hidden-md hidden-lg">
+						<img src="img/footer-small.png" alt="">
+					</footer>
+				</div>
+
+<!--			</div>-->
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
