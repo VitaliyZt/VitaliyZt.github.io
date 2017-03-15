@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'arial';
+	src: url('../fonts/arial.eot');
+	src: local('☺'), url('../fonts/arial.woff') format('woff'), url('../fonts/arial.ttf') format('truetype'), url('../fonts/arial.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arial-b';
+	src: url('../fonts/arialbd.eot');
+	src: local('☺'), url('../fonts/arialbd.woff') format('woff'), url('../fonts/arialbd.ttf') format('truetype'), url('../fonts/arialbd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arial-i';
+	src: url('../fonts/ariali.eot');
+	src: local('☺'), url('../fonts/ariali.woff') format('woff'), url('../fonts/ariali.ttf') format('truetype'), url('../fonts/ariali.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'arial-bi';
+	src: url('../fonts/arialbi.eot');
+	src: local('☺'), url('../fonts/arialbi.woff') format('woff'), url('../fonts/arialbi.ttf') format('truetype'), url('../fonts/arialbi.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'bantiqa';
+	src: url('../fonts/Book Antiqua Regular.eot');
+	src: local('☺'), url('../fonts/Book Antiqua Regular.woff') format('woff'), url('../fonts/Book Antiqua Regular.ttf') format('truetype'), url('../fonts/Book Antiqua Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'bantiqa-i';
+	src: url('../fonts/ANTQUAI.eot');
+	src: local('☺'), url('../fonts/ANTQUAI.woff') format('woff'), url('../fonts/ANTQUAI.ttf') format('truetype'), url('../fonts/ANTQUAI.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'times-i';
+	src: url('../fonts/Times New Roman Cyr Italic.eot');
+	src: local('☺'), url('../fonts/Times New Roman Cyr Italic.woff') format('woff'), url('../fonts/Times New Roman Cyr Italic.ttf') format('truetype'), url('../fonts/Times New Roman Cyr Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sladkoeshka';
+	src: url('../fonts/Sladkoeshka.eot');
+	src: local('☺'), url('../fonts/Sladkoeshka.woff') format('woff'), url('../fonts/Sladkoeshka.ttf') format('truetype'), url('../fonts/Sladkoeshka.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'myriad';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'tahoma-bi';
+	src: url('../fonts/Tahoma_Bold_Faux_Italic.eot');
+	src: local('☺'), url('../fonts/Tahoma_Bold_Faux_Italic.woff') format('woff'), url('../fonts/Tahoma_Bold_Faux_Italic.ttf') format('truetype'), url('../fonts/Tahoma_Bold_Faux_Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
