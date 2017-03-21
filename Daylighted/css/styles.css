@@ -66,11 +66,13 @@ header .menu-btn > span {
 
 .s1 {
 	height: 530px;
-/*	height: calc(100vh - 80px);*/
+	height: calc(100vh - 80px);
 	text-align: center;
 	color: #fff;
+/*
 	background: url("../video-bg/s1-bg.jpg") no-repeat center;
 	background-size: cover;
+*/
 }
 .s1-bg {
 	height: 100%;
@@ -218,20 +220,37 @@ header .menu-btn > span {
 .s5-slider {
 	margin: 10px auto 30px;
 	padding: 0;
-	width: 452px;
+	width: 458px;
 	height: auto;
-/*
-	border: 20px solid #000;
-	border-radius: 25px;
-	background: #000;
-*/
 }
 .s5-slider .slick-list, .s5-slider .slick-track, .s5-slide {
 	height: 100%;
 }
+.slick-track {}
+.s5-slider {}
+.s5-slide {}
+
 .s5-slide > img {
+	margin: 0 auto; 
 	width: 100%;
-	height: 100%;
+	height: 100%;    
+}
+.s5-vert-slider .s5-slide {
+	perspective: 96px;
+}
+.s5-slider .s5-slide {
+	perspective: 96px;
+}
+.s5-slider .s5-slide > img {
+	margin: 18px 0 0 -1px;
+	-webkit-transform: rotateX(1deg);
+	transform: rotateX(0.7deg);
+	width: 99%;
+}
+.s5-vert-slider .s5-slide > img {
+	margin-top: 1px;
+	-webkit-transform: rotateX(1deg);
+	transform: rotateX(1deg);
 }
 .s5-slider .slick-arrow {
 	position: absolute;
@@ -251,7 +270,7 @@ header .menu-btn > span {
 
 
 .s6 {
-	height: 600px;
+/*	height: 600px;*/
 	text-align: center;
 	color: #fff;
 	background: #2C3E50;
@@ -261,8 +280,11 @@ header .menu-btn > span {
 	height: 100%;
 }
 .s6-content {
+/*
 	display: table-cell;
 	vertical-align: middle;
+*/
+	margin: 78px 0;
 }
 .s6-title {
 	margin-top: 25px;
@@ -278,6 +300,11 @@ header .menu-btn > span {
 .s6-item-text {
 	font: 18px "lato-sb";
 }
+.s6-item-text-description {
+	margin-bottom: 19px;
+	font: 16px "lato-sb";
+}
+
 
 
 .s7 {
@@ -384,7 +411,7 @@ header .menu-btn > span {
 	transition: background 0.5s ease-in-out;
 }
 .s8-item-text:hover {
-	background: rgba(0,0,0,0);
+	background: rgba(0,0,0,0.6);
 }
 .s8-line-1 .s8-item-text {
 	padding: 0 6px;
@@ -436,7 +463,7 @@ header .menu-btn > span {
 }
 .s9-img-box {
 	display: block;
-	margin-top: 30px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 .s9-img-box > img {
@@ -472,7 +499,7 @@ header .menu-btn > span {
 }
 .s10-img-box {
 	float: left;
-	width: 50%;
+	width: 100%;
 	height: 64px;
 	line-height: 64px;
 	text-align: center;
@@ -654,17 +681,22 @@ footer {
 }
 .s5-slider:before {
 	top: -38px;
+	top: -20px;
 	left: -56px;
 	width: 541px;
 	height: 355px;
 	background: url("../img/s5-slider-bg.png") top center;
+	transform: scaleY(0.88) scaleX(0.97);
 }
 .s5-vert-slider:before {
 	top: -19px;
+	top: -15px;
 	left: -45px;
+	left: -44px;
 	width: 277px;
 	height: 432px;
 	background: url("../img/s5-vert-slider-bg.png") top center;
+	transform: scaleY(0.99);
 }
 
 

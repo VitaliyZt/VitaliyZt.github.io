@@ -21,15 +21,13 @@ $(function(){
 			autoplaySpeed: 5000,
 			fade: true,
 			arrows: false
-//			,
-//			prevArrow: "<a href='#' class='slick-prev'><i class='fa fa-caret-left'></i></a>",
-//			nextArrow: "<a href='#' class='slick-next'><i class='fa fa-caret-right'></i></a>"
 		});	
 	}
 
 	var slider = $(".s5-slider");
 	if(slider.length) {
 		slider.slick({
+			autoplay: true,
 			arrows: false,
 			autoplaySpeed: 5000,
 			fade: true,
@@ -40,30 +38,29 @@ $(function(){
 	}
 
 	// анимация перелета картин
-	$(window).on("scroll", function(){
-		
-		var img = $(".s4-img"),  start = $(".s4-img-box").offset().top,
-			scrolle = $(this).scrollTop(), arrows = $(".s5-slider > .slick-arrow");
-		
-		if (scrolle > start - 150){
-			img.css("animation", "move 2s ease-in-out");			
-			setTimeout(function(){
-				if (slider.slick("slickCurrentSlide") == 0){
-					slider.slick("slickNext");
-//					slider.slick("slickRemove", 0, false);
-					slider.slick("slickPlay");
-					s5sliderRows();
-					arrows.css("color", "#fff");
-				}
-			}, 2800);
-		} 	
-		else {
-			img.css("animation", "none");
-			arrows.css("color", "#000");
-			slider.slick("slickGoTo", 0);
-			slider.slick("slickPause");
-		}		
-	});	
+//	$(window).on("scroll", function(){
+//		
+//		var img = $(".s4-img"),  start = $(".s4-img-box").offset().top,
+//			scrolle = $(this).scrollTop(), arrows = $(".s5-slider > .slick-arrow");
+//		
+//		if (scrolle > start - 150){
+//			img.css("animation", "move 2s ease-in-out");			
+//			setTimeout(function(){
+//				if (slider.slick("slickCurrentSlide") == 0){
+//					slider.slick("slickNext");
+//					slider.slick("slickPlay");
+//					s5sliderRows();
+//					arrows.css("color", "#fff");
+//				}
+//			}, 2800);
+//		} 	
+//		else {
+//			img.css("animation", "none");
+//			arrows.css("color", "#000");
+//			slider.slick("slickGoTo", 0);
+//			slider.slick("slickPause");
+//		}		
+//	});	
 
 	// стрелки влево-вправо в слайдере ставим ровно
 	function s5sliderRows(){
