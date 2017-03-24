@@ -9,6 +9,7 @@
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/animate.min.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">		
 		<link href="css/styles.css" rel="stylesheet">		
 		<link href="css/responsive.css" rel="stylesheet">
@@ -22,7 +23,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<header>
+			<header class="wow fadeIn">
 				<ul class="header-menu nav nav-pills">
 					<li><a href="#">Блог</a></li>
 					<li class="active"><a href="#">Книги</a></li>
@@ -35,16 +36,18 @@
 			
 			<a href="#" class="mobile-menu-btn"></a>
 			
-			<section class="top">
+			<section class="top wow fadeIn">
+				<!--<img src="img/top-logo.png" class="top-logo-img" alt="">-->
+				<!--<img src="img/top-logo-small.png" class="top-logo-img-small" alt="">-->
 				<div class="top-logo">
-					<img src="img/top-logo.png" class="top-logo-img" alt="">
-					<img src="img/top-logo-small.png" class="top-logo-img-small" alt="">
+					<img src="img/top-logo-new.png" class="top-logo-img" alt="">
+					<img src="img/top-logo-new.png" class="top-logo-img-small" alt="">
 				</div>
 				<p class="top-text">У настоящей женщины три возраста: <br>
-					молодость,вторая молодость и вечная молодость. (с) Яна Джангирова</p>
+					молодость,вторая молодость и вечная молодость. <br>(с) Яна Джангирова</p>
 			</section>
 			
-			<section class="s11">
+			<section class="s11 wow fadeIn">
 				<h2 class="s11-title">Все книги</h2>
 				<img src="img/title-line.png">
 
@@ -95,7 +98,7 @@
 
 			<section class="s12-info">
 				<div class="s12-center">
-					<div class="s12-payment s12-block">
+					<div class="s12-payment s12-block wow fadeIn"  data-wow-duration="2s" data-wow-offset="120">
 						<h3 class="s12-info-title">Оплата</h3>
 							<p>Оплата заказа производится платежной картой Visa/Mastercard в режиме онлайн:</p>
 							<ul>
@@ -104,11 +107,11 @@
 							</ul>
 							<p>При этом списание с вашей карты будет произведено в гривне по курсу платежной системы на дату проведения платежа.</p>
 						</div>
-					<div class="s12-delivery-ua s12-block">
+					<div class="s12-delivery-ua s12-block wow fadeIn"  data-wow-duration="2s" data-wow-offset="120">
 						<h3 class="s12-info-title">Доставка по Украине</h3>
 							<p>Курьерской службой «Нова Пошта».</p>
 						</div>
-					<div class="s12-delivery-another s12-block">
+					<div class="s12-delivery-another s12-block wow fadeIn"  data-wow-duration="2s" data-wow-offset="120">
 						<h3 class="s12-info-title">Доставка в другие страны</h3>
 							<p>Доставка по миру осуществляется Укрпочтой, стоимость доставки включена в стоимость товара. В среднем доставка занимает 10-27 рабочих дней, но окончательные сроки зависят от курьерской службы.</p>
 							<p>Покупатель несет ответственность за достоверность персональных данных, внесенных при оформлении заказа.</p>
@@ -129,6 +132,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

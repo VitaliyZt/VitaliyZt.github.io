@@ -48,7 +48,11 @@ header {
 	letter-spacing: 1.6px;
 	color: #89857e;
 }
+.top-text > br:first-child {
+	display: none;
+}
 .top-logo-img {
+	max-width: 900px;
 	display: inline;
 }
 .top-logo-img-small {
@@ -578,7 +582,7 @@ body.book-2 {
 }
 
 .s10-popup {
-	margin: 790px auto 0;
+	margin: 250px auto 100px;
 	width: 795px;
 	height: 259px;
 	background: #331e23 url("../img/s10-popup-flowers.png") no-repeat right 4px;
@@ -1107,6 +1111,6 @@ body.book-2 {
 }
 .test-link {
 	display: block;
-	color: #fff !important;
-	font-size: 35px;
+	font-size: 32px;
+	color: #fff;
 }

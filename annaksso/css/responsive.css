@@ -20,11 +20,16 @@
 	}
 	.top-logo-img-small {
 		display: inline;
+		margin-top: 40px;
+		max-width: 730px;
 	}
 	.top-text {
 		margin-top: 8px;
-		font: 17px/28px "bantiqa-i";
+		font: 22px/28px "bantiqa-i";
 		letter-spacing: 3.1px;
+	}
+	.top-text > br:first-child {
+		display: inline;
 	}
 	.s1-title {
 		margin: 23px auto 22px;
@@ -474,7 +479,7 @@
 		margin: 1px 0 0 4px !important;
 	}
 	.s10-popup {
-		margin: 446px auto 0;
+		margin: 250px auto 0;
 		width: 800px;
 		height: 300px;
 		z-index: 999;
