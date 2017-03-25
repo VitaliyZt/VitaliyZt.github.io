@@ -5,8 +5,8 @@
  */
 
 /*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=d2bdc55732e4190c1572114ff44556c0)
- * Config saved to config.json and https://gist.github.com/d2bdc55732e4190c1572114ff44556c0
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=3b7592f61a6a36c31346e87826dea5a8)
+ * Config saved to config.json and https://gist.github.com/3b7592f61a6a36c31346e87826dea5a8
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -1603,9 +1603,9 @@ pre code {
     width: 940px;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1189px;
+    width: 1200px;
   }
 }
 .container-fluid {
@@ -2096,7 +2096,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
@@ -6630,7 +6630,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1188px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md {
     display: block !important;
   }
@@ -6645,22 +6645,22 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1188px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
     display: block !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1188px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline {
     display: inline !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1188px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline-block {
     display: inline-block !important;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .visible-lg {
     display: block !important;
   }
@@ -6675,17 +6675,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .visible-lg-block {
     display: block !important;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .visible-lg-inline {
     display: inline !important;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .visible-lg-inline-block {
     display: inline-block !important;
   }
@@ -6700,12 +6700,12 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 992px) and (max-width: 1188px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
     display: none !important;
   }
 }
-@media (min-width: 1189px) {
+@media (min-width: 1200px) {
   .hidden-lg {
     display: none !important;
   }

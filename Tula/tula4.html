@@ -10,6 +10,8 @@
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="lib/slick/slick.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
@@ -24,20 +26,18 @@
 	<body>
 		<header>
 			<div class="container">
-				<div class="col-xs-3">
+				<div class="header-left col-xs-3">
 					<a href="#" class="header-logo-link">
 						<img src="img/header/header-logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-xs-6">
-					<div class="header-center-content">
-						<a href="#" class="header-center-link">
-							<span>Скачайте мобильное приложение</span>
-							<img src="img/header/mobile-logos.png" alt="">
-						</a>
-					</div>
+				<div class="header-center col-xs-6">
+					<a href="#" class="header-center-link hidden-xs hidden-sm">
+						<span>Скачайте мобильное приложение</span>
+						<img src="img/header/mobile-logos.png" alt="">
+					</a>
 				</div>
-				<div class="col-xs-3">
+				<div class="header-right col-xs-3">
 					<div class="header-right-links clearfix">
 						<a href="#" class="header-login-link">
 							<img src="img/header/login.png" alt="">
@@ -180,7 +180,7 @@
 						<div class="s3-slider-title">ДВОРЯНСКОЕ СОБРАНИЕ. УСАДЬБЫ, ПАРКИ И МНОГОЕ ДРУГОЕ</div>
 						<div class="s3-slider-center clearfix">
 							<div class="s3-slider-left col-xs-4">
-								<div class="s3-slider-img">
+								<div class="s3-slider-img clearfix">
 									<img src="img/s3/s3-slider-1.jpg" alt="">
 								</div>
 							</div>
@@ -210,7 +210,7 @@
 						<div class="s3-slider-title">ДВОРЯНСКОЕ СОБРАНИЕ. УСАДЬБЫ, ПАРКИ И МНОГОЕ ДРУГОЕ</div>
 						<div class="s3-slider-center clearfix">
 							<div class="s3-slider-left col-xs-4">
-								<div class="s3-slider-img">
+								<div class="s3-slider-img clearfix">
 									<img src="img/s3/s3-slider-1.jpg" alt="">
 								</div>
 							</div>
@@ -236,14 +236,26 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 				
 				<form class="s3-form">
 					<h3 class="s3-form-title">ПОИСК МАРШРУТА</h3>
 					<div class="s3-form-content clearfix">
-						<div class="s3-form-left col-xs-4">						
+						<div class="s3-form-left col-xs-6 col-lg-4">	
+						
+							<div class="s3-form-range">
+<!--								<label for="time-1">Время в пути</label>-->
+								<input type="text" id="time-1" name="time-1" value="">
+							</div>	
+						
+							<div class="s3-form-range">
+								<label for="time-2">Время в пути</label>
+								<input type="text" id="time-2" name="time-2" value="">
+							</div>							
+
 						</div>
-						<div class="s3-form-center col-xs-4">
+						<div class="s3-form-center col-xs-6 col-lg-4">
 							<div class="s3-form-block">
 								<h4 class="s3-form-block-heading">Возраст</h4>
 								<div class="s3-form-block-content">
@@ -269,10 +281,20 @@
 										<option>Выберите район... 3</option>
 									</select>
 								</div>
+								<div class="s3-form-block hidden-lg">
+									<h4 class="s3-form-block-heading">Вид маршрута</h4>
+									<div class="s3-form-block-content">
+										<select id="place-1">
+											<option>Выберите вид отдыха...</option>
+											<option>Выберите вид отдыха... 2</option>
+											<option>Выберите вид отдыха... 3</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="s3-form-right col-xs-4">						
-							<div class="s3-form-block">
+						<div class="s3-form-right col-xs-12 col-lg-4">						
+							<div class="s3-form-block hidden-md">
 								<h4 class="s3-form-block-heading">Вид маршрута</h4>
 								<div class="s3-form-block-content">
 									<select id="place-1">
@@ -487,6 +509,7 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="lib/slick/slick.min.js"></script>
+		<script src="lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,22 @@
+@media (min-width: 1200px) {
+	.s1 {
+		background-position: center -36px;
+	}
+}
+@media (max-width: 1199px) {
+	.s2-block {
+		width: 300px;
+	}
+	.s3-form-center {
+		padding-left: 9.6%;
+	}
+	.s3-form-submit-btn {
+		margin: 40px 93px 40px 0;
+	}
+	.s3-form-range {
+		width: 390px;
+	}
+	.s4-block {
+		max-width: 300px;
+	}
+}
