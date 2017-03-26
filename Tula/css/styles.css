@@ -1,8 +1,11 @@
 body {
-	min-width: 375px;
 	overflow-x: hidden;
 }
-
+#wrapper {
+	min-width: 320px;
+	overflow-x: hidden;
+	will-change: transform;
+}
 /*		HEADER 		*/
 header {
 	padding-top: 47px;
@@ -119,7 +122,7 @@ header > .container {
 	text-transform: uppercase;
 	color: #010101;
 }
-.s-right-btn {
+.s-right-btn, .s-right-btn-xs  {
 	float: right;
 	display: block;
 	width: 182px;
@@ -209,7 +212,7 @@ header > .container {
 	outline: 0;
 	z-index: 9999;
 }
-.s2 .slick-arrow, .s3 .slick-arrow {
+.s2 .slick-arrow, .s3 .slick-arrow, .s4 .slick-arrow {
 	top: 239px;
 	width: 25px;
 	height: 33px;
@@ -220,6 +223,9 @@ header > .container {
 }
 .s3 .slick-arrow {
 	top: 230px;
+}
+.s4 .slick-arrow {
+	top: 239px;
 }
 .s2 .slick-prev {
 	left: -29px;
@@ -233,6 +239,13 @@ header > .container {
 }
 .s3 .slick-next {
 	right: 11px;
+	transform: rotate(180deg);
+}
+.s4 .slick-prev {
+	left: -29px;
+}
+.s4 .slick-next {
+	right: -29px;
 	transform: rotate(180deg);
 }
 .s1 .slick-arrow {
@@ -292,11 +305,14 @@ header > .container {
 	letter-spacing: 0.08px;
 	color: #020202;
 }
-.s3-slider-btn {
+.s3-slider-btn, .s3-slider-btn-xs {
 	display: inline-block;
 	margin: 25px 0 35px;
 	padding: 0 34px;
 	font: 16px/52px "frm-l";
+}
+.s3-slider-btn-xs {
+	display: none;
 }
 .s3-slider-icons {
 	margin: 48px 0 0 6px;
@@ -438,6 +454,9 @@ header > .container {
 }
 .s3-form-range:nth-child(2) {
 	margin: 51px 0 0 0;
+}
+.s3-form-left .s3-form-range:nth-child(1) label {
+	display: none;
 }
 .s3 .irs {
 	max-width: 100%;
