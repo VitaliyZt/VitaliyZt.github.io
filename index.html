@@ -1,129 +1,531 @@
 <!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Bootstrap 101 Template</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Daylighted</title>
 
-		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/fonts.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="libs/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-			<div class="container">
-					<header class="visible-lg">
-						<div class="container">
-							<ul class="header-menu nav nav-pills">
-								<li><a href="#">БЛОГ</a></li>
-								<li class="active"><a href="#">КНИГИ</a></li>
-								<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
-								<li><a href="#">ГАДАНИЕ</a></li>
-								<li><a href="#">ОБ АВТОРЕ</a></li>
-								<li><a href="#">ОТЗЫВЫ</a></li>
-							</ul>
-						</div>					
-					</header>
-
-
-					<section class="top">
-						<div class="container">
-							<div class="top-logo">
-								<img src="img/s1-logo.png" alt="">
-							</div>
-							<p class="top-text">У настоящей женщины три возраста:<br> молодость,вторая молодость и вечная молодость. (с) Яна Джангирова</p>
-						</div>
-					</section>
-
-					<section class="books">
-						<div class="container">
-							<h2 class="books-heading">Все книги</h2>
-							<div class="books-list clearfix">
-
-								<div class="book book1 clearfix">
-									<div class="book-top">
-										<span class="book-number">Книга 1</span>
-										<h3 class="book-title">«Секс. Друзья.Подружки».</h3>
-									</div>
-									<div class="book-img">
-										<img src="img/book-1.png" class="visible-md visible-lg" alt="">
-										<img src="img/book-1-big.png" class="hidden-md hidden-lg" alt="">
-									</div>
-									<div class="book-info clearfix">
-										<div class="book-price">120 <span>грн.</span></div>
-										<a href="#" class="addtocart-btn">В корзину!</a>
-										<a href="#" class="buyebook-btn"></a>
-										<a href="#" class="showmore-btn">Подробнее о книге...</a>
-									</div>
-								</div>
-
-								<div class="book book2 clearfix">
-									<div class="book-top">
-										<span class="book-number">Книга 2</span>
-										<h3 class="book-title">«Замуж? Да.Нет.Не знаю».</h3>
-									</div>
-									<div class="book-img">
-										<img src="img/book-2.png" class="visible-md visible-lg" alt="">
-										<img src="img/book-2-big.png" class="hidden-md hidden-lg" alt="">
-									</div>
-									<div class="book-info clearfix">
-										<div class="book-price">200 <span>грн.</span></div>
-										<a href="#" class="addtocart-btn">В корзину!</a>
-										<a href="#" class="buyebook-btn"></a>
-										<a href="#" class="showmore-btn">Подробнее о книге...</a>
-									</div>
-								</div>
-							</div>
-							<img src="img/line-1.png" alt="" class="bottom-line visible-lg visible-md">
-							<img src="img/line-1-small.png" alt="" class="bottom-line hidden-lg hidden-md">
-						</div>
-					</section>
-
-					<section class="info">
-						<div class="container">
-							<div class="center">
-								<div class="payment">
-									<h3 class="info-title">Оплата</h3>
-									<p>Оплата заказа производится платежной картой Visa/Mastercard в режиме онлайн:</p>
-									<ul>
-										<li>через систему электронных платежей Liqpay или Приват24;</li>
-										<li>через систему электронных платежей Platon.</li>
-									</ul>
-									<p>При этом списание с вашей карты будет произведено в гривне по курсу платежной системы на дату проведения платежа.</p>
-								</div>
-								<div class="delivery-ua">
-									<h3 class="info-title">Доставка по Украине</h3>
-									<p>Курьерской службой «Нова Пошта».</p>
-								</div>
-								<div class="delivery-another">
-									<h3 class="info-title">Доставка в другие страны</h3>
-									<p>Доставка по миру осуществляется Укрпочтой, стоимость доставки включена в стоимость товара. В среднем доставка занимает 10-27 рабочих дней, но окончательные сроки зависят от курьерской службы.</p>
-									<p>Покупатель несет ответственность за достоверность персональных данных, внесенных при оформлении заказа.</p>
-								</div>
-							</div>
-							<img src="img/line-1.png" alt="" class="bottom-line visible-md visible-lg">
-						</div>
-					</section>
-					<footer class="hidden-md hidden-lg">
-						<img src="img/footer-small.png" alt="">
-					</footer>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>        
+    <header>
+		  <div class="container-fluid">
+				<div class="col-sm-4">
+					  <a class="header-logo-link" href="#">
+						<img src="img/logo.png" alt="">
+					  </a>
 				</div>
+				<div class="header-center col-sm-5 col-md-4 hidden-xs">
+				  <ul class="header-center-menu nav navbar-nav">
+					<li><a href="#">Art</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Exhibitions</a></li>
+				  </ul>
+				</div>
+				<div class="col-sm-3 col-md-4">
+				  <ul class="header-right-menu nav navbar-nav navbar-right hidden-xs">
+					<li><a href="#">Register</a></li>
+					<li><a href="#">Sign in</a></li>
+				  </ul>
+				</div>
+			  <button class="menu-btn visible-xs">&#9776; <span>Menu</span></button>
+		  </div>
+    </header>
+    
+    <section class="s1">
+    	<div class="s1-bg" data-vide-bg1="video-bg/final-1080-small.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%">
+			<div class="container">
+				<div class="s1-content">
+					<h2 class="s1-title">Daylighted brings your art to life.</h2>
+					<p class="s1-text">Art made easy.</p>
+					<a href="#" class="freedemo-btn">Get a free demo</a>
+				</div>
+			</div>
+    	</div>
+    </section>
+    
+    <section class="s2">
+    	<div id="s2-container" class="container">
+    		<div class="s2-items clearfix">
+				<a href="#" class="s2-img-box">
+					<img src="img/brands/sofitel.png" alt="">
+				</a>
+				<a href="#" class="s2-img-box">
+					<img src="img/brands/joie%20de%20vivre.png" alt="">
+				</a>
+				<a href="#" class="s2-img-box">
+					<img src="img/brands/pullman.png" alt="">
+				</a>
+				<a href="#" class="s2-img-box">
+					<img src="img/brands/tworoads.png" alt="">
+				</a>
+				<a href="#" class="s2-img-box">
+					<img src="img/brands/GH.png" alt="">
+				</a>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s3">
+    	<div class="container">
+    		<div class="s3-content">
+				<h2 class="s3-title">Art Should Be Everywhere</h2>
+				<p class="s3-text">Today, art is still in art galleries and museums.
+				Daylighted believes in bringing the art in your daily life.</p>
+   			</div>
+    	</div>
+    </section>
+    
+    <section class="s4">
+    	<div class="container">
+    		<div class="s4-left col-md-4 col-lg-4">
+    			<div class="s4-left-content">
+					<h3 class="s4-title">All The Art In The World</h3>
+					<p class="s4-text">Daylighted lets you enjoy unlimited art that you can choose on demand. Whether you want to showcase a different artist every day or need art for a specific event like Christmas or Halloween. Daylighted will have you covered.</p>
+    			</div>
+    		</div>
+			<div class="s4-right col-md-8 col-lg-8">
+    			<div class="s4-img-box">
+					<img class="s4-img" src="img/s4-img.jpg" alt="">
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+	  <section class="s5">
+		  <img src="img/s5-bg.jpg" class="visible-lg" alt="">
+    	<div class="container-fluid">
 
-<!--			</div>-->
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+			<div class="s5-right col-lg-push-7 col-lg-5">
+				<div class="s5-right-content">
+					<h3 class="s5-title">The Digital Canvas</h3>
+					<p class="s5-text">Display your favorite pieces, choose from our featured artworks, upload your own content, and schedule them to display the right art at the right time.</p>
+				</div>
+			</div>
+    	
+			<div class="s5-left col-lg-pull-5 col-lg-7">
+    			<div class="s5-left-content">
+    			
+					<div class="s5-slider">
+						<div class="s5-slide"><img src="img/s5-slider/horizontal/adelmanfineart.png"></div>
+						<div class="s5-slide"><img src="img/s5-slider/horizontal/carlmoore.png"></div>
+						<div class="s5-slide"><img src="img/s5-slider/horizontal/distinctionart.png"></div>
+						<div class="s5-slide"><img src="img/s5-slider/horizontal/patricia.png"></div>
+						<div class="s5-slide"><img src="img/s5-slider/horizontal/seungyoon2.png"></div>
+					</div>
+					
+					<div class="s5-vert-slider">
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/artacacia.png"></div>
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/dilciagiron.png"></div>	
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/dolbychadwick.png"></div>
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/javicorellano.png"></div>	
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/joshuacoffy.png"></div>	
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/kateryna.png"></div>	
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/leah.png"></div>			
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/micheledelamenardiere.png"></div>	
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/ordicalder.png"></div>				
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/simona.png"></div>					
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/somewhereinart.png"></div>			
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/wendell.png"></div>			
+  						<div class="s5-slide"><img src="img/s5-slider/vertical/yumiko.png"></div>					
+   					</div>
+   					
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s6">
+    	<div class="container">
+    		<div class="s6-content">   			
+				<h2 class="s6-title">When Art Meets Experience...</h2>
+				<div class="s6-items clearfix">
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/1.png" alt="">
+						</div>
+						<p class="s6-item-text">Offer ever-changing decor</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/2.png" alt="">
+						</div>
+						<p class="s6-item-text">Adapt to the seasons</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/3.png" alt="">
+						</div>
+						<p class="s6-item-text">Highlight your events</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/4.png" alt="">
+						</div>
+						<p class="s6-item-text">Keep the environment fresh</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/5.png" alt="">
+						</div>
+						<p class="s6-item-text">Engage your guests</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+
+					<div class="col-xs-6 col-md-4">
+						<div class="s6-img-box">
+							<img src="img/s6-items/6.png" alt="">
+						</div>
+						<p class="s6-item-text">Connect with local communities</p>
+						<p class="s6-item-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s7">
+    	<div class="container">
+    		<div class="s7-content">
+				<h2 class="s7-title">An Interactive Experience</h2>
+				<p class="s7-title-description">Adapt your display through our powerful software and display right collection at the right time</p>
+				<div class="s7-items clearfix">
+					<div class="s7-left col-md-6">
+						<div class="s7-img-box">
+							<img src="img/s7/s7-img-1.png" alt="">
+						</div>
+						<div class="s7-item-description">
+							<h4 class="s7-item-title">tablet</h4>
+							<p class="s7-item-text">Adapt your display through our powerful software and display right collection at the right time Adapt your display through our powerful software and display right collection at the right time</p>
+						</div>
+					</div>
+					<div class="s7-right col-md-6">
+						<div class="s7-img-box">
+							<img src="img/s7/s7-img-2.png" alt="">
+						</div>
+						<div class="s7-item-description">    					
+							<h4 class="s7-item-title">laptop</h4>
+							<p class="s7-item-text">Adapt your display through our powerful software and display right collection at the right time Adapt your display through our powerful software and display right collection at the right time</p>
+						</div>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s8">
+    	<div id="s8-container" class="container">
+    		<div class="s8-content">
+				<h2 class="s8-title">How can we help you?</h2>
+				<div class="s8-items">    			
+					<div class="s8-line-1 clearfix">
+						<div class="col-xs-6 col-sm-3">
+							<a href="#" class="s8-item">
+<!--								<div class="s8-item-bg">-->
+									<img src="img/s8/big-1.png" alt="">
+								<p class="s8-item-text">Hotels & Resorts
+									<span class="s8-item-text-small">Lorem ipsum dolor sit amet</span>
+									<span>Click for more</span>
+								</p>
+<!--								</div>-->
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="#" class="s8-item">
+								<img src="img/s8/big-2.png" alt="">
+								<p class="s8-item-text">Corporate Offices
+									<span class="s8-item-text-small">Lorem ipsum dolor sit amet</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="#" class="s8-item">
+								<img src="img/s8/big-3.png" alt="">
+								<p class="s8-item-text">Residential Building
+									<span class="s8-item-text-small">Lorem ipsum dolor sit amet</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-3">
+							<a href="#" class="s8-item">
+								<img src="img/s8/big-4.png" alt="">
+								<p class="s8-item-text">Restaurants & Cafes
+									<span class="s8-item-text-small">Lorem ipsum dolor sit amet</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+					</div>
+					<div class="s8-line-2 clearfix">
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-1.png" alt="">
+								<p class="s8-item-text">Shopping centers
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span>
+								</p>
+							</a>
+						</div>
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-2.png" alt="">
+								<p class="s8-item-text">Clubs
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-3.png" alt="">
+								<p class="s8-item-text">Hospitals
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-4.png" alt="">
+								<p class="s8-item-text">Airports Lounges
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-5.png" alt="">
+								<p class="s8-item-text">Schools
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+						<div class="col-xs-4 col-sm-2">
+							<a href="#" class="s8-item">
+								<img src="img/s8/little-6.png" alt="">
+								<p class="s8-item-text">Art Galleries
+									<span class="s8-item-text-small">Lorem ipsum</span>
+									<span>Click for more</span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s9">
+    	<div id="s9-slider">    		   		
+			<div class="s9-slide">
+				<div class="container">
+					<div class="s9-right col-md-8 col-md-push-4">
+						<div class="s9-img-box">
+							<img src="img/s9-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="s9-left col-md-4 col-md-pull-8">
+						<h4 class="s9-title">Stanfort Court Hotel <br>San Francisco CA</h4>
+						<p class="s9-title-under">3 SmartGalleries 55”</p>
+						<div class="s9-quote">
+							<blockquote>“We are dedicated to offering our guests a true San Francisco experience and sharing local stories whenever possible”</blockquote>
+							<cite>- Michael Baier, GM</cite>
+						</div>
+					</div>
+				</div>
+			</div>    		   		
+			<div class="s9-slide">
+				<div class="container">
+					<div class="s9-right col-md-8 col-md-push-4">
+						<div class="s9-img-box">
+							<img src="img/s9-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="s9-left col-md-4 col-md-pull-8">
+						<h4 class="s9-title">Stanfort Court Hotel <br>San Francisco CA</h4>
+						<p class="s9-title-under">3 SmartGalleries 55”</p>
+						<div class="s9-quote">
+							<blockquote>“We are dedicated to offering our guests a true San Francisco experience and sharing local stories whenever possible”</blockquote>
+							<cite>- Michael Baier, GM</cite>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    </section>
+    
+    <section class="s10">
+    	<div id="s10-container" class="container">
+    		<p class="s10-heading">Supported by:</p>
+    		<div class="s10-items clearfix">
+    			<a href="#" class="s10-img-box">
+    				<img src="img/s10/1.png" alt="">
+    			</a>
+    			<a href="#" class="s10-img-box">
+    				<img src="img/s10/2.png" alt="">
+    			</a>
+    			<a href="#" class="s10-img-box">
+    				<img src="img/s10/3.png" alt="">
+    			</a>
+    			<a href="#" class="s10-img-box">
+    				<img src="img/s10/4.png" alt="">
+    			</a>
+    			<a href="#" class="s10-img-box">
+    				<img src="img/s10/5.png" alt="">
+    			</a>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s11">
+    	<div id="s11-container" class="container">
+    		<h2 class="s11-title">Pricing</h2>
+    		<div class="s11-items clearfix">
+    			<div class="s11-item-box col-sm-4">
+    				<div class="s11-item">
+    					<div class="s11-item-heading-box">
+    						<div class="s11-item-heading">
+								<h3 class="s11-item-title">Portfolio</h3>
+								<p class="s11-item-description">Up to 3 screens</p>
+    						</div>
+    					</div>
+    					<div class="s11-item-img-box">
+    						<img src="img/s11/1.png" alt="">
+    					</div>    					
+    					<p class="s11-item-price">$490<span>/month</span></p>
+    				</div>
+    				<p class="s11-item-text">
+						Unlimited license to Atlas<br>
+						Unlimited access to the art portfolio
+					</p>
+    			</div>
+    			
+    			<div class="s11-item-box col-sm-4">
+    				<div class="s11-item">
+    					<div class="s11-item-heading-box">
+    						<div class="s11-item-heading">
+								<h3 class="s11-item-title">Custom</h3>
+								<p class="s11-item-description">Up to 6 screens</p>
+    						</div>
+    					</div>
+    					<div class="s11-item-img-box">
+    						<img src="img/s11/2.png" alt="">
+    					</div>    
+    					<p class="s11-item-price">$490<span>/month</span></p>
+    				</div>
+    				<p class="s11-item-text">
+    					Unlimited license to Atlas<br>
+						Unlimited access to the art portfolio<br>
+						Brief with an art consultant<br>
+						12 premium collections<br>
+						Major Holidays collections
+					</p>
+    			</div>
+    			
+    			<div class="s11-item-box col-sm-4">
+    				<div class="s11-item">
+    					<div class="s11-item-heading-box">
+    						<div class="s11-item-heading">
+    							<h3 class="s11-item-title">Enterprise</h3>
+    						</div>
+    					</div>
+    					<div class="s11-item-img-box big-img">
+    						<img src="img/s11/3.png" alt="">
+    					</div>    
+    				</div>
+    				<p class="s11-item-text big-text">Call us to know more</p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <section class="s12">
+    	<div class="container">
+    		<div class="s12-content">
+				<h2 class="s12-title">Contact us and get a free demo</h2>
+				<a href="#" class="freedemo-btn">Get a free demo</a>
+    		</div>
+    	</div>
+    </section>
+    
+    <footer>
+    	<div id="footer-container" class="container">
+    		<div class="footer-left col-xs-6 col-sm-4">
+    			<ul class="footer-left-menu nav nav-pills nav-stacked">
+				  <li><a href="#">About Daylighted</a></li>
+				  <li><a href="#">Team</a></li>
+				  <li><a href="#">Press</a></li>
+				  <li><a href="#">Contact</a></li>
+				  <li><a href="#">Faq</a></li>
+				  <li><a href="#">Blog</a></li>
+				</ul>
+    		</div>
+    		<div class="footer-center col-xs-6 col-sm-4">
+    			<p class="footer-center-text">
+					Daylighted, Inc<br>
+					Copyright 2017<br>
+					Privacy - Terms<br><br>
+					Daylighted has created the <br>
+					SmArtGallery, a unique way to display art on demand.</p>
+    		</div>
+    		<div class="clearfix visible-xs"></div>
+    		<div class="footer-right col-sm-4">
+    			<div class="footer-right-items">
+    				<div class="footer-right-item">
+    					<h4 class="footer-right-item-title">BUSINESS</h4>
+    					<p>Exhibit curated art in your venue</p>
+    				</div>
+    				<div class="footer-right-item">
+    					<h4 class="footer-right-item-title">ARTISTS AND GALLERIES</h4>
+    					<p>Get in front of a larger audience</p>
+    				</div>
+    				<div class="footer-right-item">
+    					<h4 class="footer-right-item-title">CURATORS</h4>
+    					<p>Bring your collections to life</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+    
+	<nav class="pushy pushy-left">
+		<div class="pushy-content">
+			<ul>
+				<li class="pushy-link"><a href="#">Art</a></li>
+				<li class="pushy-link"><a href="#">Services</a></li>
+				<li class="pushy-link"><a href="#">Exhibitions</a></li>
+				<li class="pushy-link"><a href="#">Register</a></li>
+				<li class="pushy-link"><a href="#">Sign In</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="site-overlay"></div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="libs/Vide-0.5.1/dist/jquery.vide.min.js"></script>
+    <script src="libs/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="libs/pushy-master/js/pushy.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
