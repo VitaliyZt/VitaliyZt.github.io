@@ -226,10 +226,6 @@ header .menu-btn > span {
 .s5-slider .slick-list, .s5-slider .slick-track, .s5-slide {
 	height: 100%;
 }
-.slick-track {}
-.s5-slider {}
-.s5-slide {}
-
 .s5-slide > img {
 	margin: 0 auto; 
 	width: 100%;
@@ -410,6 +406,11 @@ header .menu-btn > span {
 	background: rgba(0,0,0,0.4);
 	transition: background 0.5s ease-in-out;
 }
+.s8-item-text-small {
+	display: block;
+	margin-top: 5px;
+	font: 13px "lato";
+}
 .s8-item-text:hover {
 	background: rgba(0,0,0,0.6);
 }
@@ -420,13 +421,12 @@ header .menu-btn > span {
 .s8-line-2 .s8-item-text {
 	font: 18px "lato-b";
 }
-.s8-item-text > span {
+.s8-item-text > span:last-child {
 	display: none;
 	margin: 0;
 	font: 13px "lato";
-/*	transition: all 0.1s ease-in-out !important;*/
 }
-.s8-item-text:hover > span {
+.s8-item-text:hover > span:last-child {
 	margin: 19px 0 0 0;
 	display: block;
 }
@@ -703,6 +703,9 @@ footer {
 .s4-img {
 	top: 0;
 	left: 0;
+}
+.slick-slide {
+	outline: none;
 }
 @keyframes move {
 	0% {
