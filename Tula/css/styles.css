@@ -520,6 +520,9 @@ header > .container {
 .s3-form-range label {
 	margin: 0 0 16px -4px;
 }
+.s3 .irs-from:after, .s3 .irs-to:after, .s3 .irs-single:after {
+	border-top-color: #fff;
+}
 .irs-line-mid, .irs-line-left, .irs-line-right,
 .irs-bar, .irs-bar-edge, .irs-slider {
 	background: none;
@@ -1003,19 +1006,23 @@ footer {
 
 /*		КОНСТРУКТОР МАРШРУТОВ 		*/
 /*		S-8 		*/
-.s8 {}
-.s8-form {}
-.s8-block {}
+.s8 {
+	padding: 0 0 66px 0;
+}
+.s8-block:first-child {
+	margin: 0 0 82px 0;
+}
 .s8-block-title {
 	margin: 31px 0 0 3px;
 	font: 32px "frm-b";
-	letter-spacing: 0.2px;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
 	color: #010101;
 }
 .s8-block-main {
 	margin: 28px 0 0 4px;
 }
-.s8 label {
+.s8 label:not(:last-child) {
 	display: block;
 	margin: 0 0 25px -1px;
 	font: 18px "frm-b";
@@ -1023,7 +1030,7 @@ footer {
 }
 .s8 select {
 	float: left;
-	padding: 0 0 0 21px;
+	padding: 0 45px 0 21px;
 	height: 54px;
 	border: 1px solid #882890;
 	border-radius: 0;
@@ -1033,6 +1040,10 @@ footer {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	
+	white-space: nowrap; 
+	overflow: hidden !important;
+	text-overflow: ellipsis; 
 }
 #selects8-1 {
 	width: 339px;
@@ -1082,5 +1093,227 @@ footer {
 	height: 100%;
 	background: url("../img/s8/s8-tag-bg.png") no-repeat 5px 5px;
 }
-
-
+.s8-block:nth-child(2) .s8-block-main {
+	margin: 34px 0 0 4px;
+}
+.label-s8-point {
+	margin: 0 0 0 -1px !important;
+	padding: 8px 0 15px 51px;
+}
+.label-s8-point[for="selects8-4"] {
+	background: url("../img/s8/point-a.png") no-repeat 0 0;
+}
+.label-s8-point[for="selects8-6"] {
+	background: url("../img/s8/point-b.png") no-repeat 0 0;
+}
+.s8-block:nth-child(2) select {
+	width: 520px;
+	background-position: 96.7% 18px;
+}
+.s8-select-or {
+	float: left;
+	width: 520px;
+	height: 41px;
+	font: 18px/37px "frm-l";
+	text-align: center;
+	color: #000;
+}
+.s8-checkbox {
+	float: left;
+	margin: 22px 0 0 0;
+}
+.s8-checkbox input[type="checkbox"] {
+	display: none;
+}
+.s8-checkbox label {
+	font: 18px "frm-l";
+	letter-spacing: 0.1px;
+	color: #000;
+}
+.s8-checkbox input[type="checkbox"] + label {
+	position: relative;
+	padding-left: 41px;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.s8-checkbox input[type="checkbox"] + label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -1px;
+	border: 1px solid #882890;
+	height: 28px;
+	width: 28px;
+	background: #fff;
+}
+.s8-checkbox input[type="checkbox"]:checked + label:before {
+	background: #fff url("../img/s3/s3-checkbox-bg.png") no-repeat center;
+}
+.s8-form-submit-btn {
+	float: left;
+	margin: 48px 0 0 4px;
+	width: 218px;
+	height: 54px;
+	font: 16px/52px "frm-l";
+	text-align: center;
+}
+.s8-ranges {
+	margin: 22px 0 0 0;
+}
+.s8-range-top {
+	margin: 0 0 29px 0;
+	font: 18px "frm-b";
+	color: #000;
+}
+.s8-range-top > span {
+	font: 18px "frm-l";
+	padding: 0 0 0 12px;
+}
+.s8-range-bottom {
+	margin: -5px 0 0 0;
+	font: 18px "frm-l";
+	color: #000;
+}
+.s8-range-min {
+	float: left;
+}
+.s8-range-max {
+	float: right;
+}
+.s8-range {
+	width: 321px;
+}
+.s8 .irs {
+	max-width: 100%;
+}
+.s8 .irs-line {
+	height: 6px;
+	border-radius: 3px;
+	background: #882890;
+}
+.s8 .irs-bar {
+	max-width: 322px;
+	height: 6px;
+	background: #882890;
+}
+.s8-range-box .irs-single {
+	padding: 0;
+	font-size: 0;
+}
+.s8-range-box:nth-child(1) .irs-single {
+	margin: -9px 0 0 0;
+	width: 27px;
+	height: 36px;
+	background: url("../img/s8/s8-range-1.png") no-repeat 0 0;
+}
+.s8-range-box:nth-child(2) .irs-single {
+	margin: -8px 0 0 0;
+	width: 60px;
+	height: 36px;
+	background: url("../img/s8/s8-range-2.png") no-repeat 0 0;
+}
+.s8-range-box:nth-child(3) .irs-single {
+	margin: -11px 0 0 0;
+	width: 39px;
+	height: 38px;
+	background: url("../img/s8/s8-range-3.png") no-repeat 0 0;
+}
+.s8 .irs-single, .s8 .irs-slider.single {
+	cursor: pointer;
+}
+.s8 .irs-min, .s8 .irs-max {
+	visibility: visible !important;
+	margin: 36px 0 0 0;
+	padding: 0;
+	font: 19px "frm-l";
+	color: #fff;
+	background: none;
+}
+.s8 .irs-bar-edge {
+	display: none;
+}
+.s8 .irs-from:after, .s8 .irs-to:after, .s8 .irs-single:after {
+	border-top-color: #882890;
+}
+/*		S-9 		*/
+.s9 {
+	padding: 0 0 136px 0;
+}
+.s9 > #map {
+	height: 580px;
+}
+.s9-block {
+	margin: 23px 0 0 0;
+}
+.s9-block:nth-of-type(3) {
+	margin: 14px 0 0 0;
+}
+.s9-block-title {
+	margin: 20px 0 21px 0;
+	font: 32px "frm-b";
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #010101;
+}
+.s9-points {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.s9-points > li {
+	float: left;
+	margin: 0 0 9px 0;
+	width: 100%;
+}
+.s9-points span {
+	float: left;
+	padding: 3px 0 0 0;
+	width: 26px;
+	height: 45px;
+	font: 16.3px "frm-l";
+	text-align: center;
+	color: #882890;
+	background: url("../img/s9/s9-point.png");
+}
+.s9-points a {
+	float: left;
+	margin: 0 0 10px 0;
+	padding: 7px 5px 7px 16px;
+	font: 18px "frm-l";
+	letter-spacing: 0.1px;
+	text-decoration: underline;
+	color: #882890;
+}
+.s9-points a:hover {
+	text-decoration: none;
+}
+.s9-gids-link {
+	display: inline-block;
+	margin: 8px 0 0 4px;
+	padding: 0 5px 0 27px;
+	font: 18px "frm-l";
+	letter-spacing: 0.1px;
+	text-decoration: underline;
+	color: #882890 !important;
+	background: url(../img/s9/s9-arrow.png) no-repeat 0 0;
+}
+.s9-gids-link:hover {
+	text-decoration: none;
+}
+.s9-text {
+	margin: 5px 0 0 2px;
+	font: 18px/37px "frm-l";
+	letter-spacing: 0.1px;
+	color: #000;
+}
+.s9-text > b {
+	font: 18px "frm-b";
+}
+.s9-btn {
+	float: left;
+	margin: 50px 0 0 0;
+	width: 218px;
+	height: 54px;
+	font: 16px/52px "frm-l";
+	text-align: center;
+}

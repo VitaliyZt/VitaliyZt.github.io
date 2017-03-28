@@ -40,6 +40,32 @@
 	.s7-block {
 		width: 300px;
 	}
+	#selects8-1 {
+		padding: 0 30px 0 10px;
+		width: 290px;
+		background-position: 96.7% 20px;
+	}
+	#selects8-2, #selects8-3 {
+		width: 230px;
+	}
+	.s8-add-btn {
+		margin: 0 0 0 8px;
+	}
+	.s8-select-box:first-child {
+		margin: 0 8px 0 0;
+	}
+	.s8-range {
+		width: 290px;
+	}
+	.s8-block:nth-child(2) select {
+		width: 430px;
+	}
+	.s8-select-or {
+		width: 430px;
+	}
+	.s8-block-title, .s9-block-title  {
+		font: 27px "frm-b";
+	}
 }
 
 @media (max-width: 580px) {
@@ -65,6 +91,16 @@
 @media (max-width: 635px) {
 	.s6-form select {
 		width: 320px !important;
+	}
+	#selects8-1 {
+		width: 365px !important;
+	}
+	#selects8-2, #selects8-3 {
+		width: 520px !important;
+	}
+	.s8-add-btn {
+		margin: 0 0 0 15px;
+		width: 135px;
 	}
 }
 @media (max-width: 959px) {
@@ -419,19 +455,160 @@
 		background: url(../img/page-menu/menu-small-arrow.png) no-repeat 0 center;
 	}
 	.s7 {
-		padding: 39px 0 49px;
+		padding: 39px 0 42px;
 	}
 	.s7-block {
 		width: 373px;
 	}
+	.s7 .slick-arrow {
+		top: 267px;
+	}
 	.s7 .slick-prev {
-		left: -22px;
+		left: -7px;
 	}
 	.s7 .slick-next {
-		right: -22px;
+		right: -7px;
 	}
 	.s7 .s-right-btn-xs {
-		margin: 39px auto 0;
+		margin: 38px auto 0;
+		width: 218px;
+	}
+	.s7 .s-title {
+		margin: 0;
+	}
+	.s7-blocks {
+		margin: 27px 0 0 0;
+	}
+	
+	.breadcrumb {
+		padding: 29px 0 0 32px;
+	}
+	.s8 > .container, .s9 > .container {
+		padding: 0 0 0 26px;
+		width: 100%;
+	}
+	.s8-block-title, .s9-block-title {
+		font: 32px "frm-b";
+	}
+	.s8-block-title {
+		margin: 37px 0 0 4px;
+		font: 32px "frm-b";
+	}
+	.s8-selects {
+		margin: -10px 0 0 0;
+	}
+	.s8 label:not(:last-child) {
+		margin: 0 0 17px 2px;
+	}
+	#selects8-1 {
+		padding: 0 30px 0 21px;
+		width: 404px;
+		background-position: 95.2% 19px;
+	}
+	.s8-add-btn {
+		margin: 0 0 0 23px;
+	}
+	.s8-tags {
+		margin: 27px 0 0 0;
+	}
+	.s8-select-box:nth-child(1) {
+		margin: 25px 0 0 0;
+	}
+	.s8-select-box:nth-child(2) {
+		margin: 26px 0 0 0;
+	}
+	#selects8-2, #selects8-3 {
+		margin: 4px 0 0 0;
+		width: 587px;
+		background-position: 97.7% 20px;
+	}
+	.s8-ranges {
+		margin: 37px 0 0 0;
+	}
+	.s8-range-top {
+		margin: 0 0 27px 0;
+	}
+	.s8-range {
+		width: 323px;
+	}
+	.s8-range-bottom {
+		margin: 3px 0 0 0;
+	}
+	.s8-range-box:nth-child(2) {
+		margin: 45px 0 0 0;
+	}
+	.s8-range-box:nth-child(2) .s8-range-top {
+		margin: 0 0 24px 0;
+	}
+	.s8-range-box:nth-child(2) .s8-range-bottom {
+		margin: 9px 0 0 0;
+	}
+	.s8-range-box:nth-child(3) {
+		margin: 34px 0 0 0;
+	}
+	.s8-range-box:nth-child(3) .s8-range-top {
+		margin: 0 0 25px 0;
+	}
+	.s8-block:first-child {
+		margin: 0 0 45px 0;
+	}
+	.s8-block:nth-child(2) .s8-block-main {
+		margin: 27px 0 0 8px;
+	}
+	.s8-block:nth-child(2) select {
+		margin: 0 0 0 -5px;
+		padding: 0 0 0 14px;
+		width: 520px;
+	}
+	.s8-select-or {
+		width: 515px;
+		height: 59px;
+		font: 18px/57px "frm-l";
+	}
+	.s8-block:nth-child(2) .s8-block-main > div:nth-child(1) {
+		margin: 0 0 33px 0;
+	}
+	.label-s8-point {
+		padding: 10px 0 13px 51px;
+	}
+	.s8-checkbox {
+		margin: 36px 0 0 -4px;
+	}
+	.s8-checkbox input[type="checkbox"] + label {
+		padding: 2px 0 0 45px;
+	}
+	.s8-form-submit-btn {
+		margin: 40px 0 0 3px;
+	}
+	.s8 {
+		padding: 0 0 57px 0;
+	}
+	.s9 {
+		padding: 0 0 73px 0;
+	}
+	.s9-block:nth-child(1) {
+		margin: 11px 0 0 0;
+	}
+	.s9-block:nth-child(2) {
+		margin: 4px 0 0 0;
+	}
+	.s9-block:nth-child(3) {
+		margin: 18px 0 0 0;
+	}
+	.s9-block-title {
+		margin: 20px 0 25px 3px;
+	}
+	.s9-points {
+		margin: 0 0 0 2px;
+	}
+	.s9-gids-link {
+		margin: 3px 0 0 5px;
+	}
+	.s9-text {
+		margin: -15px 0 0 8px;
+	}
+	.s9-btn {
+		margin: 22px 0 0 3px;
 	}
 }
 

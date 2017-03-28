@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>конструктор маршрутов</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="lib/slick/slick.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+		<link href="css/fonts.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">	
+		<header class="header-mod">
+			<div class="container">
+				<div class="header-left col-xs-4 col-md-3">
+					<a href="#" class="header-logo-link">
+						<img src="img/header/header-logo.png" alt="">
+					</a>
+				</div>
+				<div class="header-center col-xs-4 col-md-6">
+					<a href="#" class="header-center-link">
+						<span>Скачайте мобильное приложение</span>
+						<img src="img/header/mobile-logos.png" alt="">
+					</a>
+				</div>
+				<div class="header-right col-xs-4 col-md-3">
+					<div class="header-right-links clearfix">
+						<a href="#" class="header-login-link">
+							<img src="img/header/login.png" alt="">
+						</a>
+						<a href="#" class="header-lock-link">
+							<img src="img/header/lock.png" alt="">
+						</a>
+						<a href="#" class="header-menu-link">
+							<img src="img/header/mob-menu.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section class="page-top">
+			<h2 class="page-top-title">КОНСТРУКТОР МАРШРУТОВ</h2>
+		</section>
+		
+		<section class="page-menu">
+			<div class="container">
+				<ul class="clearfix">
+					<li><a href="#">О МАРШРУТЕ</a></li>
+					<li><a href="#">СПИСОК МАРШРУТОВ</a></li>
+					<li class="active"><a href="#">КОНСТРУКТОР МАРШРУТОВ</a></li>
+					<li><a href="#">БЫСТРЫЙ КОНСТРУКТОР МАРШРУТОВ</a></li>
+					<li><a href="#">БАНК ЭКСКУРСОВОДОВ</a></li>
+				</ul>
+				<div class="page-menu-xs visible-xs visible-sm">
+					<a href="#">КОНСТРУКТОР МАРШРУТОВ</a>  
+				</div>      	        	 	      
+			</div>
+		</section>
+		
+		<section class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li class="active">Конструктор маршрутов</li>
+				</ol>
+			</div>
+		</section>
+		
+		<section class="s8">
+			<div class="container">
+				<form class="s8-form">
+					<div class="s8-block">
+						<h3 class="s8-block-title">1. ВЫБЕРИТЕ ОСНОВНЫЕ ПАРАМЕТРЫ МАРШРУТА</h3>
+						<div class="s8-block-main clearfix">
+							<div class="s8-selects clearfix">
+								<div class="col-xs-12 col-md-6">
+									<label for="selects8-1">Тип объекта</label>
+									<select class="form-control" id="selects8-1">
+										<option>Великие путешественники</option>
+										<option>тип 2</option>
+										<option>тип 3</option>
+									</select>
+									<a href="#" class="s8-add-btn purple-btn">ДОБАВИТЬ</a>
+									<div class="s8-tags clearfix">
+										<div class="s8-tag">Великие путешественники<a href="#" class="s8-tag-del"></a></div>
+										<div class="s8-tag pink">Детские центры развлечений<a href="#" class="s8-tag-del"></a></div>
+										<div class="s8-tag purple">Памятники архитектуры<a href="#" class="s8-tag-del"></a></div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-6">
+									<div class="s8-select-box">
+										<label for="selects8-2">Вид транспорта</label>
+										<select class="form-control" id="selects8-2">
+											<option>Автотранспорт</option>
+											<option>вид 2</option>
+											<option>вид 3</option>
+										</select>
+									</div>
+									<div class="s8-select-box">
+										<label for="selects8-3">Возраст</label>
+										<select class="form-control" id="selects8-3">
+											<option>Студенческий</option>
+											<option>возраст 2</option>
+											<option>возраст 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="s8-ranges clearfix">
+								<div class="s8-range-box col-md-4">
+									<div class="s8-range">
+										<div class="s8-range-top">Длительность: <span><span class="s8-range-value">4</span> часа</span></div>
+										<input type="text" id="range-1" name="range-1" value="">
+										<div class="s8-range-bottom clearfix">
+											<span class="s8-range-min">1 час</span>
+											<span class="s8-range-max">10 дн.</span>
+										</div>
+									</div>	
+								</div>
+								<div class="s8-range-box col-md-4">
+									<div class="s8-range">
+										<div class="s8-range-top">Время в пути: <span><span class="s8-range-value">4</span> часа</span></div>
+										<input type="text" id="range-2" name="range-2" value="">
+										<div class="s8-range-bottom clearfix">
+											<span class="s8-range-min">1 час</span>
+											<span class="s8-range-max">10 дн.</span>
+										</div>
+									</div>
+								</div>
+								<div class="s8-range-box col-md-4">
+									<div class="s8-range">
+										<div class="s8-range-top">Рейтинг объектов: <span><span class="s8-range-value">80</span></span></div>
+										<input type="text" id="range-3" name="range-3" value="">
+										<div class="s8-range-bottom clearfix">
+											<span class="s8-range-min">1</span>
+											<span class="s8-range-max">100</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="s8-block">
+						<h3 class="s8-block-title">2. ОПРЕДЕЛИТЕ НАЧАЛЬНУЮ И КОНЕЧНУЮ ТОЧКУ МАРШРУТА</h3>
+						<div class="s8-block-main clearfix">
+							<div class="col-xs-12 col-md-6">
+								<label class="label-s8-point" for="selects8-4">Начальная точка:</label>
+								<select class="form-control" id="selects8-4">
+									<option value="" disabled selected>Выберите место</option>
+									<option>место 2</option>
+									<option>место 3</option>
+								</select>
+								<span class="s8-select-or">или</span>
+								<select class="form-control" id="selects8-5">
+									<option value="" disabled selected>Введите адрес</option>
+									<option>адрес 2</option>
+									<option>адрес 3</option>
+								</select>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<label class="label-s8-point" for="selects8-6">Конечная точка:</label>
+								<select class="form-control" id="selects8-6">
+									<option value="" disabled selected>Выберите место</option>
+									<option>место 2</option>
+									<option>место 3</option>
+								</select>
+								<span class="s8-select-or">или</span>
+								<select class="form-control" id="selects8-7">
+									<option value="" disabled selected>Введите адрес</option>
+									<option>адрес 2</option>
+									<option>адрес 3</option>
+								</select>
+								<div class="s8-checkbox">
+									<input id="s8-cb-1" type="checkbox">
+									<label for="s8-cb-1">Учитывать обратную дорогу при расчете времени</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="s8-form-submit-btn purple-btn">ПОСТРОИТЬ МАРШРУТ</a>
+				</form>
+			</div>
+		</section>
+		
+		<section class="s9">
+			<div id="map"></div>
+			<div class="container">
+				<div class="s9-block col-xs-12 col-md-6">
+					<h3 class="s9-block-title">ТОЧКИ МАРШРУТА</h3>
+					<ul class="s9-points clearfix">
+						<li>
+							<span>1</span><a href="#">Дворец детского и юношеского творчества</a>
+						</li>
+						<li>
+							<span>2</span><a href="#">Музей прикладного искуства г. Тула</a>
+						</li>
+					</ul>
+				</div>
+				<div class="s9-block col-xs-12 col-md-6">
+					<h3 class="s9-block-title">ПОДХОДЯЩИЕ ЭКСКУРСОВОДЫ</h3>
+					<div class="s9-gids"></div>
+					<a href="#" class="s9-gids-link">Посмотреть весь список экскурсоводов</a>
+				</div>
+				<div class="s9-block col-xs-12">
+					<h3 class="s9-block-title">РАСЧЕТНАЯ ДЛИТЕЛЬНОСТЬ МАРШРУТА</h3>
+					<p class="s9-text">
+						<b>3 часа</b> - общее время маршрута<br>
+						<b>3 часа</b> - примерное время прохождения только объектов
+					</p>
+				</div>
+				<a href="#" class="s9-btn purple-btn">СОХРАНИТЬ МАРШРУТ</a>
+			</div>
+		</section>
+		
+		<section class="s7">
+			<div class="container">
+				<div class="s7-top clearfix">
+					<h3 class="s-title">ПОПУЛЯРНЫЕ МАРШРУТЫ</h3>
+					<a href="#" class="s-right-btn purple-btn">ВСЕ МАРШРУТЫ</a>
+				</div>				
+				<div class="s7-blocks clearfix">
+
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-1.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag orange">Событийный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">Туристско-рекреационный ландшафтный парк	Бежин луг XXI век</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-2.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag pink">Активный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">КУПЕЧЕСКИЙ ГОРОД-ТУЛА</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-3.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag purple">Гастрономический туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">ОБАЯНИЕ ТУЛЬСКОГО КРАЯ: ПРОШЛОЕ И НАСТОЯЩЕЕ</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-1.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag orange">Событийный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">Туристско-рекреационный ландшафтный парк	Бежин луг XXI век</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-2.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag pink">Активный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">КУПЕЧЕСКИЙ ГОРОД-ТУЛА</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-3.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag purple">Гастрономический туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">ОБАЯНИЕ ТУЛЬСКОГО КРАЯ: ПРОШЛОЕ И НАСТОЯЩЕЕ</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+				<div class="s7-bottom visible-xs visible-sm clearfix">
+					<a href="#" class="s-right-btn-xs purple-btn">ВСЕ МАРШРУТЫ</a>
+				</div>	
+			</div>
+		</section>
+		
+		<footer>
+			<div class="footer-main">
+				<div class="container">
+					<div class="footer-left col-xs-6 col-md-5">
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">Места</h4>
+							<ul class="footer-menu clearfix">
+								<div class="col-md-5">
+									<li><a href="#">Другие объекты</a></li>
+									<li><a href="#">Культура</a></li>
+									<li><a href="#">Библиотеки</a></li>
+									<li><a href="#">Великие путешественники</a></li>
+									<li><a href="#">Достопримечательности</a></li>
+									<li><a href="#">Мобильный гид</a></li>
+									<li><a href="#">Монастыри и храмы</a></li>
+									<li><a href="#">Музеи</a></li>
+									<li><a href="#">Памятники истории</a></li>
+									<li><a href="#">Усадьбы</a></li>
+								</div>
+								<div class="col-xs-7 visible-md visible-lg">
+									<li><a href="#">Памятники природы</a></li>
+									<li><a href="#">Развлечения</a></li>
+									<li><a href="#">Агротуризм, экотуризм</a></li>
+									<li><a href="#">Активный отдых</a></li>
+									<li><a href="#">Дома культуры</a></li>
+									<li><a href="#">Зоопарки</a></li>
+									<li><a href="#">Кинотеатры</a></li>
+									<li><a href="#">Концертные залы</a></li>
+									<li><a href="#">Оздоровительный туризм</a></li>
+									<li><a href="#">Парки и скверы</a></li>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-center col-xs-6 col-md-3">
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">Маршруты</h4>
+							<ul class="footer-menu clearfix">
+								<li><a href="#">Тематические маршруты</a></li>
+								<li><a href="#">Готовые маршруты</a></li>	
+							</ul>	
+						</div>	
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">События</h4>
+						</div>
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">О Тульской области</h4>
+							<ul class="footer-menu clearfix">
+								<li><a href="#">Общая информация</a></li>
+								<li><a href="#">Путеводители</a></li>
+								<li><a href="#">Историческая справка</a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="footer-right col-xs-12 col-md-4">
+						<div class="footer-login-links visible-md visible-lg">
+							<a href="#">Вход</a> / <a href="#">Регистрация</a>
+						</div>					
+						<ul class="footer-partner-links clearfix">
+							<li><a href="#">Правительство Тульской области</a></li>
+							<li><a href="#">Министерство культуры и туризма Тульской области</a></li>
+							<li><a href="#">ГАУ ТО «Центр информационных технологий»</a></li>
+						</ul>					
+					</div>
+				</div>
+			</div>
+							
+			<div class="footer-bottom col-xs-12">
+				<div class="container">
+					<div class="col-xs-4 col-md-6">
+						<a href="#" class="footer-logo-link">
+							<img src="img/footer/footer-logo.png" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-6">
+						<div class="footer-social-links">
+							<a href="#"><img src="img/footer/footer-social-twitter.png" alt=""></a>
+							<a href="#"><img src="img/footer/footer-social-vk.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-xs-4 visible-xs visible-sm">
+						<div class="footer-login-links">
+							<a href="#">Вход</a> / <a href="#">Регистрация</a>
+						</div>			
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="lib/slick/slick.min.js"></script>
+		<script src="lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
