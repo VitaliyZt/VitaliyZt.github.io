@@ -7,6 +7,13 @@ $(function(){
 		breakpoint: 960,
 		settings: {	slidesToShow: 1	}
 		}]
+	});		
+	$(".s7-blocks").slick({
+		slidesToShow: 3,
+		responsive: [{
+		breakpoint: 960,
+		settings: {	slidesToShow: 1	}
+		}]
 	});	
 	
 	$(".s3-slider").slick({	slidesToShow: 1	});

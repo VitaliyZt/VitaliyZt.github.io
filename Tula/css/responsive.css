@@ -22,6 +22,24 @@
 	.footer-center {
 		margin-left: 0;
 	}
+
+	.page-top {
+		background-position: center top;
+	}
+	.page-menu ul > li > a {
+		padding: 0 8.87px;
+		font: 13px/57px "frm";
+	}
+	.s6-item {
+		margin: 0 auto 14px;
+		width: 300px;
+	}
+	.s6-item-img {
+		height: 300px;
+	}
+	.s7-block {
+		width: 300px;
+	}
 }
 
 @media (max-width: 580px) {
@@ -44,6 +62,11 @@
 		width: 95% !important;
 	}
 }
+@media (max-width: 635px) {
+	.s6-form select {
+		width: 320px !important;
+	}
+}
 @media (max-width: 959px) {
 	.container {
 		width: 480px;
@@ -60,6 +83,7 @@
 	}
 	.header-right-links {
 		margin: 4px 45px 0 0;
+		margin: 4px 23px 0 0;
 	}
 	.header-center-link {
 		margin: 44px 0 0 -55px;
@@ -319,12 +343,95 @@
 		margin: 4px 46px 0 0;
 		white-space: nowrap;
 	}
-	.footer-test {
-/*
-		position: fixed;
-		bottom: 0;
-*/
-		height: 1px;
+	
+	.page-top {
+		height: 247px;
 	}
-
+	.page-top-title {
+		margin: 46px 0 0 0;
+	}
+	.header-mod .header-center-link {
+		margin: 0;
+	}
+	.header-mod .header-center-link > span {
+		display: none;
+	}	
+	.header-mod .header-center-link > img {
+		margin: 3px 0 0 38px;
+	}
+	.breadcrumbs > .container,
+	.s6 > .container {
+		width: 100%;
+	}
+	.breadcrumb {
+		padding: 20px 0 0 32px;
+	}
+	.page-title {
+		margin: 37px 0 0 28px;
+	}
+	.s6 {
+		padding: 0 0 66px 0;
+	}
+	.s6-form {
+		margin: 28px 0 0 30px;
+	}
+	.s6-form select {
+		width: 388px;
+	}
+	.s6-form-btn {
+		margin: 0 0 0 16px;
+		width: 182px;
+	}
+	.s6-items > div:nth-child(3n+1) > .s6-item, 
+	.s6-items > div:nth-child(3n) > .s6-item {
+		float: none;
+	}
+	.s6-items {
+		padding: 61px 0 0 0;
+	}
+	.s6-item {
+		margin: 0 auto 41px;
+		width: 373px;
+	}
+	.s6-item-img {
+		height: 373px;
+	}
+	.s6-items-showmore-btn {
+		margin: 14px auto 0;
+	}
+	.page-menu ul {
+		display: none !important;
+	}
+	.page-menu > .container {
+		width: 100%;
+	}
+	.page-menu-xs {
+		text-align: left;
+	}
+	.page-menu-xs > a {
+		display: inline-block;
+		margin: 0 0 0 34px;
+		padding: 0 15px 0 35px;
+		font: 22px/57px "frm";
+		letter-spacing: 0.1px;
+		color: #fff !important;
+		text-transform: uppercase;
+		background: url(../img/page-menu/menu-small-arrow.png) no-repeat 0 center;
+	}
+	.s7 {
+		padding: 39px 0 49px;
+	}
+	.s7-block {
+		width: 373px;
+	}
+	.s7 .slick-prev {
+		left: -22px;
+	}
+	.s7 .slick-next {
+		right: -22px;
+	}
+	.s7 .s-right-btn-xs {
+		margin: 39px auto 0;
+	}
 }
+
