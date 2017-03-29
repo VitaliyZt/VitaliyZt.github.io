@@ -25,6 +25,21 @@ $(function(){
 		settings: {	slidesToShow: 1	}
 		}]
 	});	
+	$(".s10-slider").slick({
+		slidesToShow: 1,
+		dots: true
+	});	
+	$(".s10-slider-thumb").on("click", function(){
+		$(".s10-slider").slick("slickGoTo", $(this).index());
+	});
+	
+	
+	
+	
+	
+	
+	
+	
 
 	$("#time-1").ionRangeSlider({
 		min: 1,
@@ -90,7 +105,6 @@ $(function(){
 		zoom();
 	}());
 	
-	// яндекс карта
 	if($("#map").length){		
 		ymaps.ready(init);
 		var myMap, myPlacemark;
@@ -108,6 +122,23 @@ $(function(){
 			myMap.geoObjects.add(myPlacemark);
 			myMap.behaviors.disable('scrollZoom'); 	
 		}
+	}
+	
+	var scrollEl = $(".s10-slider-thumbs");
+	if (scrollEl.length){	
+		scrollEl.each(function(){			
+			$(this).niceScroll({
+				autohidemode: false,
+				horizrailenabled: false,
+				cursorfixedheight: 105,
+				cursorcolor: "#959595",
+				cursorwidth: 8,
+				cursorborder: 0,
+				cursorborderradius: "0px",
+				background: "#e3e3e3",
+				railoffset: {left: 24}
+			});
+		});
 	}
 
 });
