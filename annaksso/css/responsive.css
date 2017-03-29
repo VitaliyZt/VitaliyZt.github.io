@@ -242,20 +242,6 @@
 		padding-top: 0;
 		min-width: 800px;
 	}
-	footer > img {
-		width: 100%;
-		height: 335px;
-	}
-	.footer-bg-small {
-		display: inline;
-	}
-	.footer-bg {
-		display: none;
-	}
-	.footer-copy {
-		display: none;
-	}
-	
 /*				 LANDING - 2 			*/
 	.book-2 .s1-title {
 		margin: 15px auto 10px;
