@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>МАРШРУТЫ</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="lib/slick/slick.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.css" rel="stylesheet">
+		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+		<link href="css/fonts.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">	
+		<header class="header-mod">
+			<div class="container">
+				<div class="header-left col-xs-4 col-md-3">
+					<a href="#" class="header-logo-link">
+						<img src="img/header/header-logo.png" alt="">
+					</a>
+				</div>
+				<div class="header-center col-xs-4 col-md-6">
+					<a href="#" class="header-center-link">
+						<span>Скачайте мобильное приложение</span>
+						<img src="img/header/mobile-logos.png" alt="">
+					</a>
+				</div>
+				<div class="header-right col-xs-4 col-md-3">
+					<div class="header-right-links clearfix">
+						<a href="#" class="header-login-link">
+							<img src="img/header/login.png" alt="">
+						</a>
+						<a href="#" class="header-lock-link">
+							<img src="img/header/lock.png" alt="">
+						</a>
+						<a href="#" class="header-menu-link">
+							<img src="img/header/mob-menu.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section class="page-top">
+			<h2 class="page-top-title">МАРШРУТЫ</h2>
+		</section>
+		
+		<section class="breadcrumbs">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li><a href="#">Главная</a></li>
+					<li class="active">Маршруты</li>
+				</ol>
+			</div>
+		</section>
+		
+		<section class="s13">
+			<div class="container">
+				<div class="s13-top clearfix">
+					<div class="s13-filters-links clearfix">
+						<a href="#">По алфавиту</a><span>|</span>
+						<a href="#">По алфавиту</a><span>|</span>
+						<a href="#">По дате добавления</a>
+					</div>
+					<a href="#" class="s13-top-btn purple-btn">ДОБАВИТЬ МАРШРУТ</a>
+					<span class="s13-filters-num">Найдено: 57 маршрутов</span>
+				</div>
+				<form class="s13-filters clearfix">
+					<a href="#" class="s13-filt-close-btn"></a>
+					<div class="s13-filt-left col-lg-3">
+						<div class="s13-filt-block clearfix">
+							<div class="s13-form-range col-md-6 col-lg-12">
+								<label for="s13time-1">ДЛИТЕЛЬНОСТЬ</label>
+								<input type="text" id="s13time-1" name="s13time-1" value="">
+								<div class="s13-form-range-minmax clearfix">
+									<span class="s13-form-range-min">1 дн.</span>
+									<span class="s13-form-range-max">120 дн.</span>
+								</div>
+							</div>	
+							<div class="s13-form-range col-md-6 col-lg-12">
+								<label for="s13time-2">ВРЕМЯ В ПУТИ</label>
+								<input type="text" id="s13time-2" name="s13time-2" value="">
+								<div class="s13-form-range-minmax clearfix">
+									<span class="s13-form-range-min">1 ч.</span>
+									<span class="s13-form-range-max">120 ч.</span>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="s13-filt-right col-lg-9 clearfix">
+
+						<div class="col-md-4 col-lg-5 s13-filt-col">
+							<div class="s13-filt-block">
+								<h4 class="s13-filt-title">ВИД ОТДЫХА</h4>
+								<div class="s13-filt-cboxes">
+									<input id="s13cb-a1" type="checkbox">
+									<label for="s13cb-a1">Агротуризм, экотуризм</label>
+
+									<input id="s13cb-a2" type="checkbox">
+									<label for="s13cb-a2">Активный отдых</label>
+
+									<input id="s13cb-a3" type="checkbox">
+									<label for="s13cb-a3">Военно-патриотический туризм</label>
+
+									<input id="s13cb-a4" type="checkbox">
+									<label for="s13cb-a4">Гастрономический туризм</label>
+
+									<input id="s13cb-a5" type="checkbox">
+									<label for="s13cb-a5">Деловой туризм</label>
+
+									<input id="s13cb-a6" type="checkbox">
+									<label for="s13cb-a6">Культурно-познавательный туризм</label>
+
+									<input id="s13cb-a7" type="checkbox">
+									<label for="s13cb-a7">Лыжный отдых</label>
+
+									<input id="s13cb-a8" type="checkbox">
+									<label for="s13cb-a8">Образовательный туризм</label>
+
+									<input id="s13cb-a9" type="checkbox">
+									<label for="s13cb-a9">Оздоровительный туризм</label>
+
+									<input id="s13cb-a10" type="checkbox">
+									<label for="s13cb-a10">Развлекательный туризм</label>
+
+									<input id="s13cb-a11" type="checkbox">
+									<label for="s13cb-a11">Рекреационный туризм</label>
+
+									<input id="s13cb-a12" type="checkbox">
+									<label for="s13cb-a12">Религиозный туризм</label>
+
+									<input id="s13cb-a13" type="checkbox">
+									<label for="s13cb-a13">Свадебный туризм</label>
+
+									<input id="s13cb-a14" type="checkbox">
+									<label for="s13cb-a14">Событийный туризм</label>
+
+									<input id="s13cb-a15" type="checkbox">
+									<label for="s13cb-a15">Экстремальный туризм</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-lg-3 s13-filt-col">
+							<div class="s13-filt-block">
+								<h4 class="s13-filt-title">РАЙОН</h4>
+								<div class="s13-filt-cboxes">
+
+									<input id="s13cb-b1" type="checkbox">
+									<label for="s13cb-b1">Арсеньевский район</label>
+
+									<input id="s13cb-b2" type="checkbox">
+									<label for="s13cb-b2">Белевский район</label>
+
+									<input id="s13cb-b3" type="checkbox">
+									<label for="s13cb-b3">Богородицкий район</label>
+
+									<input id="s13cb-b4" type="checkbox">
+									<label for="s13cb-b4">Веневский район</label>
+
+									<input id="s13cb-b5" type="checkbox">
+									<label for="s13cb-b5">Воловский район</label>
+
+									<input id="s13cb-b6" type="checkbox">
+									<label for="s13cb-b6">г. Алексин</label>
+
+									<input id="s13cb-b7" type="checkbox">
+									<label for="s13cb-b7">г. Донской</label>
+
+									<input id="s13cb-b8" type="checkbox">
+									<label for="s13cb-b8">г. Ефремов</label>
+
+									<input id="s13cb-b9" type="checkbox">
+									<label for="s13cb-b9">г. Новомосковск</label>
+
+									<input id="s13cb-b10" type="checkbox">
+									<label for="s13cb-b10">г. Тула</label>
+
+									<input id="s13cb-b11" type="checkbox">
+									<label for="s13cb-b11">Дубенский район</label>
+
+									<input id="s13cb-b12" type="checkbox">
+									<label for="s13cb-b12">Заокский район</label>
+
+									<input id="s13cb-b14" type="checkbox">
+									<label for="s13cb-b14">Кимовский район</label>
+
+									<input id="s13cb-b15" type="checkbox">
+									<label for="s13cb-b15">Киреевский район</label>
+
+									<input id="s13cb-b16" type="checkbox">
+									<label for="s13cb-b16">Куркинский район</label>
+
+									<input id="s13cb-b17" type="checkbox">
+									<label for="s13cb-b17">Одоевский район</label>
+
+									<input id="s13cb-b18" type="checkbox">
+									<label for="s13cb-b18">Плавский район</label>
+
+									<input id="s13cb-b19" type="checkbox">
+									<label for="s13cb-b19">р.п. Новогуровский</label>
+
+									<input id="s13cb-b20" type="checkbox">
+									<label for="s13cb-b20">Суворовский район</label>
+
+									<input id="s13cb-b21" type="checkbox">
+									<label for="s13cb-b21">Тепло-Огаревский район</label>
+
+									<input id="s13cb-b22" type="checkbox">
+									<label for="s13cb-b22">Узловский район</label>
+
+									<input id="s13cb-b23" type="checkbox">
+									<label for="s13cb-b23">Чернский район</label>
+
+									<input id="s13cb-b24" type="checkbox">
+									<label for="s13cb-b24">Щекинский район</label>
+
+									<input id="s13cb-b25" type="checkbox">
+									<label for="s13cb-b25">Ясногорский район</label>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 col-lg-4 s13-filt-col">
+							<div class="s13-filt-block">
+								<h4 class="s13-filt-title">ВОЗРАСТ</h4>
+								<div class="s13-filt-cboxes">
+									<input id="s13cb-c1" type="checkbox">
+									<label for="s13cb-c1">Дошкольный</label>
+									<input id="s13cb-c2" type="checkbox">
+									<label for="s13cb-c2">Студентческий</label>
+									<input id="s13cb-c3" type="checkbox">
+									<label for="s13cb-c3">Школьный</label>
+									<input id="s13cb-c4" type="checkbox">
+									<label for="s13cb-c4">Без ограничений</label>
+								</div>
+							</div>
+
+							<div class="s13-filt-block">
+								<h4 class="s13-filt-title">ТИП МАРШРУТА</h4>
+								<div class="s13-filt-cboxes">
+									<input id="s13cb-d1" type="checkbox">
+									<label for="s13cb-d1">Автобусно-пешеходный</label>
+									<input id="s13cb-d2" type="checkbox">
+									<label for="s13cb-d2">Автобусный</label>
+									<input id="s13cb-d3" type="checkbox">
+									<label for="s13cb-d3">Пешеходный</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 s13-filt-bottom">
+						<div class="s13-filt-bottom-content clearfix">
+							<input type="reset" value="СБРОСИТЬ ФИЛЬТР" class="s13-filt-reset s13-filt-btn">
+							<input type="submit" value="ОТОБРАТЬ" class="s13-filt-submit s13-filt-btn">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+		<section class="s14">
+			<div class="container">
+				<div class="s14-blocks clearfix">
+
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-1.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag orange">Событийный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">В УСАДЬБЕ ПИСАТЕЛЕЙ</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-2.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag pink">Активный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">Детство в СУВОРОВЕ</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-3.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag purple">Гастрономический туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">ДОМ-МУЗЕЙ В.В. ВЕРЕСАЕВА 
+										И МУЗЕЙ А.С. ХОМЯКОВА</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-1.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag orange">Событийный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">Туристско-
+										рекреационный 
+										ландшафтный парк 
+										Бежин луг XXI век</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-2.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag pink">Активный туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">КУПЕЧЕСКИЙ ГОРОД-ТУЛА</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>					
+					<div class="col-xs-4">
+						<div class="s7-block">
+							<img src="img/s2/s2-img-3.jpg" alt="">
+							<div class="s7-block-bg"></div>
+							<div class="s7-block-content">
+								<div class="s7-block-tag purple">Гастрономический туризм</div>
+								<div class="s7-block-main">
+									<div class="s7-block-info clearfix">
+										<div class="s7-block-info-item time">4 часа</div>
+										<div class="s7-block-info-item distance">5 км</div>
+									</div>
+									<h4 class="s7-block-title">ОБАЯНИЕ ТУЛЬСКОГО
+										КРАЯ: ПРОШЛОЕ И 
+										НАСТОЯЩЕЕ</h4>
+									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+								</div>
+								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<a href="#" class="s14-block-btn purple-btn">ЕЩЕ МАРШРУТЫ</a>
+			</div>
+		</section>
+		
+
+		
+		<footer>
+			<div class="footer-main">
+				<div class="container">
+					<div class="footer-left col-xs-6 col-md-5">
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">Места</h4>
+							<ul class="footer-menu clearfix">
+								<div class="col-md-5">
+									<li><a href="#">Другие объекты</a></li>
+									<li><a href="#">Культура</a></li>
+									<li><a href="#">Библиотеки</a></li>
+									<li><a href="#">Великие путешественники</a></li>
+									<li><a href="#">Достопримечательности</a></li>
+									<li><a href="#">Мобильный гид</a></li>
+									<li><a href="#">Монастыри и храмы</a></li>
+									<li><a href="#">Музеи</a></li>
+									<li><a href="#">Памятники истории</a></li>
+									<li><a href="#">Усадьбы</a></li>
+								</div>
+								<div class="col-xs-7 visible-md visible-lg">
+									<li><a href="#">Памятники природы</a></li>
+									<li><a href="#">Развлечения</a></li>
+									<li><a href="#">Агротуризм, экотуризм</a></li>
+									<li><a href="#">Активный отдых</a></li>
+									<li><a href="#">Дома культуры</a></li>
+									<li><a href="#">Зоопарки</a></li>
+									<li><a href="#">Кинотеатры</a></li>
+									<li><a href="#">Концертные залы</a></li>
+									<li><a href="#">Оздоровительный туризм</a></li>
+									<li><a href="#">Парки и скверы</a></li>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-center col-xs-6 col-md-3">
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">Маршруты</h4>
+							<ul class="footer-menu clearfix">
+								<li><a href="#">Тематические маршруты</a></li>
+								<li><a href="#">Готовые маршруты</a></li>	
+							</ul>	
+						</div>	
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">События</h4>
+						</div>
+						<div class="footer-menu-box">
+							<h4 class="footer-menu-title">О Тульской области</h4>
+							<ul class="footer-menu clearfix">
+								<li><a href="#">Общая информация</a></li>
+								<li><a href="#">Путеводители</a></li>
+								<li><a href="#">Историческая справка</a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="footer-right col-xs-12 col-md-4">
+						<div class="footer-login-links visible-md visible-lg">
+							<a href="#">Вход</a> / <a href="#">Регистрация</a>
+						</div>					
+						<ul class="footer-partner-links clearfix">
+							<li><a href="#">Правительство Тульской области</a></li>
+							<li><a href="#">Министерство культуры и туризма Тульской области</a></li>
+							<li><a href="#">ГАУ ТО «Центр информационных технологий»</a></li>
+						</ul>					
+					</div>
+				</div>
+			</div>
+							
+			<div class="footer-bottom col-xs-12">
+				<div class="container">
+					<div class="col-xs-4 col-md-6">
+						<a href="#" class="footer-logo-link">
+							<img src="img/footer/footer-logo.png" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 col-md-6">
+						<div class="footer-social-links">
+							<a href="#"><img src="img/footer/footer-social-twitter.png" alt=""></a>
+							<a href="#"><img src="img/footer/footer-social-vk.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col-xs-4 visible-xs visible-sm">
+						<div class="footer-login-links">
+							<a href="#">Вход</a> / <a href="#">Регистрация</a>
+						</div>			
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="lib/slick/slick.min.js"></script>
+		<script src="lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<script src="lib/jquery.nicescroll.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

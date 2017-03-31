@@ -1,6 +1,5 @@
 $(function(){
-	$(".s1-slider").slick({	slidesToShow: 1	});	
-	
+	$(".s1-slider").slick({	slidesToShow: 1	});		
 	$(".s2-blocks").slick({
 		slidesToShow: 3,
 		responsive: [{
@@ -14,10 +13,8 @@ $(function(){
 		breakpoint: 960,
 		settings: {	slidesToShow: 1	}
 		}]
-	});	
-	
-	$(".s3-slider").slick({	slidesToShow: 1	});
-	
+	});		
+	$(".s3-slider").slick({	slidesToShow: 1	});	
 	$(".s4-blocks").slick({
 		slidesToShow: 3,
 		responsive: [{
@@ -25,21 +22,16 @@ $(function(){
 		settings: {	slidesToShow: 1	}
 		}]
 	});	
-	$(".s10-slider").slick({
+	$(".s10-slider, .s12-slider").slick({
 		slidesToShow: 1,
 		dots: true
 	});	
 	$(".s10-slider-thumb").on("click", function(){
 		$(".s10-slider").slick("slickGoTo", $(this).index());
-	});
-	
-	
-	
-	
-	
-	
-	
-	
+	});	
+	$(".s12-slider-thumb").on("click", function(){
+		$(".s12-slider").slick("slickGoTo", $(this).index());
+	});	
 
 	$("#time-1").ionRangeSlider({
 		min: 1,
@@ -54,8 +46,7 @@ $(function(){
 		from: 7,
 		step: 1,
 		postfix: " ч."
-	});
-	
+	});	
 	$("#range-1").ionRangeSlider({
 		hide_min_max: true,
 		min: 1,
@@ -88,6 +79,22 @@ $(function(){
 			var val = $(".s8-range-box:nth-child(3) .irs-single").text();
 			$(".s8-range-box:nth-child(3) .s8-range-value").text(val);
 		}
+	});
+	$("#s13time-1").ionRangeSlider({
+		hide_min_max: true,
+		min: 1,
+		max: 120,
+		from: 5,
+		step: 1,
+		postfix: " дн."
+	});
+	$("#s13time-2").ionRangeSlider({
+		hide_min_max: true,
+		min: 1,
+		max: 120,
+		from: 7,
+		step: 1,
+		postfix: " ч."
 	});
 
 
@@ -124,9 +131,9 @@ $(function(){
 		}
 	}
 	
-	var scrollEl = $(".s10-slider-thumbs");
-	if (scrollEl.length){	
-		scrollEl.each(function(){			
+	var scrollEl1 = $(".s10-slider-thumbs");
+	if (scrollEl1.length){	
+		scrollEl1.each(function(){			
 			$(this).niceScroll({
 				autohidemode: false,
 				horizrailenabled: false,
@@ -137,6 +144,22 @@ $(function(){
 				cursorborderradius: "0px",
 				background: "#e3e3e3",
 				railoffset: {left: 24}
+			});
+		});
+	}	
+	var scrollEl2 = $(".s12-slider-thumbs");
+	if (scrollEl2.length){	
+		scrollEl2.each(function(){			
+			$(this).niceScroll({
+				autohidemode: false,
+				horizrailenabled: false,
+				cursorfixedheight: 105,
+				cursorcolor: "#959595",
+				cursorwidth: 8,
+				cursorborder: 0,
+				cursorborderradius: "0px",
+				background: "#e3e3e3",
+				railoffset: {left: 22}
 			});
 		});
 	}
