@@ -1654,6 +1654,7 @@ footer {
 	padding: 0 40px 0 0;
 }
 .s13-top {
+	position: relative;
 	margin: 27px 0 0 0;
 }
 .s13-filters-links {
@@ -1683,6 +1684,7 @@ footer {
 	color: #969696;
 }
 .s13-filters {
+	display: none;
 	position: relative;
 	margin: 20px 0 0 0;
 	padding: 27px 0 0 0;
@@ -1828,6 +1830,7 @@ footer {
 }
 .s13-form-range label {
 	margin: 0 0 47px 0;
+	text-transform: uppercase;
 }
 .s13 .irs-from:after, .s13 .irs-to:after, .s13 .irs-single:after {
 	border-top-color: #fff;

@@ -77,13 +77,15 @@
 					</div>
 					<a href="#" class="s13-top-btn purple-btn">ДОБАВИТЬ МАРШРУТ</a>
 					<span class="s13-filters-num">Найдено: 57 маршрутов</span>
+					<a href="#" class="s13-top-search-btn visible-xs visible-sm"></a>
 				</div>
 				<form class="s13-filters clearfix">
+					<h3 class="s13-filt-title visible-xs visible-sm">ПАРАМЕТРЫ МАРШРУТА</h3>
 					<a href="#" class="s13-filt-close-btn"></a>
 					<div class="s13-filt-left col-lg-3">
 						<div class="s13-filt-block clearfix">
 							<div class="s13-form-range col-md-6 col-lg-12">
-								<label for="s13time-1">ДЛИТЕЛЬНОСТЬ</label>
+								<label for="s13time-1">Продолжительность маршрута</label>
 								<input type="text" id="s13time-1" name="s13time-1" value="">
 								<div class="s13-form-range-minmax clearfix">
 									<span class="s13-form-range-min">1 дн.</span>
@@ -91,7 +93,7 @@
 								</div>
 							</div>	
 							<div class="s13-form-range col-md-6 col-lg-12">
-								<label for="s13time-2">ВРЕМЯ В ПУТИ</label>
+								<label for="s13time-2">Время в пути</label>
 								<input type="text" id="s13time-2" name="s13time-2" value="">
 								<div class="s13-form-range-minmax clearfix">
 									<span class="s13-form-range-min">1 ч.</span>
@@ -103,7 +105,7 @@
 					<div class="s13-filt-right col-lg-9 clearfix">
 
 						<div class="col-md-4 col-lg-5 s13-filt-col">
-							<div class="s13-filt-block">
+							<div class="s13-filt-block visible-md visible-lg">
 								<h4 class="s13-filt-title">ВИД ОТДЫХА</h4>
 								<div class="s13-filt-cboxes">
 									<input id="s13cb-a1" type="checkbox">
@@ -155,7 +157,7 @@
 						</div>
 						
 						<div class="col-md-4 col-lg-3 s13-filt-col">
-							<div class="s13-filt-block">
+							<div class="s13-filt-block visible-md visible-lg">
 								<h4 class="s13-filt-title">РАЙОН</h4>
 								<div class="s13-filt-cboxes">
 
@@ -236,20 +238,20 @@
 						
 						<div class="col-md-4 col-lg-4 s13-filt-col">
 							<div class="s13-filt-block">
-								<h4 class="s13-filt-title">ВОЗРАСТ</h4>
+								<h4 class="s13-filt-title">Возраст</h4>
 								<div class="s13-filt-cboxes">
 									<input id="s13cb-c1" type="checkbox">
-									<label for="s13cb-c1">Дошкольный</label>
+									<label for="s13cb-c1">Любой</label>
 									<input id="s13cb-c2" type="checkbox">
 									<label for="s13cb-c2">Студентческий</label>
 									<input id="s13cb-c3" type="checkbox">
 									<label for="s13cb-c3">Школьный</label>
 									<input id="s13cb-c4" type="checkbox">
-									<label for="s13cb-c4">Без ограничений</label>
+									<label for="s13cb-c4">Дошкольный</label>
 								</div>
 							</div>
 
-							<div class="s13-filt-block">
+							<div class="s13-filt-block visible-md visible-lg">
 								<h4 class="s13-filt-title">ТИП МАРШРУТА</h4>
 								<div class="s13-filt-cboxes">
 									<input id="s13cb-d1" type="checkbox">
@@ -259,6 +261,35 @@
 									<input id="s13cb-d3" type="checkbox">
 									<label for="s13cb-d3">Пешеходный</label>
 								</div>
+							</div>
+						</div>
+						
+						<div class="s13-filt-selects visible-xs visible-sm">
+							<div class="s13-filt-selects-block">
+								<h4 class="s13-filt-selects-title">Район</h4>
+								<select id="s13sel-1">
+									<option value="" disabled selected>Выберите район...</option>
+									<option>район... 1</option>
+									<option>район... 2</option>
+								</select>
+							</div>
+							
+							<div class="s13-filt-selects-block">
+								<h4 class="s13-filt-selects-title">Вид маршрута</h4>
+								<select id="s13sel-2">
+									<option value="" disabled selected>Выберите вид маршрута...</option>
+									<option>маршрут... 1</option>
+									<option>маршрут... 2</option>
+								</select>
+							</div>
+							
+							<div class="s13-filt-selects-block">
+								<h4 class="s13-filt-selects-title">Вид отдыха</h4>
+								<select id="s13sel-3">
+									<option value="" disabled selected>Выберите вид отдыха...</option>
+									<option>отдых... 1</option>
+									<option>отдых... 2</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -277,7 +308,7 @@
 			<div class="container">
 				<div class="s14-blocks clearfix">
 
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-1.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -289,13 +320,13 @@
 										<div class="s7-block-info-item distance">5 км</div>
 									</div>
 									<h4 class="s7-block-title">В УСАДЬБЕ ПИСАТЕЛЕЙ</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>
 						</div>
 					</div>					
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-2.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -307,13 +338,13 @@
 										<div class="s7-block-info-item distance">5 км</div>
 									</div>
 									<h4 class="s7-block-title">Детство в СУВОРОВЕ</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>
 						</div>
 					</div>					
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-3.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -326,14 +357,14 @@
 									</div>
 									<h4 class="s7-block-title">ДОМ-МУЗЕЙ В.В. ВЕРЕСАЕВА 
 										И МУЗЕЙ А.С. ХОМЯКОВА</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-1.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -348,13 +379,13 @@
 										рекреационный 
 										ландшафтный парк 
 										Бежин луг XXI век</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>
 						</div>
 					</div>					
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-2.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -366,13 +397,13 @@
 										<div class="s7-block-info-item distance">5 км</div>
 									</div>
 									<h4 class="s7-block-title">КУПЕЧЕСКИЙ ГОРОД-ТУЛА</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>
 						</div>
 					</div>					
-					<div class="col-xs-4">
+					<div class="col-md-4">
 						<div class="s7-block">
 							<img src="img/s2/s2-img-3.jpg" alt="">
 							<div class="s7-block-bg"></div>
@@ -386,7 +417,7 @@
 									<h4 class="s7-block-title">ОБАЯНИЕ ТУЛЬСКОГО
 										КРАЯ: ПРОШЛОЕ И 
 										НАСТОЯЩЕЕ</h4>
-									<p class="s7-block-text">Музей купеческого <br>быта в п.Епифань - филиал <br>музея-заповедника <br>"Куликово поле"</p>
+									<p class="s7-block-text">Музей купеческого быта в п.Епифань - филиал музея-заповедника "Куликово поле"</p>
 								</div>
 								<a href="#" class="s7-block-btn">ПОДРОБНЕЕ</a>
 							</div>

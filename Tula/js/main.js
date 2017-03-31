@@ -163,6 +163,12 @@ $(function(){
 			});
 		});
 	}
+	$(".s13-filt-close-btn").on("click", function(){
+		$(".s13-filters").slideUp();
+	});
+	$(".s13-top-btn, .s13-top-search-btn").on("click", function(){
+		$(".s13-filters").slideDown();
+	});
 
 });
 
