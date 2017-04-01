@@ -104,6 +104,11 @@ header > .container {
 	text-decoration: none !important;
 	color: #fff !important;
 }
+.s1-slider-btn:hover {
+	border-color: #fff !important;
+	color: rgba(0,0,0,1) !important;
+	background: #fff !important;
+}
 .s1-slider-content > img {
 	margin: -86px 0 0 269px;
 }
@@ -510,6 +515,11 @@ header > .container {
 	text-decoration: none !important;
 	color: #fff !important;
 }
+.s3-form-submit-btn:hover {
+	border-color: #fff !important;
+	color: #a9246f !important;
+	background: #fff !important;
+}
 
 .s3-form-left {
 	padding-left: 3.68%;
@@ -791,7 +801,7 @@ footer {
 	background-size: cover;
 }
 .page-top-title {
-	margin: 38px 0 0 0;
+	margin: 38px 0 0 -70px;
 	font: 32px "frm-b";
 	color: #fff;
 	text-align: center;
@@ -1684,7 +1694,6 @@ footer {
 	color: #969696;
 }
 .s13-filters {
-	display: none;
 	position: relative;
 	margin: 20px 0 0 0;
 	padding: 27px 0 0 0;
@@ -1857,6 +1866,264 @@ footer {
 .s14-block-btn {
 	display: block;
 	margin: 8px auto 0;
+	width: 182px;
+	height: 54px;
+	font: 16px/52px "frm-l";
+	text-align: center;
+}
+
+/*		СОБЫТИЯ 		*/
+/*		S-15 		*/
+.s15 > .container {
+	padding: 0 41px 0 0;
+}
+.s15-top {
+	position: relative;
+	margin: 27px 0 0 0;
+}
+.s15-filters-links {
+	float: left;
+	margin: 13px 0 0 0;
+	font: 18px "frm-l";
+	color: #404040;
+}
+.s15-filters-links > a {
+	color: #882890;
+}
+.s15-filters-links > span {
+	margin: 0 7px;
+}
+/*
+.s15-top-btn {
+	float: right;
+	width: 205px;
+	height: 54px;
+	font: 16px/50px "frm-l";
+	text-align: center;
+}
+*/
+.s15-filters-num {
+	float: right;
+	margin: 14px 0 0 0;
+	font: 18px "frm-l";
+	letter-spacing: 0.1px;
+	color: #969696;
+}
+.s15-top-search-btn {}
+
+.s15-filters {
+	position: relative;
+	margin: 38px 0 0 0;
+	padding: 27px 0 0 0;
+	color: #fff;
+	background: #882890;
+}
+.s15-filt-block {
+	font: 16px "frm-l";
+}
+.s15-filt-left .s15-filt-block {
+	margin: 0 0 0 41px;
+}
+.s15-filt-center .s15-filt-block {
+	margin: 36px 0 0 27px;
+}
+.s15-filt-right .s15-filt-block {
+	margin: 0 0 0 75px;
+}
+.s15-filt-title {
+	margin: 0 0 0 3px;
+	font: 16px "frm-l";
+	text-transform: uppercase;
+}
+.s15-filt-cboxes {
+	margin: 13px 0 0 0;
+}
+.s15-filt-bottom {
+	margin: 30px 0 0 0;
+	padding: 0 44px 30px 43px;
+}
+.s15-filt-bottom-content {
+	padding: 29px 0 0 0;
+	border-top: 1px solid #fff;
+}
+.s15-filt-btn {
+	border: 1px solid #fff;
+	font: 16px/53px "frm-l";
+	text-transform: uppercase;
+	text-decoration: none !important;
+	color: #fff !important;
+	background: none;
+	outline: none;
+}
+.s15-filt-btn:hover {
+	border-color: #fff;
+	color: #882890 !important;
+	background: #fff;
+}
+.s15-filt-reset {
+	float: left;
+	padding: 0 12px;
+}
+.s15-filt-submit {
+	float: right;
+	padding: 0 48px;
+}
+.s15-filt-cboxes input[type="checkbox"] {
+	display: none;
+}
+.s15-filt-cboxes label {
+	font: 14px "frm-l";
+	letter-spacing: 0.1px;
+}
+.s15-filt-cboxes input[type="checkbox"] + label {
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 7px;
+	padding-left: 37px;
+	width: 100%;
+}
+.s15-filt-cboxes input[type="checkbox"] + label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 1px;
+	height: 18px;
+	width: 18px;
+	background: #fff;
+}
+.s15-filt-cboxes input[type="checkbox"]:checked + label:before {
+	background: #fff url("../img/s3/s3-checkbox-bg.png") no-repeat center;
+}
+.s15-filt-close-btn {
+	content: "";
+	position: absolute;
+	left: 540px;
+	top: -74px;
+	width: 53px;
+	height: 74px;
+	background: #882890 url(../img/s13/s13-close-btn.png) no-repeat 11px 12px;
+}
+.s15-filt-left-inputs {
+	margin: 18px 0 0 0;
+}
+.s15-filt-left-input {
+	margin-bottom: 12px;
+}
+.s15-filt-left-input label {
+	width: 34px;
+	font: 15px "frm-l";
+}
+.s15-filt-left-input input {
+	padding: 0;
+	width: 174px;
+	height: 38px;
+	border: 0;
+	color: #000;
+	text-align: center;
+}
+.s15-filt-left-text {
+	margin: 31px 0 0 0;
+	width: 220px;
+	font: 15px/24px "frm-l";
+	letter-spacing: 0.1px;
+}
+/*		КАЛЕНДАРЬ 		*/
+.s15-filt-calendar {}
+.s15-filt-calendar .ui-datepicker {
+	width: 305px;
+}
+.s15-filt-calendar .ui-datepicker table {
+	margin: 19px auto 13px;
+	width: 260px;
+}
+.s15-filt-calendar .ui-widget-content {
+	padding: 0;
+	border: 1px solid #fff;
+	border-radius: 0;
+	background: none;
+	color: #fff;
+}
+.s15-filt-calendar .ui-state-default {
+	margin: 0 7px;
+	padding: 0;
+	border: 0;
+	font: 15px "frm-l";
+	text-align: center;
+	color: #fff;
+	background: none;
+}
+.s15-filt-calendar .ui-state-active,
+.s15-filt-calendar  .dp-highlight > a {
+	color: #882890;
+	background: #fff;
+}
+.s15-filt-calendar .ui-widget-header {
+	padding: 0;
+	height: 44px !important;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	background: none;
+}
+.s15-filt-calendar .ui-datepicker th {
+	padding: 0 0 8px 0;
+	font: 15px "frm-l";
+}
+.s15-filt-calendar .ui-datepicker td {
+	padding: 0 0 5px 0;
+}
+.s15-filt-calendar .ui-datepicker .ui-datepicker-title {
+	font: 15px/45px "frm-b";
+	text-transform: uppercase;
+	color: #fff;
+}
+.s15-filt-calendar .ui-corner-all {
+	height: 100%;
+	top: 0;
+}
+.s15-filt-calendar .ui-datepicker .ui-datepicker-prev,
+.s15-filt-calendar .ui-datepicker .ui-datepicker-next {
+	width: 40px;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+.s15-filt-calendar .ui-datepicker .ui-datepicker-prev span,
+.s15-filt-calendar .ui-datepicker .ui-datepicker-next span {
+	position: static;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../img/s15/s15-calendar-arrow.png") no-repeat 12px center;
+}
+.s15-filt-calendar .ui-datepicker .ui-datepicker-prev {
+	left: 0;
+}
+.s15-filt-calendar .ui-datepicker .ui-datepicker-next {
+	right: 0;
+	transform: rotate(180deg);
+}
+/*		S-16 		*/
+.s16 > .container {
+	padding: 0 40px 0 0;
+}
+.s16 {
+	padding: 32px 0 56px;
+}
+.s16-blocks .s4-block {
+	margin: 0 auto 20px;
+	width: 373px;
+	background: #eaeaea;
+}
+.s16-blocks > *:nth-child(3n+1) > .s4-block {
+	float: left;
+}
+.s16-blocks > *:nth-child(3n) > .s4-block {
+	float: right;
+}
+.s16-block-btn {
+	display: block;
+	margin: 39px auto 0;
 	width: 182px;
 	height: 54px;
 	font: 16px/52px "frm-l";
