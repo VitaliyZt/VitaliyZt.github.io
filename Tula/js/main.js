@@ -163,6 +163,7 @@ $(function(){
 			});
 		});
 	}
+
 	$(".s8-tag").on("click", function(){
 		$(this).remove();
 	});
@@ -177,6 +178,12 @@ $(function(){
 	});
 	$(".s15-top-search-btn").on("click", function(){
 		$(".s15-filters").slideDown();
+	});
+	$(".s18-filt-close-btn").on("click", function(){
+		$(".s18-filters").slideUp();
+	});
+	$(".s18-top-btn, .s18-top-search-btn").on("click", function(){
+		$(".s18-filters").slideDown();
 	});
 	
 	if($(".datepicker").length){
@@ -207,6 +214,77 @@ $(function(){
 			}
 		});
 	}
+	if($("#s20field-5").length){
+		$("#s20field-5").datepicker({
+			changeYear: true,
+			yearRange: "-100:+0"
+		});
+	}
+	if($("#reg-7").length){
+		$("#reg-7").datepicker({
+			changeYear: true,
+			yearRange: "-100:+0"
+		});
+	}
+	
+	$(document).on("change", ".uploaded-file", function(){
+		var file = $(this).val();
+		file = file.replace(/\\/g, "/").split('/').pop();
+		$(this).next().text(file);
+	});	
+	$(document).on("click", ".s19-upload-btn", function(e){
+		e.preventDefault();
+		$(this).prev().find("label").click();
+	});
+	$(".s19-upload-more-btn").on("click", function(e){
+		e.preventDefault();
+		var num = ++$(".s19-upload-field").length,
+			el = "<div class='s19-upload-field clearfix'><div class='file-upload'><label><input type='file' name='file' class='uploaded-file'><span>Фото"+num+"</span></label></div><a href='#' class='s19-upload-btn purple-btn'>ЗАГРУЗИТЬ</a></div>";
+		$(".s19-upload-fields").append(el);
+	});
+	
+	if($('#my-select').length){
+		$('#my-select').multiSelect();
+		$(".ms-container").append("<div class='my-select-btn'></div><div class='my-select-btn'></div>");
+		$(document).on("click", ".my-select-btn:nth-child(3)", function(){
+			$('#my-select').multiSelect('select_all');
+		});
+		$(document).on("click", ".my-select-btn:nth-child(4)", function(){
+			$('#my-select').multiSelect('deselect_all');
+		});
+	}
+	
+	if($('#my-select-2').length){
+		var sel = $('#my-select-2');
+		sel.multiSelect({
+			selectableHeader: "<div class='s21-mselect-heading'>Выберите объекты, которые Вам интересны:</div>",
+			selectionHeader: "<div class='s21-mselect-heading'>Выбранные объекты:</div>"
+		});
+		$(".s21 .ms-container").append("<div class='my-select-btn'></div><div class='my-select-btn'></div>");
+		$(document).on("click", ".my-select-btn:nth-child(3)", function(){
+			sel.multiSelect('select_all');
+		});
+		$(document).on("click", ".my-select-btn:nth-child(4)", function(){
+			sel.multiSelect('deselect_all');
+		});
+	}
+	
+	if ($("#reg").length){
+		$(".header-login-link").magnificPopup({
+			type: 'inline',	
+			removalDelay: 300,
+			mainClass: 'mfp-fade'
+		});
+	}
+	$(".reg-close-btn").on("click", function(){
+		$.magnificPopup.close();
+	});
+	$(".header-menu-link").on("click", function(){
+		$("#bigmenu").slideDown();
+	});
+	$(".bigmenu-close-btn, #bigmenu .header-menu-link").on("click", function(){
+		$("#bigmenu").slideUp();
+	});
 
 });
 

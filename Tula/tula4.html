@@ -5,13 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>tula4</title>
+		<title>Главная</title>
 
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="lib/slick/slick.css" rel="stylesheet">
 		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.css" rel="stylesheet">
 		<link href="lib/ion.rangeSlider-master/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+		<link href="lib/magnific/dist/magnific.css" rel="stylesheet">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
@@ -24,7 +26,110 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="wrapper">	
+		<div id="wrapper">
+		
+		<div id="bigmenu">
+			<div class="container">
+				<div class="bigmenu-header clearfix">
+					<div class="header-left col-xs-4 col-md-3">
+						<a href="#" class="header-logo-link">
+							<img src="img/header/header-logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-center col-xs-4 col-md-6">
+						<a href="#" class="header-center-link">
+							<span class="hidden-xs hidden-sm">Скачайте мобильное приложение</span>
+							<img src="img/header/mobile-logos.png" alt="">
+						</a>
+					</div>
+					<div class="header-right col-xs-4 col-md-3">
+						<div class="footer-login-links hidden-xs hidden-sm">
+							<a href="#">Вход</a> / <a href="#">Регистрация</a>
+						</div>
+						<div class="header-right-links clearfix hidden-md hidden-lg">
+							<a href="#reg" class="header-login-link">
+								<img src="img/header/login.png" alt="">
+							</a>
+							<a href="#" class="header-lock-link">
+								<img src="img/header/lock.png" alt="">
+							</a>
+							<a href="#" class="header-menu-link">
+								<img src="img/s22/reg-modal-close.png" alt="">
+							</a>
+						</div>		
+					</div>
+				</div>
+				<div class="bigmenu-search">
+					<form class="s22-form clearfix">
+						<input type="text" placeholder="Я ищу" required="">
+						<input type="submit" value="НАЙТИ" class="purple-btn">
+					</form>
+				</div>
+				<div class="bigmenu-lists clearfix">
+					<div class="col-md-6">
+						<div class="bigmenu-list-block">
+							<h3 class="bigmenu-list-title">МЕСТА</h3>
+							<ul class="bigmenu-list clearfix">
+								<div class="col-xs-6">
+									<li><a href="#">Другие объекты</a></li>
+									<li><a href="#">Культура</a></li>
+									<li><a href="#">Библиотеки</a></li>
+									<li><a href="#">Великие путешественники</a></li>
+									<li><a href="#">Достопримечательности</a></li>
+									<li><a href="#">Мобильный гид</a></li>
+									<li><a href="#">Монастыри и храмы</a></li>
+									<li><a href="#">Музеи</a></li>
+									<li><a href="#">Памятники истории</a></li>
+									<li><a href="#">Усадьбы</a></li>
+								</div>
+								<div class="col-xs-6">
+									<li><a href="#">Памятники природы</a></li>
+									<li><a href="#">Развлечения</a></li>
+									<li><a href="#">Агротуризм, экотуризм</a></li>
+									<li><a href="#">Активный отдых</a></li>
+									<li><a href="#">Дома культуры</a></li>
+									<li><a href="#">Зоопарки</a></li>
+									<li><a href="#">Кинотеатры</a></li>
+									<li><a href="#">Концертные залы</a></li>
+									<li><a href="#">Оздоровительный туризм</a></li>
+									<li><a href="#">Парки и скверы</a></li>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 clearfix">
+						<div class="bigmenu-list-block col-xs-6 col-md-12">
+							<h3 class="bigmenu-list-title">МАРШРУТЫ</h3>
+							<ul class="bigmenu-list clearfix">
+								<li><a href="#">Тематические маршруты</a></li>
+								<li><a href="#">Готовые маршруты</a></li>	
+							</ul>
+						</div>
+						<div class="bigmenu-list-block col-xs-6 col-md-12">
+							<h3 class="bigmenu-list-title">СОБЫТИЯ</h3>
+						</div>	
+						<div class="bigmenu-list-block col-xs-12">
+							<h3 class="bigmenu-list-title">О ТУЛЬСКОЙ ОБЛАСТИ</h3>
+							<ul class="bigmenu-list clearfix">
+								<li><a href="#">Общая информация</a></li>
+								<li><a href="#">Путеводители</a></li>
+								<li><a href="#">Историческая справка</a></li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bigmenu-footer clearfix">
+					<div class="footer-social-links">
+						<a href="#"><img src="img/footer/footer-social-twitter.png" alt=""></a>
+						<a href="#"><img src="img/footer/footer-social-vk.png" alt=""></a>
+					</div>
+				</div>
+				<a href="#" class="bigmenu-close-btn"></a>
+			</div>
+		</div>
+		
+		
+		
 		<header>
 			<div class="container">
 				<div class="header-left col-xs-6 col-md-3">
@@ -40,7 +145,7 @@
 				</div>
 				<div class="header-right col-xs-6 col-md-3">
 					<div class="header-right-links clearfix">
-						<a href="#" class="header-login-link">
+						<a href="#reg" class="header-login-link">
 							<img src="img/header/login.png" alt="">
 						</a>
 						<a href="#" class="header-lock-link">
@@ -547,6 +652,51 @@
 			</div>
 			
 		</footer>
+				
+		<div id="reg" class="mfp-hide">
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation">
+					<a href="#authoriz" aria-controls="authoriz" role="tab" data-toggle="tab">АВТОРИЗАЦИЯ</a>
+				</li>
+				<li role="presentation" class="active">
+					<a href="#registr" aria-controls="registr" role="tab" data-toggle="tab">РЕГИСТРАЦИЯ</a>
+				</li>
+			</ul>			
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade" id="authoriz">
+					<form class="form-authoriz clearfix">
+						<input type="text" placeholder="Логин *" id="reg-10" required>
+						<input type="password" placeholder="Пароль *" id="reg-11" required>
+						<input type="submit" value="АВТОРИЗОВАТЬСЯ" class="purple-btn">
+					</form>					
+				</div>
+				<div role="tabpanel" class="tab-pane active fade in" id="registr">
+					<form class="form-registr clearfix">
+						<div class="col-md-6">
+							<input type="text" placeholder="Логин *" id="reg-1" required>
+							<input type="email" placeholder="Электронная почта *" id="reg-2" required>
+							<input type="password" placeholder="Пароль *" id="reg-3" required>
+							<input type="password" placeholder="Повторите пароль *" id="reg-4" required>
+						</div>
+						<div class="col-md-6">
+							<input type="text" placeholder="Имя" id="reg-5">
+							<input type="text" placeholder="Фамилия" id="reg-6">
+							<input type="text" placeholder="Дата рождения" id="reg-7">
+							<select id="reg-8">
+								<option value="" disabled selected>Выберите пол</option>
+								<option>Мужской</option>
+								<option>Женский</option>
+							</select>
+							<input id="reg-9" type="checkbox">
+							<label for="reg-9">Хочу предложить услуги экскурсовода</label>
+						</div>
+						<input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ" class="purple-btn">
+					</form>
+				</div>
+			</div>			
+			<a href="#" class="reg-close-btn"></a>
+		</div>
+			
 		</div>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -555,6 +705,9 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="lib/slick/slick.min.js"></script>
 		<script src="lib/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+		<script src="lib/magnific/dist/magnific.min.js"></script>
+		<script src="lib/datepicker/jquery-ui.min.js"></script>
+		<script src="lib/datepicker/datepicker-ru.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
