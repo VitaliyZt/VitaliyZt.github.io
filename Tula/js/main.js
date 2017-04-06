@@ -176,7 +176,7 @@ $(function(){
 	$(".s15-filt-close-btn").on("click", function(){
 		$(".s15-filters").slideUp();
 	});
-	$(".s15-top-search-btn").on("click", function(){
+	$(".s15-top-btn, .s15-top-search-btn").on("click", function(){
 		$(".s15-filters").slideDown();
 	});
 	$(".s18-filt-close-btn").on("click", function(){

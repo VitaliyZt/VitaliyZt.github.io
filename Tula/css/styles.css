@@ -98,7 +98,6 @@ header > .container {
 	margin: 36px 0 0 5px;
 	display: inline-block;
 	width: 165px;
-	height: 46px;
 	border: 1px solid #fff;
 	font: 16px/44px "frm-l";
 	text-align: center;
@@ -399,8 +398,7 @@ header > .container {
 }
 .s3-slider-icon {
 	float: left;
-	padding-left: 52px;
-	height: 41px;
+	padding: 0 0 4px 52px;
 	color: #000;
 }
 .s3-slider-icon.time {
@@ -818,6 +816,7 @@ footer {
 	height: 57px;
 	text-align: center;
 	background: #882890;
+	overflow: hidden;
 }
 .page-menu ul {
 	display: inline-block !important;
@@ -1899,7 +1898,6 @@ footer {
 .s15-filters-links > span {
 	margin: 0 7px;
 }
-/*
 .s15-top-btn {
 	float: right;
 	width: 205px;
@@ -1907,10 +1905,9 @@ footer {
 	font: 16px/50px "frm-l";
 	text-align: center;
 }
-*/
 .s15-filters-num {
 	float: right;
-	margin: 14px 0 0 0;
+	margin: 14px 26px 0 0;
 	font: 18px "frm-l";
 	letter-spacing: 0.1px;
 	color: #969696;
@@ -1919,7 +1916,7 @@ footer {
 
 .s15-filters {
 	position: relative;
-	margin: 38px 0 0 0;
+	margin: 20px 0 0 0;
 	padding: 27px 0 0 0;
 	color: #fff;
 	background: #882890;
@@ -2673,7 +2670,7 @@ footer {
 	transform: rotate(180deg);
 }
 .page-menu.cabinet ul > li > a {
-	padding: 0 28px;
+	padding: 0 27px;
 }
 /*		РЕДАКТИРОВАТЬ ПРОФИЛЬ 		*/
 /*		S-20 		*/
@@ -3211,7 +3208,9 @@ footer {
 	height: 50px;
 	background: #882890 url(../img/s22/reg-modal-close.png) no-repeat center;
 }
-
+input:focus::-webkit-input-placeholder {color:#fff !important;}
+input:focus::-moz-placeholder          {color:#fff !important;}
+input:focus:-ms-input-placeholder      {color:#fff !important;}
 
 
 
