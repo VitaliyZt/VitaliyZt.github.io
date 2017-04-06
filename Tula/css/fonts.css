@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'frm';
+	src: url('../fonts/Formular-Regular.eot');
+	src: local('☺'), url('../fonts/Formular-Regular.woff') format('woff'), url('../fonts/Formular-Regular.ttf') format('truetype'), url('../fonts/Formular-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frm-l';
+	src: url('../fonts/Formular-Light.eot');
+	src: local('☺'), url('../fonts/Formular-Light.woff') format('woff'), url('../fonts/Formular-Light.ttf') format('truetype'), url('../fonts/Formular-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frm-m';
+	src: url('../fonts/Formular-Medium.eot');
+	src: local('☺'), url('../fonts/Formular-Medium.woff') format('woff'), url('../fonts/Formular-Medium.ttf') format('truetype'), url('../fonts/Formular-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'frm-b';
+	src: url('../fonts/Formular-Bold.eot');
+	src: local('☺'), url('../fonts/Formular-Bold.woff') format('woff'), url('../fonts/Formular-Bold.ttf') format('truetype'), url('../fonts/Formular-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
