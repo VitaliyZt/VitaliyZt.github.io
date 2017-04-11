@@ -791,9 +791,24 @@ footer {
 }
 .footer-social-links > a {
 	display: inline-block;
+	transition: all 0.1s ease-in-out;
 }
-.footer-social-links > a:last-child {
+.footer-social-links > a:nth-child(1) {
+	width: 32px;
+	height: 29px;
+	background: url("../img/footer/footer-social-twitter.png");
+}
+.footer-social-links > a:nth-child(2) {
 	margin-left: 14px;
+	width: 43px;
+	height: 25px;
+	background: url("../img/footer/footer-social-vk.png");
+}
+.footer-social-links > a:nth-child(1):hover {
+	background: url("../img/footer/footer-social-twitter-hov.png");
+}
+.footer-social-links > a:nth-child(2):hover {
+	background: url("../img/footer/footer-social-vk-hov.png");
 }
 /*		БАНК ЭКСКУРСОВОДОВ 		*/
 /*		PAGE-TOP 		*/
@@ -839,10 +854,11 @@ footer {
 	color: #fff !important;
 	text-decoration: none !important;
 	text-align: center;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out;
 }
 .page-menu ul > li > a:hover {
-	text-decoration: underline !important;
+	background: #f39a1f !important;
 }
 .page-menu ul > li.active > a {
 	height: 57px;
@@ -1912,7 +1928,20 @@ footer {
 	letter-spacing: 0.1px;
 	color: #969696;
 }
-.s15-top-search-btn {}
+.s15-top-search-btn, .s13-top-search-btn, .s18-top-search-btn {
+	position: absolute;
+	right: 566px;
+	top: 0;
+	width: 53px;
+	height: 54px;
+	border: 1px solid #882890;
+	background: url(../img/s13/s13-search-btn-big.png) no-repeat center;
+	transition: all 0.1s ease-in-out;
+}
+.s15-top-search-btn:hover, .s13-top-search-btn:hover, .s18-top-search-btn:hover {
+	border-color: #aaaaaa;
+	background: url(../img/s13/s13-search-btn-hov.png) no-repeat center;
+}
 
 .s15-filters {
 	position: relative;
@@ -2030,6 +2059,98 @@ footer {
 	font: 15px/24px "frm-l";
 	letter-spacing: 0.1px;
 }
+
+
+/*		КАЛЕНДАРЬ - РЕГИСТРАЦИЯ		*/
+.s15-filt-calendar {}
+.ui-datepicker {
+	width: 339px;
+}
+.ui-datepicker table {
+	margin: 19px auto 13px;
+	width: 85%;
+}
+.ui-widget-content {
+	padding: 0;
+	border: 1px solid #882890;
+	border-radius: 0;
+	background: none;
+	color: #882890;
+}
+.ui-state-default {
+	margin: 0 7px;
+	padding: 0;
+	border: 0 !important;
+	font: 15px "frm-l";
+	text-align: center;
+	color: #882890 !important;
+	background: none !important;
+}
+.ui-state-active,
+.dp-highlight > a {
+	color: #882890;
+	background: #fff;
+}
+.ui-widget-header {
+	padding: 0 !important;
+	height: 44px !important;
+	border: 0;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	background: none;
+}
+.ui-datepicker th {
+	padding: 0 0 8px 0;
+	font: 15px "frm-l";
+}
+.ui-datepicker td {
+	padding: 0 0 5px 0;
+}
+.ui-datepicker .ui-datepicker-title {
+	font: 15px/45px "frm-b";
+	text-transform: uppercase;
+	color: #882890;
+}
+ui-corner-all {
+	height: 100%;
+	top: 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	top: 0;
+	width: 40px;
+	height: 100%;
+	border: 0;
+	background: none;
+	cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	position: static;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: url("../img/s15/s15-calendar-arrow-purple.png") no-repeat 12px center;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 0;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 0;
+	transform: rotate(180deg);
+}
+.ui-widget.ui-widget-content {
+	border: 1px solid #882890;
+	border-top: 0;
+	background: #fff;
+}
+.ui-datepicker select.ui-datepicker-year {
+	width: auto;
+	border-color: #882890;
+	font: 15px/45px "frm-b";
+}
+
+
 /*		КАЛЕНДАРЬ 		*/
 .s15-filt-calendar {}
 .s15-filt-calendar .ui-datepicker {
@@ -2052,13 +2173,13 @@ footer {
 	border: 0;
 	font: 15px "frm-l";
 	text-align: center;
-	color: #fff;
+	color: #fff !important;
 	background: none;
 }
 .s15-filt-calendar .ui-state-active,
 .s15-filt-calendar  .dp-highlight > a {
-	color: #882890;
-	background: #fff;
+	color: #882890 !important;
+	background: #fff !important;
 }
 .s15-filt-calendar .ui-widget-header {
 	padding: 0;
@@ -2276,6 +2397,7 @@ footer {
 	padding: 0 24px 0 16px;
 }
 .s18-top {
+	position: relative;
 	margin: 27px 0 0 0;
 }
 .s18-view-select {
@@ -2753,6 +2875,7 @@ footer {
 	text-decoration: none;
 }
 .s20-left-form > div:nth-child(5) input {
+	border: 1px solid #882890;
 	background: url("../img/s20/s10-calendar-icon.png") no-repeat 288px 6px;
 	cursor: pointer;
 }
@@ -2921,11 +3044,17 @@ footer {
 }
 .s22-form input[type="submit"] {
 	float: left;
-	padding: 2px 0 0 12px;
+	padding: 0 0 0 12px;
 	width: 204px;
 	height: 54px;
-	font: 15px "frm";
-	background: #fff url("../img/s22/s22-search-btn.png") no-repeat 43px 17px;
+	font: 15px/54px "frm";
+	background: #fff url("../img/s22/s22-search-btn.png") no-repeat 43px center;
+	transition: all 0.1s ease-in-out;
+}
+.s22-form input[type="submit"]:hover {
+	border-color: #f39a1f;
+	border-left-color: #882890;
+	background: #f39a1f url(../img/s22/s22-search-btn-white.png) no-repeat 43px 17px !important;
 }
 .s22-form-result {
 	margin: 33px 0 0 0;
@@ -2952,8 +3081,10 @@ footer {
 	padding: 34px 57px 35px 0
 }
 .s22-list > li:hover {
+/*
 	margin: 0 0 1px 0;
 	border: 0;
+*/
 }
 .s22-list > li:hover:before {
 	content: "";
@@ -3114,12 +3245,44 @@ footer {
 	background: #882890 url("../img/s22/reg-modal-close.png") no-repeat center;
 }
 .form-authoriz {
-	margin: 120px auto 0;
+	margin: 85px auto 0;
 	width: 339px;
 }
 .form-authoriz  input[type="submit"] {
 	float: none !important;
 	margin: 0 !important;
+}
+
+.form-authoriz-log {
+	margin-top: 20px;
+}
+.form-authoriz-log > a {
+	font: 17px "frm-l";
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: #000;
+}
+.form-authoriz-log > a:nth-child(1) {
+	float: left;
+}
+.form-authoriz-log > a:nth-child(2) {
+	float: right;
+}
+.form-authoriz-social {
+	margin-top: 10px;
+	font: 17px "frm-l";
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: #000;
+}
+.form-authoriz-social-links {
+	display: inline-block;
+	margin-left: 25px;
+}
+.form-authoriz-social-links > a {
+	padding: 0 4px;
+	font-size: 25px;
+	color: #882890;
 }
 /*		БОЛЬШОЕ МЕНЮ 	*/
 
@@ -3129,7 +3292,7 @@ footer {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 813px;
+	height: 100%;
 	background: #892891;
 	z-index: 99999;
 }
@@ -3154,7 +3317,13 @@ footer {
 	margin: 0;
 }
 #bigmenu .s22-form input[type="submit"] {
-	padding: 6px 0 0 44px;
+	padding: 0 0 0 44px;
+	transition: all 0.1s ease-in-out;
+}
+#bigmenu .s22-form input[type="submit"]:hover {
+	border-color: #882890;
+	border-left-color: #fff;
+	background: #f39a1f url(../img/s22/s22-search-btn-white.png) no-repeat 43px center !important;
 }
 .bigmenu-lists {
 	padding: 34px 0 0 0;

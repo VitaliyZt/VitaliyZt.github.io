@@ -1,3 +1,12 @@
+@media (min-width: 581px) {
+	body.menu-opened {
+/*
+		padding-right: 17px;
+		background: #892891;
+		overflow-y: hidden;	
+*/
+	}
+}
 @media (min-width: 1200px) {
 	.s1 {
 		background-position: center -36px;
@@ -129,6 +138,16 @@
 		width: 38px;
 		height: 38px;
 		background-position: center;
+		z-index: 999999;
+	}
+	.s15-top-search-btn {
+		right: 459px;
+	}
+	.s13-filters-num {
+		margin: 14px 10px 0 0;
+	}
+	.s13-top-search-btn {
+		right: 434px;
 	}
 	.s15 > .container, .s16 > .container {
 		padding: 0;
@@ -146,6 +165,7 @@
 		width: 38px;
 		height: 38px;
 		background-position: center;
+		z-index: 999999;
 	}
 	.s17-gid {
 		 margin: 0; 
@@ -171,6 +191,10 @@
 		width: 38px;
 		height: 38px;
 		background-position: center;
+		z-index: 999999;
+	}
+	.s18-top-search-btn {
+		right: 459px;
 	}
 	.s19-content {
 		padding: 0 164px 0 0;
@@ -303,7 +327,7 @@
 		height: 746px;
 	}
 	.s1-slider-content {
-		padding: 101px 0 0 8px;
+		padding: 101px 0 10px 8px;
 	}
 	.s1-slider-title {
 		max-width: 402px;
@@ -986,6 +1010,10 @@
 		border: 1px solid #882890;
 		background: url("../img/s13/s13-search-btn.png") no-repeat center;
 	}
+	.s15-top-search-btn:hover, .s13-top-search-btn:hover, .s18-top-search-btn:hover {
+		border-color: #882890;
+		background: url(../img/s13/s13-search-btn.png) no-repeat center;
+	}
 	.s14 {
 		padding: 43px 0 48px;
 	}
@@ -1140,7 +1168,7 @@
 		display: block;
 		margin: 39px auto 0;
 	}
-	.s15-top-search-btn {
+	.s15-top-search-btn, .s18-top-search-btn {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -1648,9 +1676,12 @@
 		width: 354px;
 	}
 	.s22-form input[type="submit"] {
-		padding: 2px 0 0 43px;
+		padding: 0 0 0 43px;
 		width: 166px;
-		background-position: 37px 16px;
+		background-position: 37px center;
+	}
+	.s22-form input[type="submit"]:hover {
+		background-position: 37px center !important;
 	}
 	.s22-form-result:nth-of-type(1) {
 		float: right;
@@ -1723,9 +1754,6 @@
 	.mfp-container {
 		padding: 0;
 	}
-	#bigmenu {
-		height: 1275px;
-	}
 	#bigmenu > .container {
 		width: 100%;
 	}
@@ -1785,14 +1813,20 @@
 		width: 354px;
 	}
 	#bigmenu .s22-form input[type="submit"] {
-		padding: 3px 0 0 21px;
-		background-position: 27px 16px;
+		padding: 0 0 0 21px !important;
+		background-position: 27px center;
+	}
+	#bigmenu .s22-form input[type="submit"]:hover {
+		background-position: 27px center !important;
 	}
 	.bigmenu-lists > div:nth-child(1) .bigmenu-list > div:nth-child(2) {
 		padding: 0 0 0 40px;
 	}
 	.bigmenu-lists > div:nth-child(2) > div:nth-child(2) {
 		padding: 0 0 0 40px;
+	}
+	.ui-datepicker {
+		width: 395px;
 	}
 }
 
