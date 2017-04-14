@@ -412,7 +412,7 @@
 	}
 	.s3-slider-btn-xs {
 		display: inline-block;
-		margin: 35px 0 0;
+		margin: 35px 0 3px;
 	}
 	.s3 .slick-arrow {
 		top: 360px;
