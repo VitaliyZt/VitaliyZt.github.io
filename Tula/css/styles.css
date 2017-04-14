@@ -3380,12 +3380,264 @@ ui-corner-all {
 input:focus::-webkit-input-placeholder {color:#fff !important;}
 input:focus::-moz-placeholder          {color:#fff !important;}
 input:focus:-ms-input-placeholder      {color:#fff !important;}
+textarea:focus::-webkit-input-placeholder {color:#fff !important;}
+textarea:focus::-moz-placeholder          {color:#fff !important;}
+textarea:focus:-ms-input-placeholder      {color:#fff !important;}
 
 
 
+.s3-form select,
+#registr select,
+.s6-form select, 
+.s8 select,
+.s19 select,
+.s20 select {
+	display: none;
+}
+@media (max-width: 1219px){
+	#selects8-1 + .fake-sel > .fake-sel-title,
+	#selects8-1 + .fake-sel > .fake-sel-list {
+		width: 290px !important;
+	}
+	#selects8-1 + .fake-sel > .fake-sel-title {
+		padding: 0 30px 0 10px;
+		background-position: 96.7% 20px;
+	}
+	#selects8-2 + .fake-sel > .fake-sel-title,
+	#selects8-3 + .fake-sel > .fake-sel-title,
+	#selects8-2 + .fake-sel > .fake-sel-list,
+	#selects8-3 + .fake-sel > .fake-sel-list {
+		width: 230px !important;
+	}	
+	.s8-block:nth-child(2) .fake-sel > .fake-sel-title, 
+	.s8-block:nth-child(2) .fake-sel > .fake-sel-list {
+		width: 430px !important;
+	}
+}
+@media (max-width: 959px) {
+	.s3-form .fake-sel,	.s3-form .fake-sel-list, .s3-form .fake-sel-title {
+		width: 328px;
+	}
+	#registr .fake-sel {
+		margin: 0 0 25px 0;
+	}
+	#registr .fake-sel-title {
+		background-position: 97% 19px !important;
+	}
+	#registr .fake-sel,	#registr .fake-sel-list, #registr .fake-sel-title {
+		width: 100% !important;
+	}
+	#selects8-1 + .fake-sel > .fake-sel-title,
+	#selects8-1 + .fake-sel > .fake-sel-list {
+		width: 404px !important;
+	}
+	#selects8-1 + .fake-sel > .fake-sel-title {
+		padding: 0 30px 0 21px;
+		background-position: 95.2% 19px;
+	}
+	#selects8-2 + .fake-sel > .fake-sel-title,
+	#selects8-3 + .fake-sel > .fake-sel-title,
+	#selects8-2 + .fake-sel > .fake-sel-list,
+	#selects8-3 + .fake-sel > .fake-sel-list {
+		width: 587px !important;
+	}
+	#selects8-2 + .fake-sel > .fake-sel-title,
+	#selects8-3 + .fake-sel > .fake-sel-title {
+		margin: 4px 0 0 0;
+		background-position: 97.7% 20px !important;
+	}
+	.s8-block:nth-child(2) .fake-sel > .fake-sel-title, 
+	.s8-block:nth-child(2) .fake-sel > .fake-sel-list {
+		margin: 0 0 0 -5px;
+		width: 520px !important;
+	}
+	.s8-block:nth-child(2) .fake-sel > .fake-sel-title {
+		padding: 0 0 0 14px;
+	}
+	.s19 .fake-sel-list {
+		width: 520px !important;
+	}
+	.s20 .fake-sel-title, .s20 .fake-sel-list {
+		width: 395px !important;
+		background-position: 97% center !important;
+	}
+}
+@media (max-width: 655px) {
+	.s6-form .fake-sel-title, .s6-form  .fake-sel-list {
+		width: 320px !important;
+	}
+}
+@media (max-width: 635px){
+	#selects8-1 + .fake-sel > .fake-sel-title,
+	#selects8-1 + .fake-sel > .fake-sel-list {
+		width: 365px !important;
+	}
+	#selects8-2 + .fake-sel > .fake-sel-title,
+	#selects8-3 + .fake-sel > .fake-sel-title,
+	#selects8-2 + .fake-sel > .fake-sel-list,
+	#selects8-3 + .fake-sel > .fake-sel-list {
+		width: 520px !important;
+	}
+}
+@media (max-width: 579px) {
+	.s3-form select,
+	#registr select,
+	.s6-form select, 
+	.s8 select,
+	.s19 select, 
+	.s20 select {
+		display: inline-block;
+	}
+	.fake-sel {
+		display: none;
+	}
+}
 
+.fake-sel {
+	font: 17px/42px "frm-l";
+	color: #000;
+}
+.fake-sel-title {
+	padding-left: 14px;
+	width: 285px;
+	height: 42px;
+	border: 0;
+	background: #fff url("../img/s3/s3-form-select-bg.png") no-repeat 95.3% 12px;
+	cursor: pointer;
+}
+.fake-sel-list {
+	display: none;
+	position: absolute;
+	padding: 11px;
+	width: 285px;
+	border-top: 1px solid #a9246f;
+	background: #fff;
+	z-index: 9999;
+}
+.fake-sel-option {
+	padding-left: 3px;
+}
+.fake-sel-option:hover {
+	background: #f5f5f5;
+}
+/*---------------------*/
+#registr .fake-sel {
+	margin: 0 0 24px 0;
+	font: 18px/52px "frm-l";
+	color: #000;
+}
+#registr .fake-sel-title {
+	margin: 0;
+	padding: 0 0 0 24px;
+	width: 339px;
+	height: 54px;
+	border: 1px solid #882890;
+	background: url(../img/s19/s19-select-arrow-2.png) no-repeat 294px 19px;
+}
+#registr .fake-sel-list {
+	width: 339px;
+	border: 1px solid #882890;
+	border-top: 0;
+}
+#registr .fake-sel-option {
+	padding-left: 13px;
+}
+/*---------------------*/
+.s6-form .fake-sel {
+	float: left;
+	font: 18px/52px "frm-l";
+	color: #000;
+}
+.s6-form .fake-sel-title {
+	padding: 0 0 0 21px;
+	width: 407px;
+	height: 54px;
+	border: 1px solid #882890;
+	letter-spacing: 0.1px;
+	background: #fff url(../img/s3/s3-form-select-bg.png) no-repeat 95.7% 17px;
+}
+.s6-form .fake-sel-list {
+	width: 407px;
+	border: 1px solid #882890;
+	border-top: 0;
+}
+.s6-form .fake-sel-option {
+	padding-left: 11px;
+}
+/*---------------------*/
+.s8 .fake-sel {
+	float: left;
+	font: 18px/52px "frm-l";
+}
+.s8 .fake-sel-title {
+	padding: 0 45px 0 21px;
+	height: 54px;
+	border: 1px solid #882890;
+	background: #fff url(../img/s3/s3-form-select-bg.png) no-repeat 93.7% 17px;
+}
+.s8 .fake-sel-list {
+	border: 1px solid #882890;
+	border-top: 0;
+}
+.s8 .fake-sel-option {
+	padding-left: 10px;
+}
+#selects8-1 + .fake-sel > .fake-sel-title,
+#selects8-1 + .fake-sel > .fake-sel-list {
+	width: 339px;
+}
+#selects8-2 + .fake-sel > .fake-sel-title,
+#selects8-3 + .fake-sel > .fake-sel-title,
+#selects8-2 + .fake-sel > .fake-sel-list,
+#selects8-3 + .fake-sel > .fake-sel-list {
+	width: 250px;
+	background-position: 95.7% 20px;
+}
 
-
+.s8-block:nth-child(2) .fake-sel > .fake-sel-title, 
+.s8-block:nth-child(2) .fake-sel > .fake-sel-list {
+	width: 520px;
+	background-position: 96.7% 18px;
+}
+/*---------------------*/
+.s19 .fake-sel {
+	font: 18px/52px "frm-l";
+}
+.s19 .fake-sel-title {
+	padding: 0 0 0 22px;
+	width: 100%;
+	height: 54px;
+	border: 1px solid #882890;
+	background: url(../img/s19/s19-select-arrow-2.png) no-repeat 96.9% 19px;
+}
+.s19 .fake-sel-list {
+	width: 776px;
+	border: 1px solid #882890;
+	border-top: 0;
+}
+.s19 .fake-sel-option {
+	padding-left: 10px;
+}
+/*---------------------*/
+.s20 .fake-sel {
+	float: left;
+	font: 18px/52px "frm-l";
+}
+.s20 .fake-sel-title {
+	padding: 0 0 0 25px;
+	width: 339px;
+	height: 54px;
+	border: 1px solid #882890;
+	background: url(../img/s19/s19-select-arrow-2.png) no-repeat 294px 19px;
+}
+.s20 .fake-sel-list {
+	width: 339px;
+	border: 1px solid #882890;
+	border-top: 0;
+}
+.s20 .fake-sel-option {
+	padding-left: 14px;
+}
 
 
 

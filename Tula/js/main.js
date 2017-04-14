@@ -304,36 +304,35 @@ $(function(){
 	});
 	
 	
-//	var flink1 = $(".footer-social-links>a:nth-child(1)"),
-//		flink2 = $(".footer-social-links>a:nth-child(2)"),
-//		newimg1 = "img/footer/footer-social-twitter-hov.png",
-//		newimg2 = "img/footer/footer-social-vk-hov.png";
-//	flink1.on("hover",
-//		var img = $(this).find("img");
-//		function(){
-//			var imgSrc = img.attr("src");
-//			console.log(imgSrc);
-//			img.attr("src", newimg1);
-//		},
-//		function(){
-//			img.attr("src", imgSrc);
-//		}
-//	);
-//	
-//	flink1.on("hover", function(e) {
-//		var img = $(this).find("img");
-//		if (e.type == "mouseenter") {
-//			var imgSrc = img.attr("src");
-//			console.log(imgSrc);
-//			img.attr("src", newimg1);
-//		}
-//		else {
-//			img.attr("src", imgSrc);
-//		}
-//	});
+	$(".fake-sel").on("click", ".fake-sel-title", function(){
+		var select = $(this), parent = select.parent(),	options = select.next();
+		if(!parent.hasClass("opened")){		
+			$(".fake-sel").each(function(){
+				if ($(this).hasClass("opened")){
+					$(this).removeClass("opened")
+					.children(".fake-sel-list").slideUp("fast");
+				}
+			});	
+			parent.addClass("opened");
+			options.slideDown("fast");
+			setTimeout(function(){
+				if(parent.hasClass("opened"))
+					options.slideUp("fast");
+			}, 1e4);
+		} else {
+			parent.removeClass("opened");
+			options.slideUp("fast");
+		}
+	});
+	$(".fake-sel-option").on("click", function(){
+		var option = $(this), options = option.parent(), txt = option.text(),
+		content = option.parents(".fake-sel"), select = content.prev("select"),
+		fakeselect = content.children(".fake-sel-title");
+		options.slideUp("fast");
+		fakeselect.text(txt);
+		select.attr("value", txt);
+	});
 	
-
-
 });
 
 
