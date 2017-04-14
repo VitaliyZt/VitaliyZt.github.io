@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Citycom</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
+		<link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="lib/slick/slick.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+				<div class="container">
+					<div class="col-xs-6">
+						<form class="header-town-form">
+							<label for="header-town-select">Город:</label>
+							<select class="header-town-select" id="header-town-select">
+								<option>Киев</option>
+								<option>Киев</option>
+								<option>Киев</option>
+							</select>
+						</form>				
+					</div>
+					<div class="col-xs-6">
+						<div class="header-lang-switch clearfix">
+							<a href="#" class="active">RU</a>
+							<a href="#">UA</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="container">
+					<div class="col-xs-3">
+						<a href="#" class="header-logo">
+							<img src="img/header/header-logo.png" alt="">
+						</a>
+						<form class="header-phone-form">
+							<select class="header-phone-select" id="header-phone-select">
+								<option>(044) 461-88-88</option>
+								<option>(044) 461-88-88</option>
+								<option>(044) 461-88-88</option>
+							</select>
+						</form>		
+					</div>
+					<div class="col-xs-5">
+						<form class="header-search-form">
+							<input type="text" class="header-search-form-input" placeholder="поиск товара...">
+							<div class="header-search-form-btns">
+								<a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+								<a href="#" class="voice-btn"><i class="fa fa-microphone"></i></a>
+							</div>
+						</form>		
+					</div>
+					<div class="col-xs-4">
+						<div class="header-right clearfix">
+								<div class="header-cart clearfix">
+									<a href="#" class="header-cart-link">
+										<i class="fa fa-shopping-cart"></i>
+										<span class="header-cart-link-num">22</span>
+									</a>
+									<div class="header-cart-sum">
+										<span>Сумма</span><br>
+										<span>11 777</span>
+										<span>грн</span>
+									</div>
+									
+								</div>
+								<div class="header-right-btns clearfix">
+								
+									<div class="header-right-btn-col">
+										<a href="#" class="header-right-btn">
+											<div class="header-right-btn-img"><i class="fa fa-exchange"></i></div>
+											<h5 class="header-right-btn-title">Сравнение</h5>
+										</a>
+									</div>
+								
+									<div class="header-right-btn-col">
+										<a href="#" class="header-right-btn">
+											<div class="header-right-btn-img"><i class="fa fa-star"></i></div>
+											<h5 class="header-right-btn-title">Избранное</h5>
+										</a>
+									</div>
+								
+									<div class="header-right-btn-col">
+										<a href="#" class="header-right-btn">
+											<div class="header-right-btn-img"><i class="fa fa-street-view"></i></div>
+											<h5 class="header-right-btn-title">Личный кабинет <br>и статус заказа</h5>
+										</a>
+									</div>
+								</div>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<a href="#" class="header-menu-btn"><i class="fa fa-bars"></i> Каталог товаров</a>
+					<div class="header-menu clearfix">
+						<a href="#">Скидки</a>
+						<a href="#">Акции</a>
+						<a href="#">Доставка и оплата</a>
+						<a href="#">Кредит</a>
+						<a href="#">Статьи</a>
+						<a href="#">Обратная связь</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			<div class="container">
+				<div class="page-left col-xs-9">
+
+					<section class="s1 clearfix">
+							<div class="col-xs-3">
+								<div class="s1-menu">
+									<a href="#">Apple</a>
+									<a href="#">Смартфоны</a>
+									<a href="#">Планшеты</a>
+									<a href="#">Ноутбуки и ПК</a>
+									<a href="#">Фото/Аудио/Видео</a>
+									<a href="#">Гаджеты</a>
+									<a href="#">Уцененный товар</a>
+								</div>
+							</div>
+							<div class="col-xs-9">
+								<div class="s1-slider">
+									<div class="s1-slide">
+										<img src="img/s1/s1-slider/s1-slide-1.jpg" alt="">
+										<div class="s1-slide-text">
+											<h3 class="s1-slide-title">УМНЫЕ ЧАСЫ <br>Apple Watch Series 2</h3>
+											<p class="s1-slide-info">Водонепроницаемость и специальные режимы для плавания, встроенный GPS, новая SoC Apple S2 и более яркий экран.</p>
+											<a href="#" class="s1-slide-show"><i class="fa fa-long-arrow-right"></i>Подробнее</a>
+										</div>
+									</div>
+									<div class="s1-slide">
+										<img src="img/s1/s1-slider/s1-slide-1.jpg" alt="">
+										<div class="s1-slide-text">
+											<h3 class="s1-slide-title">УМНЫЕ ЧАСЫ <br>Apple Watch Series 2</h3>
+											<p class="s1-slide-info">Водонепроницаемость и специальные режимы для плавания, встроенный GPS, новая SoC Apple S2 и более яркий экран.</p>
+											<a href="#" class="s1-slide-show"><i class="fa fa-long-arrow-right"></i>Подробнее</a>
+										</div>
+									</div>
+									<div class="s1-slide">
+										<img src="img/s1/s1-slider/s1-slide-1.jpg" alt="">
+										<div class="s1-slide-text">
+											<h3 class="s1-slide-title">УМНЫЕ ЧАСЫ <br>Apple Watch Series 2</h3>
+											<p class="s1-slide-info">Водонепроницаемость и специальные режимы для плавания, встроенный GPS, новая SoC Apple S2 и более яркий экран.</p>
+											<a href="#" class="s1-slide-show"><i class="fa fa-long-arrow-right"></i>Подробнее</a>
+										</div>
+									</div>			
+									<div class="s1-slide">
+										<img src="img/s1/s1-slider/s1-slide-1.jpg" alt="">
+										<div class="s1-slide-text">
+											<h3 class="s1-slide-title">УМНЫЕ ЧАСЫ <br>Apple Watch Series 2</h3>
+											<p class="s1-slide-info">Водонепроницаемость и специальные режимы для плавания, встроенный GPS, новая SoC Apple S2 и более яркий экран.</p>
+											<a href="#" class="s1-slide-show"><i class="fa fa-long-arrow-right"></i>Подробнее</a>
+										</div>
+									</div>
+									<div class="s1-slide">
+										<img src="img/s1/s1-slider/s1-slide-1.jpg" alt="">
+										<div class="s1-slide-text">
+											<h3 class="s1-slide-title">УМНЫЕ ЧАСЫ <br>Apple Watch Series 2</h3>
+											<p class="s1-slide-info">Водонепроницаемость и специальные режимы для плавания, встроенный GPS, новая SoC Apple S2 и более яркий экран.</p>
+											<a href="#" class="s1-slide-show"><i class="fa fa-long-arrow-right"></i>Подробнее</a>
+										</div>
+									</div>							
+								</div>
+							</div>
+					</section>
+					
+					<section class="s2 clearfix">
+						
+							<div class="col-xs-3">
+								<div class="prod">
+									<div class="prod-top">
+										<a href="#" class="prod-category">Лидер продаж</a>
+										<i class="fa fa-angle-right"></i>
+										<span class="prod-category-items">44 товара</span>
+									</div>
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s2/s2-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"><span>2 345</span> грн</span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#" class="prod-refresh-btn"><i class="fa fa-repeat"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-xs-3">
+								<div class="prod">
+									<div class="prod-top">
+										<a href="#" class="prod-category">Новинки</a>
+										<i class="fa fa-angle-right"></i>
+										<span class="prod-category-items">44 товара</span>
+									</div>
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s2/s2-prod-2.jpg" alt=""></a>
+										<div class="prod-img-btns clearfix">
+											<a href="#"><i class="fa fa-play-circle-o"></i></a>
+											<a href="#">3D</a>
+										</div>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"><span>2 345</span> грн</span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#" class="prod-refresh-btn"><i class="fa fa-repeat"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-xs-3">
+								<div class="prod">
+									<div class="prod-top">
+										<a href="#" class="prod-category">Специальные цены</a>
+										<i class="fa fa-angle-right"></i>
+										<span class="prod-category-items">44 товара</span>
+									</div>
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s2/s2-prod-3.jpg" alt=""></a>
+										<div class="prod-img-btns clearfix">
+											<a href="#"><i class="fa fa-play-circle-o"></i></a>
+											<a href="#">3D</a>
+										</div>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"><span>2 345</span> грн</span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#" class="prod-refresh-btn"><i class="fa fa-repeat"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="col-xs-3">
+								<div class="prod">
+									<div class="prod-top">
+										<a href="#" class="prod-category">Рекомендуем</a>
+										<i class="fa fa-angle-right"></i>
+										<span class="prod-category-items">44 товара</span>
+									</div>
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s2/s2-prod-4.jpg" alt=""></a>
+										<div class="prod-img-btns clearfix">
+											<a href="#"><i class="fa fa-play-circle-o"></i></a>
+											<a href="#">3D</a>
+										</div>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"><span>2 345</span> грн</span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+											<a href="#" class="prod-refresh-btn"><i class="fa fa-repeat"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+					</section>
+					
+				</div>
+				<div class="page-right col-xs-3"></div>
+			</div>
+			
+			<section class="s3">
+				<div class="container">
+					<div class="s3-main">
+						<h3 class="s-title">Преимущества</h3>
+						<div class="s3-cols clearfix">
+
+							<div class="s3-col">
+								<div class="s3-item">
+									<div class="s3-item-img"><i class="fa fa-truck"></i></div>
+									<div class="s3-item-info">
+										<h4 class="s3-item-title">Удобная доставка</h4>
+										<p class="s3-title-text">Бесплатная доставка при заказе от <br>1000 грн. Срочная доставка <br>через 3 часа</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="s3-col">
+								<div class="s3-item">
+									<div class="s3-item-img"><i class="fa fa-map-marker"></i></div>
+									<div class="s3-item-info">
+										<h4 class="s3-item-title">160 пунктов самовывоза <br>в г. Киев</h4>
+										<p class="s3-title-text">Покупки можно забирать, <br>где удобно</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="s3-col">
+								<div class="s3-item">
+									<div class="s3-item-img"><i class="fa fa-money"></i></div>
+									<div class="s3-item-info">
+										<h4 class="s3-item-title">Оплата любыми <br>способами</h4>
+										<p class="s3-title-text">9 способов оплаты для <br>вашего удобства</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="s3-col">
+								<div class="s3-item">
+									<div class="s3-item-img"><i class="fa fa-thumbs-up"></i></div>
+									<div class="s3-item-info">
+										<h4 class="s3-item-title">Качественное гарантийное <br>обслуживание</h4>
+										<p class="s3-title-text">Поможем с ремонтом товара и <br>предоставим аппарат на замену</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="s3-col">
+								<div class="s3-item">
+									<div class="s3-item-img"><i class="fa fa-hourglass-half"></i></div>
+									<div class="s3-item-info">
+										<h4 class="s3-item-title">Онлайн-кредит <br>за 5 минут</h4>
+										<p class="s3-title-text">Просто и быстро – <br>понадобится только паспорт</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="s4">
+				<div class="container">
+					<div class="s4-main">
+						<form class="s4-form clearfix">
+							<div class="col-xs-3">
+								<h3 class="s4-title"><i class="fa fa-paper-plane"></i>Будьте в курсе</h3>
+								<span>Подпишись на рассылку</span>
+							</div>
+							<div class="col-xs-6">
+								<div class="s4-input-box">
+									<input type="text" placeholder="e-mail" required>
+									<input type="submit" value="Подписаться">
+								</div>
+							</div>
+							<div class="col-xs-3">
+								<input id="s4-form-cb-1" type="checkbox">
+								<label for="s4-form-cb-1">Хочу получить выгодные предложения</label>
+							</div>							
+						</form>
+						<div class="s4-bottom clearfix">
+							<div class="s4-bottom-left col-xs-5">
+								<p>Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
+							</div>
+							<div class="s4-bottom-right col-xs-7">
+								<div class="s4-social clearfix">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-google-plus"></i></a>
+									<a href="#"><i class="fa fa-vk"></i></a>
+									<a href="#"><i class="fa fa-youtube"></i></a>
+								</div>
+								<p>Присоединяйтесь к нам в социальных сетях:</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div class="container">
+				<div class="page-left col-xs-9">
+				
+					<section class="s5">					
+						<h3 class="s-title">Смартфоны</h3>
+						<div class="prod-cols clearfix">
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-action">АКЦИЯ</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-2.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-3.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-4.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-5.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>								
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-action">АКЦИЯ</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>							
+						</div>						
+					</section>
+				
+					<section class="s5">					
+						<h3 class="s-title">Планшеты</h3>
+						<div class="prod-cols clearfix">
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-action">АКЦИЯ</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-2.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-3.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-4.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-5.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>								
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-img-btns clearfix">
+										<a href="#"><i class="fa fa-play-circle-o"></i></a>
+										<a href="#">3D</a>
+									</div>
+									<div class="prod-action">АКЦИЯ</div>
+									<div class="prod-main">
+										<span class="prod-status">есть в наличии</span>
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 8GB 3G Black</a>
+										<div class="prod-rating clearfix">
+											<i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="yellstar fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+										</div>
+										<a href="#" class="prod-review">Отзывы 412</a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>							
+						</div>						
+					</section>
+				
+					<section class="s5 viewed-prod">					
+						<h3 class="s-title">Просмотренные товары</h3>
+						<div class="prod-cols clearfix">
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-1.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"><span>2 345</span> грн</span>
+												<span class="prod-price-now">11 777 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-2.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">11 777 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-3.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-4.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-5.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>	
+							<div class="prod-col">
+								<div class="prod">
+									<div href="#" class="prod-img">
+										<a href="#"><img src="img/s5/s5-prod-3.jpg" alt=""></a>
+									</div>
+									<div class="prod-main">
+										<a href="#" class="prod-name">Samsung T561N Galaxy Tab E 9.6 </a>
+										<div class="prod-bottom clearfix">
+											<div class="prod-price">
+												<span class="prod-price-old"></span>
+												<span class="prod-price-now">4 999 <span>грн</span></span>
+											</div>
+											<a href="#" class="prod-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>						
+					</section>
+				</div>
+				<div class="page-right col-xs-3"></div>
+			</div>
+		</main>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="lib/slick/slick.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
