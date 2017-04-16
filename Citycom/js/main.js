@@ -11,6 +11,14 @@ $(function(){
 		dots: true,
 		prevArrow: "<i class='prod-cols-left fa fa-angle-left'></i>",
 		nextArrow: "<i class='prod-cols-right fa fa-angle-right'></i>"
+	});	
+	
+	$(".audiorev-revs").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		prevArrow: "<i class='audiorev-left fa fa-angle-left'></i>",
+		nextArrow: "<i class='audiorev-right fa fa-angle-right'></i>"
 	});
 	
 	
