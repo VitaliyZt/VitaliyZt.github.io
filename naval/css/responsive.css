@@ -158,16 +158,22 @@
 		width: 240px;
 	}
 }
+@media (min-width: 451px) and (max-width: 600px) {
+	.n1-main {
+		width: 450px;
+	}
+}
 @media (max-width: 450px) {
 	.n-title {
 		font-size: 40px;
 	}
 	.n1 {
+		padding: 0;
 /*		height: 410px;*/
 		height: 100vh;
 	}
 	.n1-main {
-		max-width: 340px;
+		width: 300px;
 		height: 245px;
 	}
 	.n1-title {
