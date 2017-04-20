@@ -95,37 +95,50 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	background: #fff;
+	overflow-x: hidden;
 }
 .n1 {
 	position: relative;
-	height: 762px;
-/*
+/*	height: 762px;*/
+	height: 100vh;
 	background: url("../img/n1-bg.jpg") no-repeat center top;
 	background-size: cover;
-*/
 }
 
+.n1 > .container {
+	display: table;
+	height: 100%;
+}
 .n1-main {
 	position: relative;
-	margin: 182px auto 0;
-/*	width: 1043px;*/
+	margin: 0 auto;
 	height: 399px;
 	border: 6px solid white;
 	text-align: center;
 	color: #fff;
 	background: rgba(0,0,0,0.35);
 }
+.n1-content {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
 .n1-title {
 	display: inline-block;
-	margin: 46px 0 25px;
+	margin: 46px 0 19px;
 	padding-bottom: 10px;
 	border-bottom: 8px solid #fff;
 	font: 131px "Century";
 }
 .n1-title-desr {
 	font: 40px "Century";
+	line-height: 1.5 !important;
+}
+.n1-title-desr > br {
+	display: none;
 }
 .n1 > img, .n4 > img {
+	display: none;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -150,17 +163,16 @@ body {
 	color: #2c2c2c;
 }
 .n2-slides {
-	margin: 80px 0 0;
+	margin: 80px 0 10px;
 }
 .n2-slide {}
 .n2-slide > div {
-	padding: 0;
+	text-align: center;
 }
-.n2-slide-left > img {
-	float: left;
-}
-.n2-slide-right > img {
-	float: right;
+.n2-slide > div > img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
 }
 .n2-slides .slick-slide {
 	outline: 0;
@@ -181,23 +193,23 @@ body {
 	color: #7d9eb3;
 }
 .n2-left {
-	left: -89px;
+	left: -10px;
 }
 .n2-right {
-	right: -89px;
+	right: -10px;
 }
 
 .n3 {
-	padding: 150px 0 153px;
+	padding: 140px 0 0;
 }
 .n3-cols {
-	margin: 80px 0 0;
+	margin: 80px 0 113px;
 }
 .n3-cols > div {
 	padding: 0;
 }
 .n3-col {
-	margin: 0 auto;
+	margin: 0 auto 40px;
 	width: 220px;
 }
 .n3-img {
@@ -228,6 +240,8 @@ body {
 	position: relative;
 	padding: 90px 0 0;
 	height: 762px;
+	background: url("../img/n4-bg.jpg") no-repeat center top;
+	background-size: cover;
 }
 .n4 > .container {
 	position: relative;
@@ -241,10 +255,7 @@ body {
 	width: 771px;
 }
 .n4-form-top {}
-.n4-form-top > div {
-	padding: 0;
-}
-.n4-form-top > div:nth-child(2) > * {
+.n4-form-top select {
 	float: right;
 }
 .n4-form input:not([type="submit"]), 
@@ -330,18 +341,21 @@ textarea:focus:-ms-input-placeholder      {color: transparent !important;}
 .n5-title-descr {
 	font: 16px "Century";
 }
+.n5-title-descr > br {
+	display: none;
+}
 
 .leftcol {
 	position: fixed;
 	left: 0;
 	top: 0;
-/*	float: left;*/
 	padding-top: 120px;
 	width: 271px;
 	height: 100%;
 	text-align: center;
 	color: #fff;
 	background: #000;
+	transition: all 0.5s ease-in-out;
 }
 .leftcol-title {
 	font: 40px "Century";
@@ -370,6 +384,7 @@ textarea:focus:-ms-input-placeholder      {color: transparent !important;}
 	font-size: 18px;
 	line-height: 56px;
 	color: #fff;
+	text-decoration: none !important;
 }
 .leftcol-contacts {
 	margin: 39px 0 0;
@@ -379,4 +394,5 @@ textarea:focus:-ms-input-placeholder      {color: transparent !important;}
 
 main {
 	padding-left: 271px;
+	transition: all 0.5s ease-in-out;
 }
