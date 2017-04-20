@@ -1,0 +1,11 @@
+@media (min-width: 1200px) {
+	.container {
+		padding: 0 !important;
+		width: 1043px !important;
+	}
+}
+@media (min-width: 1400px) {
+	.n3-cols {
+		margin: 80px -21px 0;
+	}
+}
