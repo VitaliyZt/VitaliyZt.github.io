@@ -10,4 +10,12 @@ $(function(){
 		var	currentBlockOffset = $(currentBlock).offset().top;
 		$("html, body").animate({scrollTop: currentBlockOffset}, 500);
 	});
+
+	if ($("#modal").length){
+		$("svg a").magnificPopup({
+			type: 'inline',	
+			removalDelay: 300,
+			mainClass: 'mfp-fade'
+		});
+	}
 });

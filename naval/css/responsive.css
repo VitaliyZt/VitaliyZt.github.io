@@ -3,29 +3,6 @@
 		padding: 0 !important;
 		height: 100vh !important;
 	}
-/*
-	.n1, .n2, .n3, .n4 {
-		padding: 0 !important;
-		height: 100vh !important;
-	}
-	.n1, .n2, .n3, .n4 {
-		padding: 0 !important;
-		height: 100vh !important;
-	}
-	.n1 > container, .n2 > container, .n3 > container, .n4 > container {
-		display: table;
-		height: 100%;
-	}
-	.n1-content, .n2-content, .n3-content, .n4-content {
-		display: table-cell;
-		vertical-align: middle;
-		width: 1043px !important;
-		overflow-x: hidden;
-	}
-	.n2-slides {
-		margin: 80px auto 0;
-	}
-*/
 }
 @media (min-width: 1360px) {
 	.n2-slide-left > img {
@@ -70,7 +47,6 @@
 @media (max-width: 1359px) {
 	.n2-slides {
 		margin: 80px auto 10px;
-/*		width: 520px;*/
 	}
 	.n2-left {
 		left: -40px;
@@ -80,6 +56,12 @@
 	}
 	.n2, .n3 {
 		padding: 70px 0 0;
+	}
+	.n2-slide > div > img, .n2-slide > div > svg {
+		max-height: 415px;
+	}
+	.mfp-content {
+		max-width: 1030px;
 	}
 }
 @media (max-width: 1260px) {
@@ -118,11 +100,16 @@
 	.n4-form input:not([type="submit"]), .n4-form select {
 		width: 330px;
 	}
+	.mfp-content {
+		max-width: 800px;
+	}
+	.room-right {
+		padding: 0;
+	}
 }
 @media (max-width: 767px) {
 	.n1 {
 		padding: 0 15px;
-/*		height: 460px;*/
 		height: 100vh;
 	}
 	.n1-main {
@@ -157,6 +144,33 @@
 	.n4-form input[type="submit"] {
 		width: 240px;
 	}
+	.mfp-container {
+		padding: 0;
+	}
+	.room {
+		padding: 15px;
+	}
+	.room-name {
+		font-size: 40px;
+	}
+	.room-main {
+		margin: 25px 0 0 0;
+	}
+	.room-heading {
+		margin: 30px 0 0 0;
+		font-size: 32px;
+	}
+	.room-col {
+		margin: 0 auto;
+		width: 320px;
+		padding: 0 0 31px 57px !important;
+	}
+	.room-col:nth-child(2) {
+		background-position: 14px 6px;
+	}
+	.room-col:nth-child(4) {
+		background-position: 14px 3px;
+	}
 }
 @media (min-width: 451px) and (max-width: 600px) {
 	.n1-main {
@@ -169,7 +183,6 @@
 	}
 	.n1 {
 		padding: 0;
-/*		height: 410px;*/
 		height: 100vh;
 	}
 	.n1-main {
