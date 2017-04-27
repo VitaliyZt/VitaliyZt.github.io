@@ -211,7 +211,7 @@ header > .container {
 	position: fixed;
 	right: -374px;
 	top: 0;
-	width: 374px;
+	width: 19.65%;
 	height: 100%;
 	background: #768db4;
 	z-index: 99999;
@@ -702,9 +702,6 @@ header > .container {
 	height: 704px;
 	border-bottom: 7px solid #c22821;
 	overflow-y: hidden;
-}
-.s6-block:hover {
-	border-color: transparent;
 }
 div:nth-child(2n) .s6-block {
 	margin-top: 87px;
