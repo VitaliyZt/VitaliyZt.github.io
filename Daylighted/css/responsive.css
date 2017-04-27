@@ -107,6 +107,23 @@
 		width: 100% !important;
 		padding: 0 30px;
 	}
+	
+	.s8-modal {
+		padding: 20px 30px;
+	}
+	.s8-modal-right > * {
+		float: none !important; 
+	}
+	.s8-modal .freedemo-btn {
+		display: block;
+		margin: 20px auto 25px;
+	}
+	.s8-modal-title {
+		text-align: center;
+	}
+	.s8-modal-text {
+		text-align: left;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -130,6 +147,9 @@
 	}
 	.s4-right {
 		padding: 0;
+	}
+	.s5-video {
+		margin: 15px auto;
 	}
 	.s8 {
 		padding: 0;
@@ -216,6 +236,9 @@
 	}
 	.s4-left-content {
 		text-align: left;
+	}
+	.s5-video {
+		margin: 15px auto 52px;
 	}
 	.s6 {
 		min-height: 500px;
@@ -356,6 +379,9 @@
 	}
 	.s5-text {
 		max-width: 435px;
+	}
+	.s5-video {
+		margin: 105px auto 0;
 	}
 	.s6-items {
 		padding: 0 8%;

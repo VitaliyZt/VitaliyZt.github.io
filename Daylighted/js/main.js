@@ -118,7 +118,32 @@ $(function(){
 		className: ''
 	});
 	
+	// модалка
+	if ($(".s8-modal").length){
+		$(".s8-item").magnificPopup({
+			type: 'inline',	
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			closeOnBgClick: 'true',
+		});
+	}
+	$(".s8-modal-close, .mfp-container").on("click", function(e){
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	$(".mfp-bg").on("click", ".mfp-wrap", function(){
+		$.magnificPopup.close();
+	});
+	$(".mfp-bg").on("click", ".mfp-wrap", function(){
+		$.magnificPopup.close();
+	});
 	
+	$(".s8-item").on("click", function(){
+		var imgSrc = $(this).find("img").attr("src"),
+		title = $(this).find(".s8-item-text>span:first").text();
+		$(".s8-modal-img>img").attr("src", imgSrc);
+		$(".s8-modal-title, .s8-modal-img-text").text(title);
+	});
 	
 	
 });
