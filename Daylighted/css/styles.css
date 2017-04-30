@@ -183,6 +183,7 @@ header .menu-btn > span {
 	color: #fff;
 	background: url("../img/s5-bg.jpg") no-repeat center top;
 	background-size: cover;
+	background: #fff;
 }
 .s5-left, .s5-right  {
 	padding: 0;
@@ -652,6 +653,7 @@ footer {
 	position: relative;
 }
 .s5 > img {
+	display: none !important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -785,3 +787,4 @@ footer {
 .mfp-content {
 	text-align: center;
 }
+

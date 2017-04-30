@@ -145,5 +145,4 @@ $(function(){
 		$(".s8-modal-title, .s8-modal-img-text").text(title);
 	});
 	
-	
 });
