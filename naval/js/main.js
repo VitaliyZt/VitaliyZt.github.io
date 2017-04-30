@@ -18,4 +18,17 @@ $(function(){
 			mainClass: 'mfp-fade'
 		});
 	}
+	
+	$(".room-link").on("click", function(){
+		var roomId = $(this).attr("id"),
+		stage = roomId.charAt(1), room = roomId.charAt(2);
+		$("#room-img").attr("src", "img/rooms/"+stage+"/"+room+".png");
+		$("#room-num").text(room);
+		$(".room-descr>div>div").hide();
+		var roomTextId = "#room"+stage+room;
+		var roomSquare = $(roomTextId+">span:nth-child(1)>span").text();
+		$("#room-square").text(roomSquare);
+		$(roomTextId).show();
+	});
+	
 });

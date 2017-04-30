@@ -1,3 +1,12 @@
+@media (min-width: 992px) {
+	.n2-slide > div > svg {
+		height: 446px;
+		line-height: 446px;
+	}
+	.room-left {
+		line-height: 400px;
+	}
+}
 @media (min-width: 1261px) {
 	.n1 {
 		padding: 0 !important;
@@ -90,6 +99,9 @@
 	}
 	.n2-slides {
 		margin: 50px auto 0;
+	}
+	.n2-slide > div > svg {
+		margin-top: 15px;
 	}
 	.n4-form {
 		 width: 100%; 

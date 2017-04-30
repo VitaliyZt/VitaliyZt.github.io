@@ -414,3 +414,10 @@ svg a {
 .mfp-close-btn-in .mfp-close {
 	color: #fff;
 }
+
+.room-descr > div > div {
+	display: none;
+}
+.room-descr > div > div > span:first-child {
+	display: none;
+}
