@@ -333,6 +333,20 @@ $(function(){
 		select.attr("value", txt);
 	});
 	
+	
+	$(".header-lng-link").on("click", function(){
+		var lnk = $(this), val = lnk.text(),
+			list = $(".header-lng-list"), cur = list.prev();
+		if (lnk.hasClass("cur")){
+			if (!list.hasClass("opened"))
+				list.fadeIn().addClass("opened");
+			else
+				list.fadeOut().removeClass("opened");
+		} else {
+			cur.text(val);
+			list.fadeOut().removeClass("opened");
+		}
+	});
 });
 
 
