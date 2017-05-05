@@ -1,6 +1,6 @@
 $(function(){
-//	фиксированое меню
 	
+	//	фиксированое меню	
 	$(window).on("scroll", function(){
 		var menu = $(".header-fix"), begin = $(".s1").height();
 		var menuH = menu.outerHeight();
@@ -92,7 +92,7 @@ $(function(){
 	//	вывод новостей и объектов - фикс
 	$(".news-blocks>div:nth-child(4n), .obj-blocks>div:nth-child(4n)")
 		.after("<div class='clearfix'></div>");
-
+	$(".s20-videos-slide>div:nth-child(4n)").after("<div class='clearfix'></div>");
 
 	// выводим карту в модальном окне
 	if ($(".s13").length)
@@ -105,7 +105,59 @@ $(function(){
 		fixedContentPos: false
 	});
 	
+	// фейк - селекты
+	$(".fake-sel").on("click", ".fake-sel-title", function(){
+		var select = $(this), parent = select.parent(),	options = select.next();
+		if(!parent.hasClass("opened")){		
+			$(".fake-sel").each(function(){
+				if ($(this).hasClass("opened")){
+					$(this).removeClass("opened")
+						.children(".fake-sel-list").slideUp("fast");
+				}
+			});	
+			parent.addClass("opened");
+			options.slideDown("fast");
+			setTimeout(function(){
+				if(parent.hasClass("opened"))
+					options.slideUp("fast");
+			}, 1e4);
+		} else {
+			parent.removeClass("opened");
+			options.slideUp("fast");
+		}
+	});
+	$(".fake-sel-option").on("click", function(){
+		var option = $(this), options = option.parent(), txt = option.text(),
+			content = option.parents(".fake-sel"), select = content.prev("select"),
+			fakeselect = content.children(".fake-sel-title");
+		options.slideUp("fast");
+		fakeselect.text(txt);
+		select.attr("value", txt);
+	});	
 	
+	//	инпут - файл 
+	$(document).on("change", ".uploaded-file", function(){
+		var file = $(this).val();
+		file = file.replace(/\\/g, "/").split('/').pop();
+		$(this).next().text(file);
+	});
+	
+	//	s20, s21 - слайдер 
+	var s20Slider = $(".s20-videos"), s21Slider = $(".s21-objects");
+	if (s20Slider.length)
+		s20Slider.slick({slidesToShow: 1,arrows: false,dots: true});
+	if (s21Slider.length)
+		s21Slider.slick({slidesToShow: 1,arrows: false,dots: true});
+	$(".s20 .slider-panel>i").on("click", function(){
+		if($(this).is(":first-child"))
+			s20Slider.slick("slickPrev");
+		else s20Slider.slick("slickNext");
+	});
+	$(".s21 .slider-panel>i").on("click", function(){
+		if($(this).is(":first-child"))
+			s21Slider.slick("slickPrev");
+		else s21Slider.slick("slickNext");
+	});
 	
 
 });
@@ -125,6 +177,10 @@ $(window).load(function(){
 	//	высота заливки новости (hover)
 	$(".news-block").each(function(){
 		var bg = $(this).find(".news-block-bg");
+		bg.css("height", $(this).outerHeight());
+	});
+	$(".s16-items>li").each(function(){
+		var bg = $(this).find(".s16-item-bg");
 		bg.css("height", $(this).outerHeight());
 	});
 	
