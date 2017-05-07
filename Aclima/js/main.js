@@ -1,19 +1,19 @@
 $(function(){
 	
 	//	фиксированое меню	
-//	$(window).on("scroll", function(){
-//		var menu = $(".header-fix"), begin = $(".s1").height();
-//		var menuH = menu.outerHeight();
-//		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
-//			if (screen.width > '991' && $(window).width() > '991'){
-//				menu.addClass("scrolled");
-//				$(".s1").css({"marginBottom": menuH});	
-//			}			
-//		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
-//			menu.removeClass("scrolled");
-//			$(".s1").removeAttr("style");
-//		} 		
-//	});
+	$(window).on("scroll", function(){
+		var menu = $(".header-fix"), begin = $(".s1").height();
+		var menuH = menu.outerHeight();
+		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
+			if (screen.width > '991' && $(window).width() > '991'){
+				menu.addClass("scrolled");
+				$(".s1").css({"marginBottom": menuH});	
+			}			
+		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
+			menu.removeClass("scrolled");
+			$(".s1").removeAttr("style");
+		} 		
+	});
 	
 	//	правое меню	- фикс
 	$(".menur-menus>ul:first>li>a").each(function(){
@@ -181,6 +181,26 @@ $(function(){
 	.each(function(){
 		this.innerHTML = this.innerHTML.replace( /^(.+?\s)/, '<span>$1</span><br>');
 	});
+	
+	// каталог 3 - попап галерея
+	if ($(".s25-item-img").length)
+	$(".s25-item-img").magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) { return item.el.attr('title'); }
+		},
+		gallery: { enabled: true },
+		zoom: {
+			enabled: true,
+			duration: 300, 
+			opener: function(element) {	return element.find('img');	}
+		}
+	});
 
 });
 
@@ -189,7 +209,7 @@ $(window).load(function(){
 	$("section:not('.s1') .sec-top>i").on("click", function(){
 		var block = $(this).parents("section").next();
 		var offset = $(block).offset().top;
-		$("html, body").animate({scrollTop: offset - 69}, 500);
+		$("html, body").animate({scrollTop: offset - 57}, 500);
 	});		
 	$(".s1 .sec-top>i").on("click", function(){
 		var offset = $(".header-fix").offset().top;
@@ -228,23 +248,4 @@ $(window).load(function(){
 
 
 
-$(document).ready(function() {
-	$(".s25-item-img").magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) { return item.el.attr('title'); }
-		},
-		gallery: { enabled: true },
-		zoom: {
-			enabled: true,
-			duration: 300, 
-			opener: function(element) {	return element.find('img');	}
-		}
 
-	});
-});
