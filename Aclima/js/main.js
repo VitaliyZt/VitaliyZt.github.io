@@ -1,19 +1,19 @@
 $(function(){
 	
 	//	фиксированое меню	
-	$(window).on("scroll", function(){
-		var menu = $(".header-fix"), begin = $(".s1").height();
-		var menuH = menu.outerHeight();
-		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
-			if (screen.width > '991' && $(window).width() > '991'){
-				menu.addClass("scrolled");
-				$(".s1").css({"marginBottom": menuH});	
-			}			
-		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
-			menu.removeClass("scrolled");
-			$(".s1").removeAttr("style");
-		} 		
-	});
+//	$(window).on("scroll", function(){
+//		var menu = $(".header-fix"), begin = $(".s1").height();
+//		var menuH = menu.outerHeight();
+//		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
+//			if (screen.width > '991' && $(window).width() > '991'){
+//				menu.addClass("scrolled");
+//				$(".s1").css({"marginBottom": menuH});	
+//			}			
+//		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
+//			menu.removeClass("scrolled");
+//			$(".s1").removeAttr("style");
+//		} 		
+//	});
 	
 	//	правое меню	- фикс
 	$(".menur-menus>ul:first>li>a").each(function(){
@@ -159,6 +159,28 @@ $(function(){
 		else s21Slider.slick("slickNext");
 	});
 	
+	// таблица s22 - сабменю 
+	$(".s22-brand-list>ul>li>a").on("click", function(e){
+		e.preventDefault();
+		var li = $(this).parent(), menu = li.find("ul");
+		if(!menu.hasClass("+")){
+			$(".s22-submenu").each(function(){
+				if($(this).hasClass("+")) $(this).fadeOut("fast");
+			});
+			menu.addClass("+").slideDown();
+//			setTimeout(function(){
+//				if(menu.hasClass("+"))
+//					menu.fadeOut("fast");
+//			}, 1e4);
+		} else
+			menu.removeClass("+").slideUp();
+	});
+	
+	// каталог-2, 3 - оборачиваем слово 'Серия' в span	
+	$(".s24-left-title>span:nth-of-type(2), .s25-left-title>span:nth-of-type(2)")
+	.each(function(){
+		this.innerHTML = this.innerHTML.replace( /^(.+?\s)/, '<span>$1</span><br>');
+	});
 
 });
 
@@ -189,4 +211,40 @@ $(window).load(function(){
 		var el = $(".news-blocks>.clearfix + div"), elH = el.offset().top + 129;
 		$(".news-main-bg").css({"top": elH+"px", "display": "block"});
 	}
+	
+	// таблица s22 - фикс
+	var rightH = [], k = 0;
+	$(".s22-brand-list").each(function(){
+		rightH[k++] = $(this).outerHeight();
+	});	k = 0;
+	$(".s22-brand").each(function(){
+		$(this).css("height", rightH[k++]);
+	});
+	
+	// каталог - 2, 3 - высота левой рамки
+	$(".s24-left, .s24-main").css("height", $(".s24-right").outerHeight());	
+});
+
+
+
+
+$(document).ready(function() {
+	$(".s25-item-img").magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) { return item.el.attr('title'); }
+		},
+		gallery: { enabled: true },
+		zoom: {
+			enabled: true,
+			duration: 300, 
+			opener: function(element) {	return element.find('img');	}
+		}
+
+	});
 });
