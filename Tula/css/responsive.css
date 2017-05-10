@@ -1827,6 +1827,13 @@
 	}
 	.ui-datepicker {
 		width: 395px;
+	}	
+	.s7-block {
+		overflow: hidden;
+	}
+	.s7-block > img {
+		width: 100%;
+		height: auto;
 	}
 }
 

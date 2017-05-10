@@ -86,7 +86,7 @@ $(function(){
 		max: 120,
 		from: 5,
 		step: 1,
-		postfix: " дн."
+		postfix: "дн."
 	});
 	$("#s13time-2").ionRangeSlider({
 		hide_min_max: true,
@@ -94,7 +94,7 @@ $(function(){
 		max: 120,
 		from: 7,
 		step: 1,
-		postfix: " ч."
+		postfix: "ч."
 	});
 
 
@@ -292,15 +292,22 @@ $(function(){
 	
 	$(".header-menu-link").on("click", function(){
 		if (!$("body").hasClass("menu-opened")){
-			if (get_scroll('Height')){
-				$("body").addClass("menu-opened");
-			}
+			$("body").addClass("menu-opened");
+			$("#bigmenu").slideDown();
+			setTimeout(function(){
+				$("#bigmenu").css("height", $("#bigmenu>.container").outerHeight());
+			}, 100);
 		}
-		$("#bigmenu").slideDown();
 	});
 	$(".bigmenu-close-btn, #bigmenu .header-menu-link").on("click", function(){
 		$("#bigmenu").slideUp();
 		$("body").removeClass("menu-opened");
+	});
+	$("section").on("click", function(){
+		if ($("body").hasClass("menu-opened")){
+			$("#bigmenu").slideUp();
+			$("body").removeClass("menu-opened");
+		}
 	});
 	
 	
