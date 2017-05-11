@@ -145,4 +145,26 @@ $(function(){
 		$(".s8-modal-title, .s8-modal-img-text").text(title);
 	});
 	
+//	$("#frame30").each(function(){
+//		if ($(this).is(":in-viewport")) {
+//			video.load();
+//			video.play();
+//		} else {
+//		}
+//	})
+	var video30 = $("#frame30");
+//	if (video30.visible(true)) {
+//		video30.load();
+//		video30.play();
+//	} else {
+//	}
+	
+
+	if (video30.is(":in-viewport")) {
+		video30.play();
+		} else {
+			video30.pause();
+		}
+	})
+	
 });

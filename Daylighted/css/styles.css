@@ -788,3 +788,12 @@ footer {
 	text-align: center;
 }
 
+
+body.alerted .alert-success {
+	position: absolute;
+	left: 0;
+	top: 90px;
+	width: 100%;
+}
+
+

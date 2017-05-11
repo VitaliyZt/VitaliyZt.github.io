@@ -327,17 +327,21 @@
 		height: 746px;
 	}
 	.s1-slider-content {
-		padding: 101px 0 10px 8px;
+		margin: 70px 0 0 0;
+/*		padding: 101px 0 10px 8px;*/
 	}
 	.s1-slider-title {
-		max-width: 402px;
+/*		max-width: 402px;*/
 	}
 	.s1-slider-text {
+		margin: 0;
+/*
 		max-width: 465px;
 		margin: 47px 0 0 2px;
+*/
 	}
 	.s1-slider-btn {
-		margin: 52px 0 0 0;
+/*		margin: 52px 0 0 0;*/
 		font: 16px/47px "frm-l";
 	}
 	.s1-slider-content > img {

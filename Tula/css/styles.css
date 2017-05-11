@@ -46,7 +46,7 @@ header > .container {
 }
 .header-right-links {
 	float: right;
-	margin: 1px 0 0 0;
+	margin: 1px 11px 0 0;
 }
 .header-right-links > a {
 	float: left;
@@ -94,7 +94,7 @@ header > .container {
 	margin-top: -122px;
 	padding-top: 122px;
 	height: 629px;
-	background: url("../img/s1/s1-slide-bg.jpg") no-repeat center top;
+	background: url("../img/s1/s1-slide-bg-new.jpg") no-repeat center top;
 	background-size: cover;
 }
 .s1-slider {
@@ -104,21 +104,22 @@ header > .container {
 	outline: none;
 }
 .s1-slider-content {
-	padding: 96px 0 0 6.35%;
+	margin: 118px 0 0 3.4%;
+	padding: 9px 20px 0 29px;
+	max-width: 694px;
+	background: rgba(0,0,0,0.38);
 }
 .s1-slider-title {
-	max-width: 748px;
 	font: 35px/39px "frm";
 	text-transform: uppercase;
 }
 .s1-slider-text {
-	max-width: 723px;
-	margin: 17px 0 0 3px;
+	margin: 0 0 0 4px;
 	font: 17px/24px "frm-l";
 	letter-spacing: 0.08px;
 }
 .s1-slider-btn {
-	margin: 36px 0 0 5px;
+	margin: 18px 0 26px 5px;
 	display: inline-block;
 	width: 165px;
 	border: 1px solid #fff;

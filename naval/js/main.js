@@ -31,4 +31,16 @@ $(function(){
 		$(roomTextId).show();
 	});
 	
+	$(window).load(function(){
+		if($(".s1").length){
+			$(".ng-scope").removeClass("container");
+			console.log("+");
+		} else {
+			$(".ng-scope").addClass("container");
+			console.log("-");
+		}
+
+	});
+	
+	
 });
