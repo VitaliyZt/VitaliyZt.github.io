@@ -175,8 +175,10 @@ header > .container {
 	background-size: cover !important;
 }
 .s1-main {
+/*
 	display: table-cell;
 	vertical-align: middle;
+*/
 }
 .s1-main-box {
 	padding: 0 0 0 6%;
@@ -272,7 +274,7 @@ header > .container {
 /*		MENU-RIGHT 		*/
 .menur {
 	position: fixed;
-	right: -374px;
+	right: -380px;
 	top: 0;
 	width: 19.65%;
 	height: 100%;
@@ -402,11 +404,17 @@ header > .container {
 }
 /*		HEADER-FIX 		*/
 .header-fix {
-	height: 57px;
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 57px;	
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
 	text-align: center;
 	background: #fff;
+	z-index: 999;
 }
 .header-fix.scrolled {
 	position: fixed;
