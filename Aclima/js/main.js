@@ -2,19 +2,38 @@ $(function(){
 	
 	//	фиксированое меню	
 	$(window).on("scroll", function(){
-		var menu = $(".header-fix");
-		if (!$("body").hasClass("fp-viewing-0")){
-			console.log("1");
-		}        
-//			if (screen.width > '991' && $(window).width() > '991'){
-//				menu.addClass("scrolled");
-//				$(".s1").css({"marginBottom": menuH});	
-//			}			
-		if ($(this).scrollTop() <= $(window).height()){
-//			menu.removeClass("scrolled");
-//			$(".s1").removeAttr("style");
+		var menu = $(".header-fix"), begin = $(".s1").height();
+		var menuH = menu.outerHeight();
+		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
+			if (screen.width > '991' && $(window).width() > '991'){
+				menu.addClass("scrolled");
+				$(".s1").css({"marginBottom": menuH});	
+			}			
+		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
+			menu.removeClass("scrolled");
+			$(".s1").removeAttr("style");
 		} 		
 	});
+	
+	
+	$('#fullpage').fullpage({
+		parallax: true,
+		fadingEffect: true,
+		onLeave: function(index, nextIndex, direction){
+			if (nextIndex == 1 || nextIndex == 8){
+				$(".header-fix").hide();
+				console.log(nextIndex);
+			} else {
+				$(".header-fix").show();
+			}
+		}
+	});
+	
+	$('.sec-top i').click(function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveSectionDown();
+	});
+	
 	
 	//	правое меню	- фикс
 	$(".menur-menus>ul:first>li>a").each(function(){
@@ -23,7 +42,7 @@ $(function(){
 	
 	//	правое меню	- разворачивание
 	(function(){
-		var menu = $(".menur"), menuW = menu.width()+6;
+		var menu = $(".menur"), menuW = menu.width();
 		$(".header-menu-btn").on("click", function(){
 			if (parseInt(menu.css("right")) < 0){
 				menu.css("right", 0);
@@ -86,9 +105,9 @@ $(function(){
 	});
 	
 	//	центрируем по высоте маркер 
-	$(".sec-top").each(function(){
-		$(this).css("line-height", $(this).css("height"));
-	});	
+//	$(".sec-top").each(function(){
+//		$(this).css("line-height", $(this).css("height"));
+//	});	
 	
 	//	вывод новостей и объектов - фикс
 	$(".news-blocks>div:nth-child(4n), .obj-blocks>div:nth-child(4n)")
@@ -222,35 +241,7 @@ $(function(){
 		}
 	});
 	
-	$('#fullpage').fullpage({
-		onLeave: function(index, nextIndex, direction){
 
-			if (nextIndex != 1){
-				$(".header-fix").show();
-			} else {
-				$(".header-fix").hide();
-			}
-		},
-		
-//		afterLoad: function(anchorLink, index){
-//			if (index>1){
-//				$(".header-fix").show();
-//			} else {
-//				$(".header-fix").hide();
-//			}
-//		}
-	});
-	
-$('.sec-top i').click(function(e){
-	e.preventDefault();
-	$.fn.fullpage.moveSectionDown();
-});
-	
-	
-	
-	
-	
-	
 
 });
 
