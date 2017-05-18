@@ -17,8 +17,6 @@ $(function(){
 	
 	
 	$('#fullpage').fullpage({
-		parallax: true,
-		fadingEffect: true,
 		onLeave: function(index, nextIndex, direction){
 			if (nextIndex == 1 || nextIndex == 8){
 				$(".header-fix").hide();
