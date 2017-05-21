@@ -772,6 +772,7 @@
 	}
 	.author-top-content {
 		padding: 14px 29px 7px 29px;
+		width: 800px;
 		font: 20px "arial-i";
 		letter-spacing: 1.2px;
 	}
@@ -820,7 +821,7 @@
 	.author-top > img:last-child {
 		display: inline-block;
 	}
-	.author-top > img[src='img/line-1.png'] {
+	.author-authograph + img {
 		display: none;
 	}
 	.author-main-title {
