@@ -2,35 +2,38 @@ $(function(){
 	
 	//	фиксированое меню	
 	$(window).on("scroll", function(){
-		var menu = $(".header-fix"), begin = $(".s1").height();
+		var menu = $(".header-fix");
 		var menuH = menu.outerHeight();
+		var begin = $(".s1").height() + menuH;
 		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
 			if (screen.width > '991' && $(window).width() > '991'){
+//				$(".s2").css("padding-top", menuH);
 				menu.addClass("scrolled");
-				$(".s1").css({"marginBottom": menuH});	
+				$(".s1").css({"marginBottom": menuH});
 			}			
 		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
+//			$(".s2").css("padding-top", 0);
 			menu.removeClass("scrolled");
 			$(".s1").removeAttr("style");
 		} 		
 	});
 	
 	
-	$('#fullpage').fullpage({
-		onLeave: function(index, nextIndex, direction){
-			if (nextIndex == 1 || nextIndex == 8){
-				$(".header-fix").hide();
-				console.log(nextIndex);
-			} else {
-				$(".header-fix").show();
-			}
-		}
-	});
+//	$('#fullpage').fullpage({
+//		onLeave: function(index, nextIndex, direction){
+//			if (nextIndex == 1 || nextIndex == 8){
+//				$(".header-fix").hide();
+//				console.log(nextIndex);
+//			} else {
+//				$(".header-fix").show();
+//			}
+//		}
+//	});
 	
-	$('.sec-top i').click(function(e){
-		e.preventDefault();
-		$.fn.fullpage.moveSectionDown();
-	});
+//	$('.sec-top i').click(function(e){
+//		e.preventDefault();
+//		$.fn.fullpage.moveSectionDown();
+//	});
 	
 	
 	//	правое меню	- фикс
