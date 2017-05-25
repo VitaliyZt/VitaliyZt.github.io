@@ -4,15 +4,13 @@ $(function(){
 	$(window).on("scroll", function(){
 		var menu = $(".header-fix");
 		var menuH = menu.outerHeight();
-		var begin = $(".s1").height() + menuH;
+		var begin = $(".s1").height() + 2*menuH;
 		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
 			if (screen.width > '991' && $(window).width() > '991'){
-//				$(".s2").css("padding-top", menuH);
 				menu.addClass("scrolled");
 				$(".s1").css({"marginBottom": menuH});
 			}			
 		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
-//			$(".s2").css("padding-top", 0);
 			menu.removeClass("scrolled");
 			$(".s1").removeAttr("style");
 		} 		
