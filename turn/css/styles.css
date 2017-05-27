@@ -4,11 +4,13 @@ body {
 	background: #fff;
 	overflow-x: hidden;
 }
-.wh-txt {
+.bg-red {
 	color: #fff !important;
+	background: #ff6a4c;
 }
-.bl-txt {
+.bg-white {
 	color: #222627 !important;
+	background: #fff;
 }
 .txt-right {
 	text-align: right;
@@ -64,6 +66,7 @@ header .navbar-toggle .icon-bar {
 .s1 {
 	position: relative;
 	padding: 120px 0 102px;
+	color: #fff;
 	background-image: url("../img/s1-bg.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -157,10 +160,10 @@ header .navbar-toggle .icon-bar {
 .bright-hov:hover {
 	filter: brightness(115%);
 }
-.s1 .row > div:last-child {
+.s1 .flex-box > div:last-child {
 	position: relative;
 }
-.s1 .row > div:last-child:before {
+.s1 .flex-box > div:last-child:before {
 	content: "";
 	position: absolute;
 	left: -11px;
@@ -173,33 +176,33 @@ header .navbar-toggle .icon-bar {
 .s2 {
 	padding: 104px 0 75px;
 }
-.s2 .row > div:first-child .sec-list {	
+.s2 .flex-box > div:first-child .sec-list {	
 	padding-top: 56px;
 }
-.s3 .row > div:first-child .sec-list {	
+.s3 .flex-box > div:first-child .sec-list {	
 	padding-top: 89px;
 }
-.s2 .row > div:first-child .sec-list > li {
+.s2 .flex-box > div:first-child .sec-list > li {
 	margin-bottom: 40px;
 	padding-right: 55px;
 }
-.s3 .row > div:first-child .sec-list > li {
+.s3 .flex-box > div:first-child .sec-list > li {
 	margin-bottom: 28px;
 	padding-right: 56px;
 	padding-left: 13px;
 }
 
-.s2 .row > div:last-child .sec-list {	
+.s2 .flex-box > div:last-child .sec-list {	
 	padding-top: 133px;
 }
-.s3 .row > div:last-child .sec-list {	
+.s3 .flex-box > div:last-child .sec-list {	
 	padding-top: 225px;
 }
-.s2 .row > div:last-child .sec-list > li {
+.s2 .flex-box > div:last-child .sec-list > li {
 	margin-bottom: 28px;
 	padding: 0 28px 0 36px;
 }
-.s3 .row > div:last-child .sec-list > li {
+.s3 .flex-box > div:last-child .sec-list > li {
 	margin-bottom: 46px;
 	padding: 0 31px 0 34px;
 }
@@ -224,7 +227,7 @@ header .navbar-toggle .icon-bar {
 	font-weight: 300;
 	opacity: 0.9;
 }
-.s2 .row > div:first-child .sec-list:after {
+.s2 .flex-box > div:first-child .sec-list:after {
 	content: "";
 	position: absolute;
 	right: -5px;
@@ -233,7 +236,7 @@ header .navbar-toggle .icon-bar {
 	height: calc(100% + 122px);
 	background: #474a4b;
 }
-.s2 .row > div:first-child .sec-list > li:after {
+.s2 .flex-box > div:first-child .sec-list > li:after {
 	content: "";
 	position: absolute;
 	right: -10px;
@@ -261,7 +264,7 @@ header .navbar-toggle .icon-bar {
 	text-transform: uppercase;
 	background: #255e75 !important;
 }
-.s3 .row > div:first-child .sec-list:after {
+.s3 .flex-box > div:first-child .sec-list:after {
 	content: "";
 	position: absolute;
 	right: -5px;
@@ -270,7 +273,7 @@ header .navbar-toggle .icon-bar {
 	height: calc(100% + 175px);
 	background: #fff;
 }
-.s3 .row > div:last-child .sec-list > li:before {
+.s3 .flex-box > div:last-child .sec-list > li:before {
 	content: "";
 	position: absolute;
 	left: -32px;

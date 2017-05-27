@@ -35,7 +35,7 @@
 	.s1-form-heading + p > br {
 		display: none;
 	}
-	.s1 .row > div:last-child:before {
+	.s1 .flex-box > div:last-child:before {
 		display: none;
 	}
 	.txt-right {

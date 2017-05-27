@@ -13,8 +13,6 @@ $(function(){
 	
 	$(window).on("scroll", function(){		
 		var st = $(this).scrollTop();
-		$(".s1").css({
-			"background-position": "center " + st/2 + "px", 
-		})
+		$(".s1").css({ "background-position": "center " + st/2 + "px",})
 	});
 });
