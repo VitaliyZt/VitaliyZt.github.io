@@ -12,8 +12,12 @@ a, button, .slick-slide {
 	outline: 0 !important;
 }
 
+header {
+	min-height: 90px;
+}
 header > nav {
 	padding: 21px 0 17px;
+	background: #fff;
 }
 header > nav > div {
 	width: 1170px;
@@ -60,7 +64,7 @@ header .navbar-collapse a {
 }
 .header-login {
 	float: right;
-	margin-right: -30px;
+	margin-right: -15px;
 }
 .header-login > a {
 	display: block;
@@ -339,7 +343,7 @@ header .navbar-toggle > span {
 	padding: 32px 0 0;
 }
 .s6-blocks {
-	width: 706px;
+	width: 703px;
 	margin-left: 255px;
 }
 .s6-block:not(:last-child) {
@@ -353,8 +357,8 @@ header .navbar-toggle > span {
 	position: relative;
 	margin-top: 21px;
 	padding: 1px 0 17px;
-	font: 16px/26px "sf-ui-b";
-	letter-spacing: -0.45px;
+	font: 16px/26px "sf-ui";
+	letter-spacing: 0.02px;
 }
 .s6-block > p:before {
 	content: "";
@@ -399,9 +403,8 @@ header .navbar-toggle > span {
 .s7-block-text {
 	display: inline-block;
 	margin: 7px 0 0;
-	max-width: 244px;
-	font: 14px/26px "sf-ui-b";
-	letter-spacing: -0.4px;
+	max-width: 242px;
+	font: 14px/26px "sf-ui";
 	color: #5F5F5F;
 }
 .s7-blocks > div:not(:last-child) .s7-block:after {
