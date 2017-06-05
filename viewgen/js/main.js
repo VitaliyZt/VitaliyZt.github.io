@@ -19,8 +19,7 @@ $(function(){
 		$("header").css("height", $("header>nav").outerHeight());
 	});
 	
-	$(".header-menu>li>a:not(:last), .footer-menu>li>a:not(:last)")
-		.on("click", function(e){
+	$("a[href^='#scr']").on("click", function(e){
 		e.preventDefault();		
 		var link = $(this), target = $(link.attr("href")),
 			headerHeight = $("header>nav").outerHeight(),
@@ -34,9 +33,9 @@ $(function(){
 				bottom = top + $(el).height(),
 				scroll = $(window).scrollTop(),
 				id = $(el).attr('id');
-			if( scroll > top && scroll < bottom){
+			if (scroll > top && scroll < bottom){
 				$(".header-menu .active").removeClass("active");
-				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+				if($(window).scrollTop() + $(window).height() > $(document).height() - 100){
 					$(".header-menu a[href='#scr5']").parent().addClass("active");
 				} else {
 					$(".header-menu a[href='#"+id+"']").parent().addClass("active");
