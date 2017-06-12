@@ -28,7 +28,7 @@ a, a:hover {
 	background-size: 100% 100%;	
 */
 	position: relative;
-	height: 903px;
+	max-height: 903px;
 	background: #a8dbd2;
 }
 
@@ -43,6 +43,7 @@ a, a:hover {
 	
 	position: absolute;
 	width: 100%;
+	z-index: 999;
 }
 
 .main-nav1 nav ul li{
@@ -685,14 +686,16 @@ div.soc-btns2 a.btn {
 	/*navigator menu*/
 	.top-block {
 		height: 100%;
+/*
 		background: url("../img/header.jpg") no-repeat center top;
 		background-size: 100%;
+*/
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 	.main-nav1 {
 		display: block;
-		position: relative;
+/*		position: relative;*/
 		top: 30px;
 		background-color: #a8dbd2;
 		opacity: 0.82;
@@ -743,7 +746,7 @@ div.soc-btns2 a.btn {
 	
 	/*text of bottom part of header*/
 	.header-row {
-		margin-top: 25px;
+/*		margin-top: 25px;*/
 	}
 
 	div.header-text{
@@ -950,8 +953,10 @@ div.soc-btns2 a.btn {
 	.top-block {
 		height: 100%;
 		max-height: 1000px;
+/*
 		background: url("../img/header.jpg") no-repeat center top;
 		background-size: 100%;
+*/
 		font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -1554,11 +1559,13 @@ img#comp-logo {
 
 	/*ECO-COMPLEX PAGE*/
 .top-eco {
-	background-color: #a8dbd2;
+	background: #a8dbd2;
+/*
 	background-image: url(../img/eco-building1.jpg);
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 50%;
+*/
 	min-height:890px;
 }
 
@@ -1569,8 +1576,10 @@ img#comp-logo {
 	margin: -50px 0px 40px -5px;
 }
 .eco-objects {
+/*
 	overflow-y: scroll;
 	height: 600px;
+*/
 }
 
 h4.eco-acc-title {
@@ -1729,8 +1738,10 @@ dl.eco-dl4 dd {
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.top-eco {
 		min-height: 1200px;
+/*
 		background: url(../img/eco-building1.jpg) no-repeat top center;
 		background-size: 100% 50%;
+*/
 		background-color: #a8dbd2;
 	}
 	.eco-objects {
@@ -1740,7 +1751,7 @@ dl.eco-dl4 dd {
 		margin: -20px 0px 20px -5px;
 	}
 	.eco-flats {
-		padding: 150px 0 0 50px;
+		padding: 150px 0 0 50px !important;
 		height: 550px;
 	}
 	
@@ -1788,7 +1799,7 @@ dl.eco-dl4 dd {
 @media screen and (max-width: 767px) {
 	.top-eco {
 		min-height: 700px;
-		background: none;
+/*		background: none;*/
 	}
 	.eco-objects {
 		height: 400px;
@@ -1798,7 +1809,7 @@ dl.eco-dl4 dd {
 		margin: -20px 0px 20px -5px;
 	}
 	.eco-flats {
-		padding: 20px 0 0 35px;
+		padding: 20px 0 0 35px !important;
 		height: 300px;
 		background: url(../img/eco-building1.jpg) no-repeat top center;
 		background-size: 100%;
@@ -2242,7 +2253,6 @@ p#contacts-addr-mail {
 		height: 800px;
 	}
 }
-
 @media screen and (max-width: 767px) {
 	.top-contacts {
 		background-image: none;
@@ -2272,15 +2282,59 @@ p#contacts-addr-mail {
 
 /*12.06*/
 .bg-effect {
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
 	overflow: hidden;
 }
 .bg-effect-img {
+	position: absolute;
+	left: 0;
+	top: 0;
 	height: 100%;
-	background: url("../img/header-new.jpg") no-repeat center;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	transform: scale(1);
-	transition: all 10s;	
+	transition: transform 10s;	
 }
 .bg-effect-img.effected {
 	transform: scale(1.12);
+}
+
+
+@media (max-width: 1499px) {
+	.header-row {
+		height: auto;
+	}
+	.header-text {
+		padding: 180px 0 182px !important;
+	}
+}
+@media (max-width: 991px) {
+	.header-text {
+		padding: 100px 0 65px !important;
+	}
+	.top-eco .header-row {
+		display: block;
+	}
+	.top-eco .header-row .eco-objects {
+		 padding-top: 0 !important; 
+	}
+}
+@media screen and (max-width: 767px){
+	.header-text {
+		padding: 30px 0 30px 10px !important;
+	}
+}
+	
+.top-eco .header-row {
+	height: 890px;
+}
+.top-eco .header-row .eco-objects {
+	padding-top: 177px;
+}
+.top-eco .header-row .eco-flats {
+	padding-top: 310px;
 }
