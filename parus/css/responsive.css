@@ -1,0 +1,18 @@
+.header-top [class*="col-"] {
+	text-align: center;
+}
+.header-top [class*="col-"] > * {
+	margin-left: 0;
+}
+.header-menu {
+	margin: 18px 0 0 0;
+}
+
+
+@media (max-width: 1199px){
+	.header-top > .container-fluid {
+		width: 100%;
+	}
+}
+@media (max-width: 991px){}
+@media (max-width: 767px){}
