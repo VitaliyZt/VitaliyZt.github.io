@@ -34,16 +34,14 @@ a, a:hover {
 
 /*NAVIGATION MENU*/
 .main-nav1 {
-/*	position: relative;*/
+	position: relative;
 	top: 50px;
 	background-color: #a8dbd2;
 	opacity: 0.82;
 	height: 96px;
-/*	margin-bottom: 76px;*/
+	margin-bottom: 76px;
 	
-	position: absolute;
-	width: 100%;
-	z-index: 999;
+
 }
 
 .main-nav1 nav ul li{
@@ -2281,6 +2279,14 @@ p#contacts-addr-mail {
     /*END OF CONTACT PAGE*/
 
 /*12.06*/
+.body-about .main-nav1,
+.body-main .main-nav1 {
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+}
+
+
 .bg-effect {
 	position: relative;
 	padding-left: 0;
