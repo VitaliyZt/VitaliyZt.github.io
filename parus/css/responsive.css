@@ -4,9 +4,6 @@
 .header-top [class*="col-"] > * {
 	margin-left: 0;
 }
-.header-menu {
-	margin: 18px 0 0 0;
-}
 
 
 @media (max-width: 1199px){

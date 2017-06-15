@@ -78,11 +78,22 @@ body {
 	font: 18px/1.7 "Fedra-Demi"
 }
 
+header {}
 header > nav {
-	height: 88px;
+	padding: 18px 0 17px;
+	background: #fff;
+}
+.navbar-fix {
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0 0 10px;
+	width: 100%;
+	background: rgba(255,255,255,0.85);
+	z-index: 9999;
 }
 .header-menu {
-	margin: 18px -15px 0 0;
+	margin-right: -15px;
 }
 .header-menu > li:not(:first-child) {
 	margin-left: 20.4px;
@@ -110,11 +121,12 @@ header > nav {
 
 
 .p1 {
-	padding: 171px 0 154px;
+/*	padding: 171px 0 154px;*/
+	padding-top: 171px;
+	padding-bottom: 154px;
 	text-align: center;
-	background: url("../img/p1-bg.jpg") no-repeat center top;
+/*	background: url("../img/p1-bg.jpg") no-repeat center top;*/
 	background-size: cover;
-/*	background-attachment: fixed;*/
 }
 .p1-title {
 	margin-bottom: 38px;
@@ -212,7 +224,7 @@ header > nav {
 }
 .p3-right {
 	width: 53.1%;
-	background: url("../img/p3-right.jpg") no-repeat center top;
+/*	background: url("../img/p3-right.jpg") no-repeat center top;*/
 	background-size: cover;
 }
 .p3-text {
@@ -311,7 +323,7 @@ header > nav {
 .p5 {
 	padding: 42px 0 70px;
 	text-align: center;
-	background: url("../img/p5-bg.jpg") no-repeat center;
+/*	background: url("../img/p5-bg.jpg") no-repeat center;*/
 	background-size: cover;
 }
 .p5-photos {
@@ -437,7 +449,7 @@ header > nav {
 
 
 footer {
-	background: url("../img/footer-bg.jpg") no-repeat center;
+/*	background: url("../img/footer-bg.jpg") no-repeat center;*/
 	background-size: cover;
 }
 .footer-box {

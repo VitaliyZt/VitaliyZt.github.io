@@ -18,7 +18,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<header>
+		<header id="scr1">
 			<div class="header-top">
 				<div class="container-fluid">
 					<div class="col-md-3 hidden-xs hidden-sm">
@@ -37,7 +37,7 @@
 				</div>
 			</div>			
 
-			<nav>
+			<nav id="scrollspy-nav">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -48,12 +48,12 @@
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="header-menu nav navbar-nav navbar-right">
-							<li class="active"><a href="#">Главная</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Галерея</a></li>
-							<li><a href="#">Отзывы</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li class="active"><a href="#scr1">Главная</a></li>
+							<li><a href="#scr2">О нас</a></li>
+							<li><a href="#scr3">Цены</a></li>
+							<li><a href="#scr4">Галерея</a></li>
+							<li><a href="#scr5">Отзывы</a></li>
+							<li><a href="#scr6">Контакты</a></li>
 						</ul>
 					</div>					
 				</div>
@@ -145,7 +145,7 @@
 				</div>
 			</section>
 
-			<section class="p3">
+			<section class="p3" id="scr2">
 				<div class="p3-box clearfix">
 					<div class="p3-left"></div>
 					<div class="p3-right">
@@ -162,7 +162,7 @@
 				</div>
 			</section>
 
-			<section class="p4">
+			<section class="p4" id="scr3">
 				<div class="container">
 					<h3 class="p-title">Цены базы отдыха <span class="parus-in-title">“ПАРУС”</span></h3>
 					<div class="p4-blocks clearfix">
@@ -201,7 +201,7 @@
 				</div>
 			</section>
 
-			<section class="p5">
+			<section class="p5" id="scr4">
 				<div class="container">
 					<h3 class="p-title">Фото базы отдыха <span class="parus-in-title">“ПАРУС”</span></h3>
 					<div class="p5-photos zoom-gallery clearfix">					
@@ -297,7 +297,7 @@
 				</div>
 			</section>
 
-			<section class="p7">
+			<section class="p7" id="scr5">
 				<div class="container">
 					<h3 class="p-title">Отзывы о базе отдыха <span class="parus-in-title">“ПАРУС”</span></h3>
 					<div class="p7-slider clearfix">
@@ -373,7 +373,7 @@
 			</section>
 		</main>
 		
-		<footer>
+		<footer id="scr6">
 			<div class="container">
 				<div class="footer-box">
 					<div class="footer-left">
@@ -412,9 +412,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHW-NEtViaXERw7Cj0R7pjDMDpbolnb-0&callback=initMap"></script>	
 		<script src="js/bootstrap.min.js"></script>
-		<script src="lib/jquery.maskedinput.min.js"></script>
+		<script src="lib/mask-input/jquery.maskedinput.min.js"></script>
 		<script src="lib/magnific/dist/magnific.min.js"></script>
 		<script src="lib/slick/slick.min.js"></script>
+		<script src="lib/parallax.js/parallax.min.js"></script>
 		<script src="js/main.js"></script>	
 	</body>
 </html>
