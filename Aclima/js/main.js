@@ -2,37 +2,18 @@ $(function(){
 	
 	//	фиксированое меню	
 	$(window).on("scroll", function(){
-		var menu = $(".header-fix");
+		var menu = $(".header-fix"), begin = $(".s1").height();
 		var menuH = menu.outerHeight();
-		var begin = $(".s1").height() + 2*menuH;
 		if ($(this).scrollTop() > begin && !menu.hasClass("scrolled"))        
 			if (screen.width > '991' && $(window).width() > '991'){
 				menu.addClass("scrolled");
-				$(".s1").css({"marginBottom": menuH});
+				$(".s1").css({"marginBottom": menuH});	
 			}			
 		if ($(this).scrollTop() <= begin && menu.hasClass("scrolled")){
 			menu.removeClass("scrolled");
 			$(".s1").removeAttr("style");
 		} 		
 	});
-	
-	
-//	$('#fullpage').fullpage({
-//		onLeave: function(index, nextIndex, direction){
-//			if (nextIndex == 1 || nextIndex == 8){
-//				$(".header-fix").hide();
-//				console.log(nextIndex);
-//			} else {
-//				$(".header-fix").show();
-//			}
-//		}
-//	});
-	
-//	$('.sec-top i').click(function(e){
-//		e.preventDefault();
-//		$.fn.fullpage.moveSectionDown();
-//	});
-	
 	
 	//	правое меню	- фикс
 	$(".menur-menus>ul:first>li>a").each(function(){
@@ -68,17 +49,19 @@ $(function(){
 		var lng = $(this).text();
 		$(".header-lang-switch").text(lng);	
 		lngs.slideUp();
-	});		
-	var phones = $(".header-phones-list");
-	$(".header-phones").hover(
-		function(){	if (!phones.is(":visible"))	phones.slideDown();	},
-		function(){ if (phones.is(":visible")) phones.slideUp(); }	
-	);	
-	var lngs = $(".header-lang-list");
-	$(".header-lang").hover(
-		function(){	if (!lngs.is(":visible")) lngs.slideDown();	},
-		function(){ if (lngs.is(":visible")) lngs.slideUp(); }	
-	);
+	});	
+	
+//	var phones = $(".header-phones-list");
+//	$(".header-phones").hover(
+//		function(){	if (!phones.is(":visible"))	phones.slideDown();	},
+//		function(){ if (phones.is(":visible")) phones.slideUp(); }	
+//	);	
+	
+//	var lngs = $(".header-lang-list");
+//	$(".header-lang").hover(
+//		function(){	if (!lngs.is(":visible")) lngs.slideDown();	},
+//		function(){ if (lngs.is(":visible")) lngs.slideUp(); }	
+//	);
 	
 	//	s4 - подстановка картинок по категориям	
 	$(".s4-menu>li:even>a").hover(
@@ -104,9 +87,9 @@ $(function(){
 	});
 	
 	//	центрируем по высоте маркер 
-//	$(".sec-top").each(function(){
-//		$(this).css("line-height", $(this).css("height"));
-//	});	
+	$(".sec-top").each(function(){
+		$(this).css("line-height", $(this).css("height"));
+	});	
 	
 	//	вывод новостей и объектов - фикс
 	$(".news-blocks>div:nth-child(4n), .obj-blocks>div:nth-child(4n)")
@@ -239,22 +222,27 @@ $(function(){
 			opener: function(element) {	return element.find('img');	}
 		}
 	});
-	
-
 
 });
 
 $(window).load(function(){
 	//	переход к след блоку по клику на маркер
-	$("section:not('.s1') .sec-top>i").on("click", function(){
-		var block = $(this).parents("section").next();
-		var offset = $(block).offset().top;
-		$("html, body").animate({scrollTop: offset - 57}, 500);
-	});		
+//	$("section:not('.s1') .sec-top>i").on("click", function(){
+//		var block = $(this).parents("section").next();
+//		var offset = $(block).offset().top;
+//		$("html, body").animate({scrollTop: offset - 57}, 500);
+//	});		
 	$(".s1 .sec-top>i").on("click", function(){
 		var offset = $(".header-fix").offset().top;
 		$("html, body").animate({scrollTop: offset}, 500);
 	});
+	
+	$("section:not('.s1') .sec-arrow-btn").on("click", function(e){
+		e.preventDefault();
+		var block = $(this).parents("section").next();
+		var offset = $(block).offset().top;
+		$("html, body").animate({scrollTop: offset - 57}, 500);
+	});	
 	
 	//	высота заливки новости (hover)
 	$(".news-block").each(function(){
